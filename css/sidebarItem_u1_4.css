@@ -29,8 +29,9 @@
 /*-----------------------BTNINTRODUCCION-------------------------------*/
 #sidebarBtnIntroduccion{
 
+	color: white;
 	font-weight: bold;
-	background-color: #7B8992;
+	background-color: #6FA6CA;
 	transition: background-color 0.15s linear 0s;
 
 }
@@ -39,7 +40,8 @@
 #sidebarBtnIntroduccion:hover{
 
 	font-weight: bold;
-	background-color: #6FA6CA;
+	background-color: #7B8992;
+	
 
 }
 
@@ -74,7 +76,7 @@
 
 	color: white;
 	font-weight: bold;
-	background-color: #6FA6CA;
+	background-color: #6FA6CA;	
 	transition: background-color 0.15s linear 0s;
 
 }
@@ -83,6 +85,7 @@
 #sidebarBtnU111:hover{
 
 	background-color: #7B8992;
+	
 
 }
 
@@ -103,6 +106,7 @@
 #sidebarBtnU112:hover{
 
 	background-color: #7B8992;
+	
 
 }
 /*-----------------------U112-------------------------------*/
@@ -113,7 +117,7 @@
 
 	color: white;
 	font-weight: bold;
-	background-color: #6FA6CA;
+	background-color: #7B8992;
 	transition: background-color 0.15s linear 0s;
 
 }
@@ -121,7 +125,7 @@
 
 #sidebarBtnU113:hover{
 
-	background-color: #7B8992;
+	background-color: #6FA6CA;
 
 }
 /*-----------------------U113-------------------------------*/
