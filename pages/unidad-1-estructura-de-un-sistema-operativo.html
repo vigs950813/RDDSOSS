@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+
+
+
+
+<html lang="es">
+    <!------------------------------------------HEAD------------------------------------------------>  
+    <head>
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>&#8544;. Estructura de un sistema operativo</title>
+
+
+        <!--BOOTSTRAP CSS-->  
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <!--BOOTSTRAP CSS-->  
+
+          <link rel="stylesheet" type="text/css" href="../css/headerImages.css">
+          <link rel="stylesheet" type="text/css" href="../css/header.css">
+          <link rel="stylesheet" type="text/css" href="../css/hoverU1.css">
+          <link rel="stylesheet" type="text/css" href="../css/navbar.css">
+          <link rel="stylesheet" type="text/css" href="../css/wrapper.css">
+          <link rel="stylesheet" type="text/css" href="../css/sidebarItem.css">
+          <link rel="stylesheet" type="text/css" href="../css/cardTitle.css">
+          <link rel="stylesheet" type="text/css" href="../css/carrouselBtn.css">
+          <link rel="stylesheet" type="text/css" href="../css/footerBG.css">
+
+          <!-- Favicon-->
+          <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
+          <!-- Core theme CSS (includes Bootstrap)-->
+          <link href="../css/styles.css" rel="stylesheet" />
+
+    </head>
+
+    <!------------------------------------------HEAD------------------------------------------------>
+
+
+
+
+
+
+    <!------------------------------------------BODY------------------------------------------------>
+    <body>
+
+      <!------------------------------------------HEADER-------------------------------------------->
+      <header >
+            <div class="column">
+                <img src="../images/logoBlancoESCOM.png" class="img-fluid" alt="..." id="logoESCOM">
+            </div>
+            <div class="column" >
+                <h2>Instituto Politécnico Nacional</h2>
+                <h3>Escuela Superior de Cómputo</h3>
+                <h4>Recurso Didáctico Digital</h4>
+                <h5>Sistemas Operativos</h5>
+            </div>
+            <div class="column" >
+                <img src="../images/logoBlancoIPN.png" class="img-fluid" alt="..." id="logoIPN">
+            </div>
+      </header>
+      <!------------------------------------------HEADER-------------------------------------------->
+
+
+
+
+
+
+
+        <!------------------------------------------WRAPPER----------------------------------------->
+        <div class="d-flex" id="wrapper">
+            <!--------------------------------------SIDEBAR---------------------------------------->
+            <div class="border-end bg-secondary" id="sidebar-wrapper">
+
+
+                <div class="list-group list-group-flush">
+
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3 disabled" id="sidebarBtnDisabled" href="unidad-1-estructura-de-un-sistema-operativo.html">&#8544;. Estructura de un sistema operativo</a>
+
+
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3 active " id="sidebarBtn" href="unidad-1-estructura-de-un-sistema-operativo.html">Introducción</a>
+
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" id="sidebarBtn" href="unidad-1-estructura-de-un-sistema-operativo.html">Propósito de la unidad de aprendizaje</a>
+
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" id="sidebarBtn" href="unidad-1-estructura-de-un-sistema-operativo.html">&#8544;. Estructura de un sistema operativo</a>
+
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" id="sidebarBtn" href="1-1-1-objetivos.html">1.1.1 Objetivos </a>
+
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" id="sidebarBtn" href="1-1-2-evolucion.html">1.1.2 Evolución</a>
+
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" id="sidebarBtn" href="1-1-3-tipos-monolítico-por-capas-micro-núcleo-máquina-virtual.html">1.1.3 Tipos: monolítico, por capas, micro núcleo, máquina virtual</a>
+
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" id="sidebarBtn" href="evaluacion-1.html">Evaluación</a>
+
+                </div>
+            </div>
+            <!--------------------------------------SIDEBAR---------------------------------------->
+
+            <!----------------------------------CONTENIDO DE WRAPPER-------------------------------->
+            <div id="page-content-wrapper">
+                <!------------------------------------NAVBAR------------------------------------>
+                <nav class="navbar navbar-expand-lg navbar-light bg-gradient border-bottom">
+
+                    <div class="container-fluid">
+
+                        <!------------------------------------TOGGLERSIDEBAR------------------------------------>
+                        <button class="btn btn-dark" type="submit"id="sidebarToggle" style="font-size: auto; vertical-align: center;">&#9868;
+                        </button>
+                        <!------------------------------------TOGGLERSIDEBAR------------------------------------>
+                     
+                        <!------------------------------------TOGGLERNAVBAR------------------------------------>
+                        <button class="navbar-toggler" id="toggler1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+                          <span class="navbar-toggler-icon"></span>
+
+                        </button>
+                        <!------------------------------------TOGGLERNAVBAR------------------------------------>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                            <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+
+                                <li class="nav-item active">
+
+                                  <div class="container" id="containerInicio">
+                                    <a class="nav-link active" href="../index2.html">
+                                      
+                                        Inicio
+                                      
+                                    </a>  
+                                  </div>
+                                  
+                                  
+                                </li>
+                                <!--------------------------DROPDOWN MENU---------------------------->
+                                <li class="nav-item dropdown">
+                                    
+                                    <div class="container nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="containerDropdown">
+
+                                        
+                                          <!--Unidades de aprendizaje (proximamente)-->
+                                          Contenido
+                                        
+                                      
+                                    </div>
+                                    
+                                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+
+                                        <!--------------------------UNIDAD 1------------------------->
+                                        <a class="dropdown-item" href="unidad-1-estructura-de-un-sistema-operativo.html">
+                                          &#8544;. Estructura de un sistema operativo
+                                        </a>
+                                        <!--------------------------UNIDAD 1------------------------->
+
+                                        <!--------------------------UNIDAD 2------------------------->
+                                        <a class="dropdown-item disabled" href="unidad-2-administracion-de-procesos.html">
+                                          &#8545;. Administración de procesos
+                                        </a>
+                                        <!--------------------------UNIDAD 2------------------------->
+
+                                        <!--------------------------UNIDAD 3------------------------->
+                                        <a class="dropdown-item disabled" href="unidad-3-administracion-de-memoria.html">
+                                          &#8546;.  Administración de memoria
+                                        </a>
+                                        <!--------------------------UNIDAD 3------------------------->
+
+                                        <!--------------------------UNIDAD 4------------------------->
+                                        <a class="dropdown-item disabled" href="unidad-4-sistema-de-archivos.html">
+                                          &#8548;. Sistema de archivos
+                                        </a>                                 
+                                        <!--------------------------UNIDAD 4------------------------->      
+                                        <!--------------------------UNIDAD 5------------------------->
+                                        <a class="dropdown-item disabled" href="unidad-5-dispositivos-de-entrada-y-salida.html">
+                                          &#8549;. Dispositivos de entrada y salida
+                                        </a>                               
+                                        <!--------------------------UNIDAD 5------------------------->
+
+                                        <!--------------------------UNIDAD 6------------------------->
+                                        <a class="dropdown-item disabled" href="unidad-6-seguridad-y-virtualizacion.html">
+                                          &#8549;. Seguridad y virtualización
+                                        </a>                               
+                                        <!--------------------------UNIDAD 6------------------------->
+
+                                    </div>
+                                </li>
+                                <!--------------------------DROPDOWN MENU---------------------------->                                
+                                <li class="nav-item active">
+                                  <div class="container" id="containerBibRec">
+                                    <a class="nav-link" href="bibliografia-y-recursos.html">Bibliografía y recursos</a>  
+                                  </div>
+                                </li>
+
+                                <li class="nav-item active">
+                                  <div class="container" id="containerGlosario">
+                                    <a class="nav-link" href="glosario.html">Glosario</a>  
+                                  </div>
+                                </li>
+
+
+                                
+                                <li class="nav-item active">
+                                  <div class="container" id="containerContactos">
+                                    <a class="nav-link" href="contactos.html">Contactos</a>
+                                  </div>
+                                </li>
+
+
+                                <li class="nav-item active">
+                                  <div class="container" id="containerAcercaDe">
+                                    <a class="nav-link" href="acerca-de.html">Acerca de</a>  
+                                  </div>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <!------------------------------------NAVBAR------------------------------------>
+
+                <!--------------------------------CONTENIDO PRINCIPAL-------------------->
+                <div class="container-fluid">
+
+
+
+
+
+
+
+
+
+
+
+
+                    <!--------------------------------SECTION-------------------->   
+                    <section>
+
+                          <div class="container">
+
+                                <div class="card" id="cardBigTitle">
+                                  <div class="card-body">
+
+                                    <h1>Introducción</h1>
+
+                                  </div>
+                                </div>    
+
+                          </div>
+
+
+                              <div class="container">
+                                <div class="card" id="cardConcept">
+                                  <div class="card-body" id="cardTextConcept">
+                                    <p class="card-text">
+                                      Dentro de esta unidad de aprendizaje te familiarizaras con conceptos y funcionamiento de:
+
+
+                                      <ul>  
+                                        <li>Aspectos básicos del sistema operativo</li>
+                                        <li>Fundamentos del núcleo del sistema operativo </li>
+                                        <li>Modos de operación de un sistema operativo</li>
+                                        <li>Llamadas a sistema</li>
+                                        <li>Shell</li>
+                                      </ul>      
+
+                                      
+                                      
+                                      
+                                      
+                                      
+
+                                      Para ello es muy importante establecer que el uso del sistema operativo desde la visión interna y su funcionalidad en donde la gestión, llamadas al sistema y shell, te ayudarán a entender más su interacción con cada uno de los elementos que lo componen la interactividad entre las instrucciones del usuario hacia la máquina al generar una tarea o actividad. 
+
+                                    </p>
+                                    
+                                  <div class="container">
+                                    <div class="row">
+                                      <div class="col">
+                                        
+                                      </div>
+                                      <div class="col">
+                                        <img src="images/workspace-with-computer-screen-k.png" class="img-fluid" alt="..." style="">Imágen diseñada por <a href="https://www.freepik.com/free-photo/workspace-with-computer-screen-keyboard_12079253.htm#query=computer&position=36&from_view=search&track=sph">Freepik</a>
+                                      </div>
+                                      <div class="col">
+                                        
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                    
+                                  </div>
+
+
+                                </div>
+
+                              </div>
+
+                          
+
+                        
+                    </section>
+                    <!--------------------------------SECTION--------------------> 
+
+
+
+
+                    <!--------------------------------SECTION-------------------->   
+                    <section>
+
+                          <div class="container">
+
+                                <div class="card" id="cardBigTitle">
+                                  <div class="card-body">
+
+                                    <h1>Unidad de competencia</h1>
+
+                                  </div>
+                                </div>    
+
+                          </div>
+
+
+                              <div class="container">
+                                <div class="card" id="cardConcept">
+                                  <div class="card-body" id="cardTextConcept">
+                                    <p class="card-text">
+                                      Identifica los sistemas  operativos actuales y  emergentes con base en su  estructura, modos de operación  y llamadas a sistema.
+                                    </p>
+                                    
+                                  <div class="container">
+                                    <div class="row">
+                                      <div class="col">
+                                        
+                                      </div>
+                                      <div class="col">
+                                        <img src="images/workspace-with-computer-screen-k.png" class="img-fluid" alt="..." style="">Imágen diseñada por <a href="https://www.freepik.com/free-photo/workspace-with-computer-screen-keyboard_12079253.htm#query=computer&position=36&from_view=search&track=sph">Freepik</a>
+                                      </div>
+                                      <div class="col">
+                                        
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                    
+                                  </div>
+
+
+                                </div>
+
+                              </div>
+
+                          
+
+                        
+                    </section>
+                    <!--------------------------------SECTION--------------------> 
+
+
+
+                </div>
+                <!--------------------------------CONTENIDO PRINCIPAL-------------------->
+            </div>
+
+            <!----------------------------------CONTENIDO DE WRAPPER-------------------------------->            
+        </div>
+            <!--------------------------------------FOOTER--------------------------------------->
+
+              <footer>
+                
+                <div class="footerBG">
+                  <div class="card-header">
+                    Pie de página
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Pie de página</h5>
+                    <p class="card-text">Pie de página</p>
+                  </div>
+
+                </div>
+
+
+              </footer>
+            <!--------------------------------------FOOTER--------------------------------------->
+        <!------------------------------------------WRAPPER----------------------------------------->
+
+
+
+
+
+        <!--------------------------------SCRIPTS------------------------------------------------->
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js">
+        </script>
+        <!-- Core theme JS-->
+        <script src="../js/scripts.js"></script>
+
+
+        <!--------------------------------SCRIPTS------------------------------------------------->
+
+
+
+
+    </body>
+    <!------------------------------------------BODY------------------------------------------------>
+</html>
