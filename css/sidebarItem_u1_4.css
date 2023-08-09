@@ -71,12 +71,46 @@
 
 
 
+
+/*-----------------------U11-------------------------------*/
+#sidebarBtnU11{
+
+	color: white;
+	font-weight: bold;
+	background-color: #6FA6CA;
+	transition: background-color 0.15s linear 0s;
+
+}
+
+
+#sidebarBtnU11:hover{
+
+	background-color: #7B8992;
+
+}
+
+/*-----------------------U11-------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*-----------------------U111-------------------------------*/
 #sidebarBtnU111{
 
 	color: white;
 	font-weight: bold;
-	background-color: #6FA6CA;	
+	background-color: #7B8992;
 	transition: background-color 0.15s linear 0s;
 
 }
@@ -84,8 +118,7 @@
 
 #sidebarBtnU111:hover{
 
-	background-color: #7B8992;
-	
+	background-color: #6FA6CA;	
 
 }
 
@@ -105,8 +138,7 @@
 
 #sidebarBtnU112:hover{
 
-	background-color: #7B8992;
-	
+	background-color: #7B8992;	
 
 }
 /*-----------------------U112-------------------------------*/
@@ -117,7 +149,7 @@
 
 	color: white;
 	font-weight: bold;
-	background-color: #7B8992;
+	background-color: #6FA6CA;
 	transition: background-color 0.15s linear 0s;
 
 }
@@ -125,7 +157,7 @@
 
 #sidebarBtnU113:hover{
 
-	background-color: #6FA6CA;
+	background-color: #7B8992;
 
 }
 /*-----------------------U113-------------------------------*/

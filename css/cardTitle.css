@@ -37,16 +37,7 @@
 
 	font-weight: bold;
 	color: white;
-	background-image: linear-gradient(
-	  120deg,
-	  hsl(314deg 100% 5%) 0%,
-	  hsl(329deg 100% 20%) 2%,
-	  hsl(345deg 100% 35%) 9%,
-	  hsl(0deg 100% 50%) 23%,
-	  hsl(337deg 100% 66%) 41%,
-	  hsl(315deg 100% 81%) 65%,
-	  hsl(292deg 100% 97%) 98%
-	);
+	background-color: #50A5E6;
 
 }
 
@@ -59,11 +50,9 @@
 }
 
 
-
 #cardConcept .card-body{
 	text-align: justify;
 }
-
 
 
 #cardContactos{
