@@ -31,7 +31,7 @@
 
 	color: white;
 	font-weight: bold;
-	background-color: #7B8992;
+	background-color: #6FA6CA;
 	transition: background-color 0.15s linear 0s;
 
 }
@@ -40,7 +40,8 @@
 #sidebarBtnIntroduccion:hover{
 
 	font-weight: bold;
-	background-color: #6FA6CA;
+	background-color: #7B8992;
+	
 
 }
 
@@ -68,6 +69,9 @@
 
 /*-----------------------PROPOSITO UA-------------------------------*/
 
+
+
+
 /*-----------------------U11-------------------------------*/
 #sidebarBtnU11{
 
@@ -90,12 +94,21 @@
 
 
 
+
+
+
+
+
+
+
+
+
 /*-----------------------U111-------------------------------*/
 #sidebarBtnU111{
 
 	color: white;
 	font-weight: bold;
-	background-color: #6FA6CA;
+	background-color: #6FA6CA;	
 	transition: background-color 0.15s linear 0s;
 
 }
@@ -104,6 +117,7 @@
 #sidebarBtnU111:hover{
 
 	background-color: #7B8992;
+	
 
 }
 
@@ -134,7 +148,7 @@
 
 	color: white;
 	font-weight: bold;
-	background-color: #6FA6CA;
+    background-color: #6FA6CA;
 	transition: background-color 0.15s linear 0s;
 
 }
@@ -142,17 +156,18 @@
 
 #sidebarBtnU113:hover{
 
-	background-color: #7B8992;
+	background-color: #7B8992;	
 
 }
 /*-----------------------U113-------------------------------*/
+
 
 /*-----------------------U12-------------------------------*/
 #sidebarBtnU12{
 
 	color: white;
 	font-weight: bold;
-	background-color: #6FA6CA;
+    background-color: #6FA6CA;	
 	transition: background-color 0.15s linear 0s;
 
 }
@@ -170,7 +185,7 @@
 
 	color: white;
 	font-weight: bold;
-	background-color: #6FA6CA;
+    background-color: #6FA6CA;
 	transition: background-color 0.15s linear 0s;
 
 }
@@ -178,7 +193,7 @@
 
 #sidebarBtnU121:hover{
 
-	background-color: #7B8992;
+    background-color: #7B8992;
 
 }
 /*-----------------------U1121-------------------------------*/
@@ -196,7 +211,7 @@
 
 #sidebarBtnU13:hover{
 
-	background-color: #7B8992;
+    background-color: #7B8992;
 
 }
 /*-----------------------U13-------------------------------*/
@@ -232,7 +247,7 @@
 
 #sidebarBtnU132:hover{
 
-	background-color: #7B8992;
+	background-color: #6FA6CA;
 
 }
 /*-----------------------U1132-------------------------------*/
@@ -316,7 +331,7 @@
 
 	color: white;
 	font-weight: bold;
-	background-color: #6FA6CA;
+	background-color: #7B8992;
 	transition: background-color 0.15s linear 0s;
 
 }
@@ -324,7 +339,7 @@
 
 #sidebarBtnU143:hover{
 
-	background-color: #7B8992;
+	background-color: #6FA6CA;
 
 }
 /*-----------------------U143-------------------------------*/
@@ -437,6 +452,14 @@
 
 }
 /*-----------------------U154-------------------------------*/
+
+
+
+
+
+
+
+
 
 
 

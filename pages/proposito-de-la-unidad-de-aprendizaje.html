@@ -11,7 +11,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>1.1.2 Tipos: monolítico, por capas, micro núcleo, máquina virtual</title>
+        <title>Propósito de la unidad de aprendizaje</title>
 
 
         <!--BOOTSTRAP CSS-->  
@@ -23,8 +23,9 @@
           <link rel="stylesheet" type="text/css" href="../css/hoverU1.css">
           <link rel="stylesheet" type="text/css" href="../css/navbar.css">
           <link rel="stylesheet" type="text/css" href="../css/wrapper.css">
-          <link rel="stylesheet" type="text/css" href="../css/sidebarItem_u1_6.css">
+          <link rel="stylesheet" type="text/css" href="../css/sidebarItem_u1_2.css">
           <link rel="stylesheet" type="text/css" href="../css/cardTitle.css">
+          <link rel="stylesheet" type="text/css" href="../css/accordionBtn.css">
           <link rel="stylesheet" type="text/css" href="../css/carrouselBtn.css">
           <link rel="stylesheet" type="text/css" href="../css/footerBG.css">
 
@@ -170,6 +171,8 @@
                 >1.3.3 Contadores</a
               >
     
+       
+              
               
     
               <a
@@ -310,252 +313,59 @@
 
 
 
-
-
-
-
-
-
-
-
-
-                    <!--------------------------------SECTION-------------------->   
+                    <!--------------------SECTION1-------------------->                  
                     <section>
+                        <!--------------------------------ASPECTOSBASICOSSO-------------------->
 
-                          <div class="container">
 
-                                <div class="card" id="cardBigTitle">
-                                  <div class="card-body">
+                               <div class="container">
 
-                                    <h1>Tipos de sistemas operativos</h1>
+                                      <div class="card" id="cardBigTitle">
+                                        <div class="card-body">
 
-                                  </div>
-                                </div>    
+                                          <h1>Propósito de la unidad de aprendizaje</h1>
 
-                          </div>
+                                        </div>
+                                      </div>    
 
+                               </div>
 
-                              <div class="container">
-                                <div class="card" id="cardConcept">
-                                  <div class="card-body" id="cardTextConcept">
-                                    <p class="card-text">
-                                      Los sistemas operativos para las mainframes están profundamente orientados hacia el procesamiento
-                                      de muchos trabajos a la vez, de los cuales la mayor parte requiere muchas operaciones de E/S. Por lo general ofrecen tres tipos de servicios: procesamiento por lotes, procesamiento de transacciones y tiempo compartido.
 
-
-                                      Aunado a ello existen características como son:
-
-                                      <ol type="a">  
-
-                                        <li>Administración de tareas:
-                                          <ul>
-
-                                            <li>
-                                              Monotarea: Son aquellos sistemas operativos capaces de manejar programas o realizar tareas una sola vez a la vez.
-                                            </li>
-
-                                            <li>
-                                              Multitarea: Son  aquellos sistemas operativos que permiten ejecutar varios procesos a la vez desde uno de la computadora, esto quiere decir  que varios usuarios pueden realizar tareas desde sus computadoras y puede ser en forma de acceso remoto o en servicios de red en donde estén conectadas las máquinas.
-                                            </li>
-                                            
-                                          </ul>
-                                        </li>
-
-
-                                        <li>Administración de usuarios:
-                                          <ul>
-
-                                            <li>
-                                              Monousuario: este sistema solo trabaja con un usuario a la vez, por lo que cualquier usuario tiene acceso a sus datos del sistema debido a que solo está en su computadora y el es único que puede realizar en su propia máquina.
-                                            </li>
-
-                                            <li>
-                                              Multiusuario: En este sistema operativo varios usuarios pueden trabajar a la misma vez, ya sea en servicios o en almacenamiento de información debido a que trabajan en red y pueden compartir memoria, programas, procesador, impresoras, scanner entre otros.
-                                            </li>
-                                            
-                                          </ul>
-                                        </li>
-
-                                        <p>
-                                          Existen también sistemas operativos por lotes estos funcionan y procesan una gran cantidad de trabajos con poca o ninguna comunicación con los usuarios y los programas en ejecución.
-                                        </p>
-
-
-                                        <p>
-                                          Cuando los sistemas son bien planeados se puede establecer un tiempo de ejecución ya que los recursos como el procesador son mejor utilizados y los sistemas operativos son simples debido a la secuencia de la ejecución de los trabajos y sus procesos.
-                                        </p>
-
-
-
-                                        <li>Sistemas operativos en tiempo real: Conocidos como RTOS. Son aquellos en los cuales no tiene importancia el usuario sino los procesos que se lleven a cabo, estos se utilizan en entornos donde existe una gran necesidad sucesos o eventos por ello estos sistemas operativos en tiempo real son construidos para aplicaciones específicas como puede ser un control de tráfico aéreo, bolsa de valores, control de refinerías, por lo que las aplicaciones que se pueden realizar en tiempo real son las siguientes:
-
-                                          <ul>
-
-                                            <li>
-                                              Control de trenes.
-                                            </li>
-
-                                            <li>
-                                              Telecomunicaciones.
-                                            </li>
-
-                                             <li>
-                                              Sistemas de fabricación integrada.
-                                            </li>
-
-                                             <li>
-                                              Producción y distribución de energía eléctrica.
-                                            </li>
-
-                                             <li>
-                                              Control de edificios.
-                                            </li>
-
-                                             <li>
-                                              Sistemas multimedia.
-                                            </li>
-                                            
-                                          </ul>
-                                        </li>
-
-                                        <p>
-                                          Algunos ejemplos de estos sistemas operativos como son:  Solaris, Lyns y Spectra.
-                                        </p>
-
-                                        <li>
-                                          Existen también sistemas operativos distribuidos que son aquellos que permiten distribuir trabajos, tareas o procesos entre un conjunto de procesadores, por lo que en este caso para el usuario es transparente este funcionamiento, para ello existen dos esquemas:
-
-                                          <ul>
-
-                                            <li>
-                                              Un sistema fuertemente acoplado que es aquel que comparte memoria y un reloj global, en donde sus tiempos de acceso son similares para todos los procesadores.
-
-                                            </li>
-
-                                            <li>
-                                              Sistema débilmente acoplado en este caso los procesadores no comparten memoria ni reloj, ya que cada uno de ellos cuenta con su memoria local y sus recursos propios.
-                                            </li>
-                                            
-                                          </ul>
-
-                                        </li>
-                                        
-
-                                      </ol>      
-
-                                      
-                                      
-                                      
-                                      
-                                      
-
-                                      No todos los sistemas operativos de tiempo real son embebidos ni todos los sistemas operativos embebidos son de tiempo real, como lo muestra la siguiente imagen:
-
-                                      <div class="container">
-                                        <img src="../images/Fig1SOTR.png" class="img-fluid" alt="...">  
-                                      </div>
-
-                                      <p>
-
-                                        Ahora bien las operaciones de entrada y salida son importantes por lo que los procesos de usuario emiten peticiones de entrada/salida al sistema operativo. Cuando un proceso solicita una operación de E/S, el sistema operativo prepara dicha operación y bloquea al proceso hasta que se recibe una interrupción del controlador del dispositivo indicando que la operación está completa.
-
-                                        
-                                      </p>
-
-
-                                      <p>
-                                        
-                                        Las peticiones se procesan de forma estructurada en las siguientes capas:
-
-                                        <ul>
-                                          <li>Manejadores de interrupción.</li>
-                                          <li>Manejadores de dispositivos o drivers.</li>
-                                        </ul>
-
-                                      </p>
-
-
-                                      <p>
-                                        
-                                        Software de Entrada y salida independiente de los dispositivos. Este software está formado por la parte de alto nivel de los manejadores, el gestor de caché, el gestor de bloques y el servidor de archivos Interfaz del sistema operativo. Llamadas al sistema que usan las aplicaciones de usuario, como se muestra en la siguiente imagen
-
-                                      </p>
-
-
-                                      <div class="container">
-                                        <img src="../images/Fig2OES.png" class="img-fluid" alt="...">
-                                      </div>
-
-
-                                      <p>
-                                        
-                                        La forma más sencilla de solicitar una operación de entrada y salida implica que cuando la operación haya realizado la petición, bloqueará el proceso o hilo que la realizó hasta que la operación termine, con lo que ya no requerirá hacer ninguna implementación adicional para seguir utilizando el dispositivo de entrada y salida para la siguiente operación, sea de lectura o de escritura
-
-                                      </p>
-
-                                      <p>
-                                        
-                                        Existen dos métodos de entrada y salida:
-                                        <ul>
-                                          <li>
-                                            Síncrono: Es cuando la invocación de una operación en un dispositivo de entrada y salida que bloquea al solicitante mientras realiza la operación, debido a que coordina la interacción del proceso que solicita con las operaciones.
-                                          </li>
-                                          <li>
-                                            Asíncrono: Es cuando el proceso de inicio  la entrada y salida y continúa su ejecución en donde el proceso es notificado al sistema operativo cuando este es concluido en su entrada y salida totalmente
-
-                                          </li>
-                                        </ul>
-
-
-                                        <p>
-                                          Como se muestra en la siguiente imagen
-
-                                        </p>
-                                        
-
-                                      </p>
-
-
-                                      <p>
-                                          
-                                          El  síncrono es cuando la invocación de una operación en un dispositivo de entrada y salida que bloquea al solicitante mientras realiza la operación, debido a que coordina la interacción del proceso que solicita con las operaciones.
-
-
-                                      </p>
-
-                                       <div class="container">
-                                        <img src="../images/Fig3MES.png" class="img-fluid" alt="...">
-                                      </div>
-
-                                    </p>
-                                    
                                   <div class="container">
-                                    <div class="row">
-                                      <div class="col">
-                                        
-                                      </div>
-                                      <div class="col">
-                                        <img src="../images/features_5203117.png" class="img-fluid" alt="..." style="">Ícono por <a href="https://www.freepik.com/search?format=search&last_filter=query&last_value=operative+system&query=operative+system&type=icon">PIXARTIST</a>
-                                      </div>
-                                      <div class="col">
-                                        
-                                      </div>
-                                    </div>
-                                  </div>
+                                        <div class="card" id="cardConcept">
+                                          <div class="card-body" id="cardTextConcept">
+                                            <p class="card-text">
+                                              Propone soluciones a las necesidades de sistemas computacionales actuales a partir del funcionamiento del sistema operativo.
+                                            </p>
 
-                                    
-                                  </div>
+                                            <div class="text-center">
+
+                                              <img src="../images/solution_10553064.png" class="img-fluid" alt="..." id="logoESCOM">
+                                              <p>
+
+                                                Ícono por <a href="https://www.freepik.com/search?format=search&last_filter=query&last_value=solutions&query=solutions&sort=relevance&type=icon">Smashicons</a>
+                                                
+                                              </p>
+                                            
+                                              
+                                            </div>
+                                            
+                                            
+                                            
+                                          </div>
 
 
-                                </div>
+                                        </div>
 
-                              </div>
+                                  </div>                          
 
-                          
 
-                        
+
+                        <!--------------------------------ASPECTOSBASICOSSO-------------------->
                     </section>
-                    <!--------------------------------SECTION--------------------> 
+                    <!--------------------SECTION1-------------------->                  
+
+
 
 
 
@@ -564,7 +374,6 @@
                 <!--------------------------------CONTENIDO PRINCIPAL-------------------->
             </div>
 
-            <!----------------------------------CONTENIDO DE WRAPPER-------------------------------->            
         </div>
             <!--------------------------------------FOOTER--------------------------------------->
 

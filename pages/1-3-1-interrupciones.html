@@ -11,7 +11,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>1.1.2 Tipos: monolítico, por capas, micro núcleo, máquina virtual</title>
+        <title>1.3.1 Interrupciones</title>
 
 
         <!--BOOTSTRAP CSS-->  
@@ -23,7 +23,8 @@
           <link rel="stylesheet" type="text/css" href="../css/hoverU1.css">
           <link rel="stylesheet" type="text/css" href="../css/navbar.css">
           <link rel="stylesheet" type="text/css" href="../css/wrapper.css">
-          <link rel="stylesheet" type="text/css" href="../css/sidebarItem_u1_6.css">
+          <link rel="stylesheet" type="text/css" href="../css/sidebarItem_u1_10.css">
+          <link rel="stylesheet" type="text/css" href="../css/accordionBtn.css">
           <link rel="stylesheet" type="text/css" href="../css/cardTitle.css">
           <link rel="stylesheet" type="text/css" href="../css/carrouselBtn.css">
           <link rel="stylesheet" type="text/css" href="../css/footerBG.css">
@@ -170,6 +171,7 @@
                 >1.3.3 Contadores</a
               >
     
+            
               
     
               <a
@@ -327,7 +329,7 @@
                                 <div class="card" id="cardBigTitle">
                                   <div class="card-body">
 
-                                    <h1>Tipos de sistemas operativos</h1>
+                                    <h1>Interrupciones</h1>
 
                                   </div>
                                 </div>    
@@ -339,209 +341,100 @@
                                 <div class="card" id="cardConcept">
                                   <div class="card-body" id="cardTextConcept">
                                     <p class="card-text">
-                                      Los sistemas operativos para las mainframes están profundamente orientados hacia el procesamiento
-                                      de muchos trabajos a la vez, de los cuales la mayor parte requiere muchas operaciones de E/S. Por lo general ofrecen tres tipos de servicios: procesamiento por lotes, procesamiento de transacciones y tiempo compartido.
+                                      <b>Las  interrupciones funcionan en donde se  transfiere el control a la rutina de servicio de la misma</b>, generalmente por medio del vector de interrupción, que contiene las direcciones de todas las rutinas de servicio, estas interrupciones entrantes son deshabilitadas mientras otra interrupción está siendo procesada para prevenir una pérdida de interrupción. 
+                                    </p>
+                                    <p>
+                                      Es por ello que <b>cuando un dispositivo de entrada y salida (E/S) ha terminado el trabajo que se le asignó, genera un interrupción que es gestionada por el manejador de interrupciones</b>, en donde despierta al proceso que había solicitado la entrada y salida (en caso de que esta fuese síncrona) y Libera los recursos ocupados por la operación entrada y salida, generalmente  por medio del vector de interrupción, que contiene las direcciones de todas las rutinas de servicio <b>generando un trap</b>.
+                                    </p>
+                                    <p>
+                                      <b>Un trap es una interrupción generada por el software </b>causada por un error o por un requerimiento del usuario.
+                                    </p>
+
+                                  </div>
 
 
-                                      Aunado a ello existen características como son:
+                                </div>
 
-                                      <ol type="a">  
+                              </div>
 
-                                        <li>Administración de tareas:
-                                          <ul>
+                          
 
-                                            <li>
-                                              Monotarea: Son aquellos sistemas operativos capaces de manejar programas o realizar tareas una sola vez a la vez.
-                                            </li>
+                        
+                    </section>
+                    <!--------------------------------SECTION--------------------> 
 
-                                            <li>
-                                              Multitarea: Son  aquellos sistemas operativos que permiten ejecutar varios procesos a la vez desde uno de la computadora, esto quiere decir  que varios usuarios pueden realizar tareas desde sus computadoras y puede ser en forma de acceso remoto o en servicios de red en donde estén conectadas las máquinas.
-                                            </li>
-                                            
-                                          </ul>
-                                        </li>
+                    <!--------------------------------SECTION-------------------->   
+                    <section>
+
+                          <div class="container">
+
+                                <div class="card" id="cardBigTitle">
+                                  <div class="card-body">
+
+                                    <h1>Manejo de Interrupciones</h1>
+
+                                  </div>
+                                </div>    
+
+                          </div>
 
 
-                                        <li>Administración de usuarios:
-                                          <ul>
+                              <div class="container">
+                                <div class="card" id="cardConcept">
+                                  <div class="card-body" id="cardTextConcept">
+                                    <p class="card-text">
+                                      <b>El sistema operativo preserva el estado de la CPU almacenando los registros y el contador de programa</b>, por lo que determina qué tipo de interrupción ha ocurrido que puedes ser:
+                                    </p>
 
-                                            <li>
-                                              Monousuario: este sistema solo trabaja con un usuario a la vez, por lo que cualquier usuario tiene acceso a sus datos del sistema debido a que solo está en su computadora y el es único que puede realizar en su propia máquina.
-                                            </li>
+                                    <ul>
 
-                                            <li>
-                                              Multiusuario: En este sistema operativo varios usuarios pueden trabajar a la misma vez, ya sea en servicios o en almacenamiento de información debido a que trabajan en red y pueden compartir memoria, programas, procesador, impresoras, scanner entre otros.
-                                            </li>
-                                            
-                                          </ul>
-                                        </li>
+                                      <li>
+                                        <b>Polling</b>
+                                          <p>
+                                            Las interrupciones parten del requerimiento que presentan los dispositivos y periféricos de enviar información al procesador de una computadora, es por ello que <b>la técnica de polling establece que el procesador se encargue de visualizar a los dispositivos y periféricos cada determinado tiempo</b> en donde revise que sus comunicaciones estén funcionando correctamente.
+                                          </p>
+                                          <p>
+                                            Esta técnica polling <b>presenta diferentes problemas ya que es ineficiente para el procesador</b> debido a que   consume tiempo y recursos para estar revisando el funcionamiento correcto de las interrupciones.
+                                          </p>
+                                      </li>
 
+
+                                      <li>
+                                        <b>Sistema de interrupción vectorizado</b>
                                         <p>
-                                          Existen también sistemas operativos por lotes estos funcionan y procesan una gran cantidad de trabajos con poca o ninguna comunicación con los usuarios y los programas en ejecución.
+                                          <b>Las interrupciones vectorizadas son aquellas que generan dos  líneas de interrupción</b>, una es de petición y otra de reconocimiento esto es  generado por el dispositivo que produce la interrupción y el cual utiliza a todos los periféricos ya que solicitan servicios por la misma línea, cuando la CPU reconoce la interrupción, el periférico que ha interrumpido se identifica poniendo en el bus de datos el vector de interrupción (dirección) o una codificación del mismo (nivel) y la resolución de prioridades se resuelve por alguno de ellos, como se ve en la siguiente imagen.
                                         </p>
+                                      </li>
 
+                                      <div class="text-center">
 
-                                        <p>
-                                          Cuando los sistemas son bien planeados se puede establecer un tiempo de ejecución ya que los recursos como el procesador son mejor utilizados y los sistemas operativos son simples debido a la secuencia de la ejecución de los trabajos y sus procesos.
-                                        </p>
-
-
-
-                                        <li>Sistemas operativos en tiempo real: Conocidos como RTOS. Son aquellos en los cuales no tiene importancia el usuario sino los procesos que se lleven a cabo, estos se utilizan en entornos donde existe una gran necesidad sucesos o eventos por ello estos sistemas operativos en tiempo real son construidos para aplicaciones específicas como puede ser un control de tráfico aéreo, bolsa de valores, control de refinerías, por lo que las aplicaciones que se pueden realizar en tiempo real son las siguientes:
-
-                                          <ul>
-
-                                            <li>
-                                              Control de trenes.
-                                            </li>
-
-                                            <li>
-                                              Telecomunicaciones.
-                                            </li>
-
-                                             <li>
-                                              Sistemas de fabricación integrada.
-                                            </li>
-
-                                             <li>
-                                              Producción y distribución de energía eléctrica.
-                                            </li>
-
-                                             <li>
-                                              Control de edificios.
-                                            </li>
-
-                                             <li>
-                                              Sistemas multimedia.
-                                            </li>
-                                            
-                                          </ul>
-                                        </li>
-
-                                        <p>
-                                          Algunos ejemplos de estos sistemas operativos como son:  Solaris, Lyns y Spectra.
-                                        </p>
+                                          <img class="img-fluid" src="../images/Fig 13 Sistema de interrupción vectorizado.png">
+                                            <p>
+                                              <b>Fig 13. Sistema de interrupción vectorizado</b>
+                                            </p>
+                                                                    
+                                        </div>
 
                                         <li>
-                                          Existen también sistemas operativos distribuidos que son aquellos que permiten distribuir trabajos, tareas o procesos entre un conjunto de procesadores, por lo que en este caso para el usuario es transparente este funcionamiento, para ello existen dos esquemas:
-
-                                          <ul>
-
-                                            <li>
-                                              Un sistema fuertemente acoplado que es aquel que comparte memoria y un reloj global, en donde sus tiempos de acceso son similares para todos los procesadores.
-
-                                            </li>
-
-                                            <li>
-                                              Sistema débilmente acoplado en este caso los procesadores no comparten memoria ni reloj, ya que cada uno de ellos cuenta con su memoria local y sus recursos propios.
-                                            </li>
-                                            
-                                          </ul>
-
-                                        </li>
-                                        
-
-                                      </ol>      
-
-                                      
-                                      
-                                      
-                                      
-                                      
-
-                                      No todos los sistemas operativos de tiempo real son embebidos ni todos los sistemas operativos embebidos son de tiempo real, como lo muestra la siguiente imagen:
-
-                                      <div class="container">
-                                        <img src="../images/Fig1SOTR.png" class="img-fluid" alt="...">  
-                                      </div>
-
-                                      <p>
-
-                                        Ahora bien las operaciones de entrada y salida son importantes por lo que los procesos de usuario emiten peticiones de entrada/salida al sistema operativo. Cuando un proceso solicita una operación de E/S, el sistema operativo prepara dicha operación y bloquea al proceso hasta que se recibe una interrupción del controlador del dispositivo indicando que la operación está completa.
-
-                                        
-                                      </p>
-
-
-                                      <p>
-                                        
-                                        Las peticiones se procesan de forma estructurada en las siguientes capas:
-
-                                        <ul>
-                                          <li>Manejadores de interrupción.</li>
-                                          <li>Manejadores de dispositivos o drivers.</li>
-                                        </ul>
-
-                                      </p>
-
-
-                                      <p>
-                                        
-                                        Software de Entrada y salida independiente de los dispositivos. Este software está formado por la parte de alto nivel de los manejadores, el gestor de caché, el gestor de bloques y el servidor de archivos Interfaz del sistema operativo. Llamadas al sistema que usan las aplicaciones de usuario, como se muestra en la siguiente imagen
-
-                                      </p>
-
-
-                                      <div class="container">
-                                        <img src="../images/Fig2OES.png" class="img-fluid" alt="...">
-                                      </div>
-
-
-                                      <p>
-                                        
-                                        La forma más sencilla de solicitar una operación de entrada y salida implica que cuando la operación haya realizado la petición, bloqueará el proceso o hilo que la realizó hasta que la operación termine, con lo que ya no requerirá hacer ninguna implementación adicional para seguir utilizando el dispositivo de entrada y salida para la siguiente operación, sea de lectura o de escritura
-
-                                      </p>
-
-                                      <p>
-                                        
-                                        Existen dos métodos de entrada y salida:
-                                        <ul>
-                                          <li>
-                                            Síncrono: Es cuando la invocación de una operación en un dispositivo de entrada y salida que bloquea al solicitante mientras realiza la operación, debido a que coordina la interacción del proceso que solicita con las operaciones.
-                                          </li>
-                                          <li>
-                                            Asíncrono: Es cuando el proceso de inicio  la entrada y salida y continúa su ejecución en donde el proceso es notificado al sistema operativo cuando este es concluido en su entrada y salida totalmente
-
-                                          </li>
-                                        </ul>
-
-
-                                        <p>
-                                          Como se muestra en la siguiente imagen
-
-                                        </p>
-                                        
-
-                                      </p>
-
-
-                                      <p>
+                                          <b>Sistema con una línea de petición de interrupción y una línea de reconocimiento con encadenamiento</b>
+                                          <p>
+                                            <b>También conocido como daisy-chain</b>. son módulos de Entrada y salida que se conectan al procesador con una línea de petición de interrupción llamada <b>(INT)</b> en colector abierto y una línea de reconocimiento de interrupción llamada <b>(INTA)</b> que se genera el procesador para indicar al módulo de Entrada y salida que se atiende la petición que ha hecho. Esta señal <b>INTA</b> se propaga mediante los módulos, en los cuales el sistema de conexión permite reducir el tiempo necesario para gestionar las prioridades si más de un módulo de Entrada y salida ha pedido atención al mismo tiempo y, por otra parte, identificar qué periférico pide atención, sin tener que ejecutar un programa de encuesta que accede a todos los módulos de entrada y salida.
+                                          </p>
+                                          <p>
+                                            <b>Para llevar a cabo este sistema, se requiere realizar algunos ajustes en el hardware</b> en donde el procesador requiere un punto de conexión que genere una señal de reconocimiento de interrupción <b>(INTA)</b>, para que los módulos de entrada y salida  pueden disponer de un circuito lógico para que se pueda propagar la señal <b>INTA</b> de este módulo al siguiente dispositivo de entrada y salida permitiendo que los demás módulos están conectados para que se genere su registro será el registro vector y donde se almacenará el valor del vector de interrupción que se envío del procesador mediante el bus del sistema. El valor que se almacena en cada registro es único ya que el procesador lo utiliza como identificador del periférico.
+                                          </p>
+                                          <p>
+                                            Por lo que <b>la gestión de una interrupción es análoga</b>  ya que como es único el módulo de entrada y salida podrá variar el ciclo de reconocimiento de la interrupción para poder gestionar sus prioridades, por lo que si algun otro modulo requiere hacer una petición de entrada y salida tendrá que obtener un identificador para tener la atención de la interrupción del sistema.
+                                          </p>
+                                          <p>
+                                            <b>Segmentos de código separados determinan que tipo de acción deberían llevarse a cabo para cada tipo de interrupción</b>.
+                                          </p>
                                           
-                                          El  síncrono es cuando la invocación de una operación en un dispositivo de entrada y salida que bloquea al solicitante mientras realiza la operación, debido a que coordina la interacción del proceso que solicita con las operaciones.
+                                        </li>
+                                      
+                                    </ul>
 
 
-                                      </p>
-
-                                       <div class="container">
-                                        <img src="../images/Fig3MES.png" class="img-fluid" alt="...">
-                                      </div>
-
-                                    </p>
-                                    
-                                  <div class="container">
-                                    <div class="row">
-                                      <div class="col">
-                                        
-                                      </div>
-                                      <div class="col">
-                                        <img src="../images/features_5203117.png" class="img-fluid" alt="..." style="">Ícono por <a href="https://www.freepik.com/search?format=search&last_filter=query&last_value=operative+system&query=operative+system&type=icon">PIXARTIST</a>
-                                      </div>
-                                      <div class="col">
-                                        
-                                      </div>
-                                    </div>
-                                  </div>
 
                                     
                                   </div>

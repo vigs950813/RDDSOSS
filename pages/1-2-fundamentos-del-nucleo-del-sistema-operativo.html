@@ -11,7 +11,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>1.1.2 Tipos: monolítico, por capas, micro núcleo, máquina virtual</title>
+        <title>1.2 Fundamentos del núcelo del sistema operativo</title>
 
 
         <!--BOOTSTRAP CSS-->  
@@ -23,7 +23,8 @@
           <link rel="stylesheet" type="text/css" href="../css/hoverU1.css">
           <link rel="stylesheet" type="text/css" href="../css/navbar.css">
           <link rel="stylesheet" type="text/css" href="../css/wrapper.css">
-          <link rel="stylesheet" type="text/css" href="../css/sidebarItem_u1_6.css">
+          <link rel="stylesheet" type="text/css" href="../css/sidebarItem_u1_7.css">
+          <link rel="stylesheet" type="text/css" href="../css/accordionBtn.css">
           <link rel="stylesheet" type="text/css" href="../css/cardTitle.css">
           <link rel="stylesheet" type="text/css" href="../css/carrouselBtn.css">
           <link rel="stylesheet" type="text/css" href="../css/footerBG.css">
@@ -327,7 +328,7 @@
                                 <div class="card" id="cardBigTitle">
                                   <div class="card-body">
 
-                                    <h1>Tipos de sistemas operativos</h1>
+                                    <h1>Fundamentos del núcleo del sistema operativo</h1>
 
                                   </div>
                                 </div>    
@@ -339,195 +340,31 @@
                                 <div class="card" id="cardConcept">
                                   <div class="card-body" id="cardTextConcept">
                                     <p class="card-text">
-                                      Los sistemas operativos para las mainframes están profundamente orientados hacia el procesamiento
-                                      de muchos trabajos a la vez, de los cuales la mayor parte requiere muchas operaciones de E/S. Por lo general ofrecen tres tipos de servicios: procesamiento por lotes, procesamiento de transacciones y tiempo compartido.
-
-
-                                      Aunado a ello existen características como son:
-
-                                      <ol type="a">  
-
-                                        <li>Administración de tareas:
-                                          <ul>
-
-                                            <li>
-                                              Monotarea: Son aquellos sistemas operativos capaces de manejar programas o realizar tareas una sola vez a la vez.
-                                            </li>
-
-                                            <li>
-                                              Multitarea: Son  aquellos sistemas operativos que permiten ejecutar varios procesos a la vez desde uno de la computadora, esto quiere decir  que varios usuarios pueden realizar tareas desde sus computadoras y puede ser en forma de acceso remoto o en servicios de red en donde estén conectadas las máquinas.
-                                            </li>
-                                            
-                                          </ul>
-                                        </li>
-
-
-                                        <li>Administración de usuarios:
-                                          <ul>
-
-                                            <li>
-                                              Monousuario: este sistema solo trabaja con un usuario a la vez, por lo que cualquier usuario tiene acceso a sus datos del sistema debido a que solo está en su computadora y el es único que puede realizar en su propia máquina.
-                                            </li>
-
-                                            <li>
-                                              Multiusuario: En este sistema operativo varios usuarios pueden trabajar a la misma vez, ya sea en servicios o en almacenamiento de información debido a que trabajan en red y pueden compartir memoria, programas, procesador, impresoras, scanner entre otros.
-                                            </li>
-                                            
-                                          </ul>
-                                        </li>
-
-                                        <p>
-                                          Existen también sistemas operativos por lotes estos funcionan y procesan una gran cantidad de trabajos con poca o ninguna comunicación con los usuarios y los programas en ejecución.
-                                        </p>
-
-
-                                        <p>
-                                          Cuando los sistemas son bien planeados se puede establecer un tiempo de ejecución ya que los recursos como el procesador son mejor utilizados y los sistemas operativos son simples debido a la secuencia de la ejecución de los trabajos y sus procesos.
-                                        </p>
-
-
-
-                                        <li>Sistemas operativos en tiempo real: Conocidos como RTOS. Son aquellos en los cuales no tiene importancia el usuario sino los procesos que se lleven a cabo, estos se utilizan en entornos donde existe una gran necesidad sucesos o eventos por ello estos sistemas operativos en tiempo real son construidos para aplicaciones específicas como puede ser un control de tráfico aéreo, bolsa de valores, control de refinerías, por lo que las aplicaciones que se pueden realizar en tiempo real son las siguientes:
-
-                                          <ul>
-
-                                            <li>
-                                              Control de trenes.
-                                            </li>
-
-                                            <li>
-                                              Telecomunicaciones.
-                                            </li>
-
-                                             <li>
-                                              Sistemas de fabricación integrada.
-                                            </li>
-
-                                             <li>
-                                              Producción y distribución de energía eléctrica.
-                                            </li>
-
-                                             <li>
-                                              Control de edificios.
-                                            </li>
-
-                                             <li>
-                                              Sistemas multimedia.
-                                            </li>
-                                            
-                                          </ul>
-                                        </li>
-
-                                        <p>
-                                          Algunos ejemplos de estos sistemas operativos como son:  Solaris, Lyns y Spectra.
-                                        </p>
-
-                                        <li>
-                                          Existen también sistemas operativos distribuidos que son aquellos que permiten distribuir trabajos, tareas o procesos entre un conjunto de procesadores, por lo que en este caso para el usuario es transparente este funcionamiento, para ello existen dos esquemas:
-
-                                          <ul>
-
-                                            <li>
-                                              Un sistema fuertemente acoplado que es aquel que comparte memoria y un reloj global, en donde sus tiempos de acceso son similares para todos los procesadores.
-
-                                            </li>
-
-                                            <li>
-                                              Sistema débilmente acoplado en este caso los procesadores no comparten memoria ni reloj, ya que cada uno de ellos cuenta con su memoria local y sus recursos propios.
-                                            </li>
-                                            
-                                          </ul>
-
-                                        </li>
-                                        
-
-                                      </ol>      
-
-                                      
-                                      
-                                      
-                                      
-                                      
-
-                                      No todos los sistemas operativos de tiempo real son embebidos ni todos los sistemas operativos embebidos son de tiempo real, como lo muestra la siguiente imagen:
-
-                                      <div class="container">
-                                        <img src="../images/Fig1SOTR.png" class="img-fluid" alt="...">  
-                                      </div>
-
-                                      <p>
-
-                                        Ahora bien las operaciones de entrada y salida son importantes por lo que los procesos de usuario emiten peticiones de entrada/salida al sistema operativo. Cuando un proceso solicita una operación de E/S, el sistema operativo prepara dicha operación y bloquea al proceso hasta que se recibe una interrupción del controlador del dispositivo indicando que la operación está completa.
-
-                                        
-                                      </p>
-
-
-                                      <p>
-                                        
-                                        Las peticiones se procesan de forma estructurada en las siguientes capas:
-
-                                        <ul>
-                                          <li>Manejadores de interrupción.</li>
-                                          <li>Manejadores de dispositivos o drivers.</li>
-                                        </ul>
-
-                                      </p>
-
-
-                                      <p>
-                                        
-                                        Software de Entrada y salida independiente de los dispositivos. Este software está formado por la parte de alto nivel de los manejadores, el gestor de caché, el gestor de bloques y el servidor de archivos Interfaz del sistema operativo. Llamadas al sistema que usan las aplicaciones de usuario, como se muestra en la siguiente imagen
-
-                                      </p>
-
-
-                                      <div class="container">
-                                        <img src="../images/Fig2OES.png" class="img-fluid" alt="...">
-                                      </div>
-
-
-                                      <p>
-                                        
-                                        La forma más sencilla de solicitar una operación de entrada y salida implica que cuando la operación haya realizado la petición, bloqueará el proceso o hilo que la realizó hasta que la operación termine, con lo que ya no requerirá hacer ninguna implementación adicional para seguir utilizando el dispositivo de entrada y salida para la siguiente operación, sea de lectura o de escritura
-
-                                      </p>
-
-                                      <p>
-                                        
-                                        Existen dos métodos de entrada y salida:
-                                        <ul>
-                                          <li>
-                                            Síncrono: Es cuando la invocación de una operación en un dispositivo de entrada y salida que bloquea al solicitante mientras realiza la operación, debido a que coordina la interacción del proceso que solicita con las operaciones.
-                                          </li>
-                                          <li>
-                                            Asíncrono: Es cuando el proceso de inicio  la entrada y salida y continúa su ejecución en donde el proceso es notificado al sistema operativo cuando este es concluido en su entrada y salida totalmente
-
-                                          </li>
-                                        </ul>
-
-
-                                        <p>
-                                          Como se muestra en la siguiente imagen
-
-                                        </p>
-                                        
-
-                                      </p>
-
-
-                                      <p>
-                                          
-                                          El  síncrono es cuando la invocación de una operación en un dispositivo de entrada y salida que bloquea al solicitante mientras realiza la operación, debido a que coordina la interacción del proceso que solicita con las operaciones.
-
-
-                                      </p>
-
-                                       <div class="container">
-                                        <img src="../images/Fig3MES.png" class="img-fluid" alt="...">
-                                      </div>
-
+                                      También denominado <b>kernel</b>, el núcleo del sistema operativo es el nivel más interno, actúa como una interfaz entre el hardware y todo lo demás del sistema operativo, su finalidad es construir un entorno en donde se puedan llevar varios procesos.
                                     </p>
+                                    <p>
+                                      Sus <b>funciones</b> radican en:
+                                    </p>
+
+                                      <ul class="list-group">
+                                        <li class="list-group-item"><b>Manipulación de interrupciones.</b></li>
+                                        <li class="list-group-item"><b>Creacion y destruccion de procesos.</b></li>
+                                        <li class="list-group-item"><b>Cambio de estados de procesos.</b></li>
+                                        <li class="list-group-item"><b>Planificación de procesos.</b></li>
+                                        <li class="list-group-item"><b>Sincronización de procesos.</b></li>
+                                        <li class="list-group-item"><b>Comunicación entre procesos.</b></li>
+                                        <li class="list-group-item"><b>Manipulación de bloques de control de procesos.</b></li>
+                                        <li class="list-group-item"><b>Soporte de actividades de entrada y salida.</b></li>
+                                        <li class="list-group-item"><b>Asignación y liberación del almacenamiento.</b></li>
+                                        <li class="list-group-item"><b>Sistema de archivos.</b></li>
+                                        <li class="list-group-item"><b>Mecanismos de llamada y regreso del procedimientos y funciones contables del sistema.</b></li>
+                                      </ul>
+
+                                      <p>
+                                        <b>El Kernel determina los recursos que los programas pueden utilizar</b> como son el procesador o procesadores, así como la memoria RAM()  que seguramente varios programas intentan ejecutarse al mismo tiempo pero el núcleo es el responsable de decidir qué programa y cuanta memoria puede utilizar, por ello las aplicaciones realizan solicitudes de entrada o salida a un dispositivo por ende el núcleo proporciona métodos más convenientes para su uso de ese programa o dispositivo.
+
+                                      </p>
+
                                     
                                   <div class="container">
                                     <div class="row">
@@ -557,6 +394,211 @@
                     </section>
                     <!--------------------------------SECTION--------------------> 
 
+
+
+
+                    <!--------------------------------SECTION-------------------->   
+                    <section>
+
+                          <div class="container">
+
+                                <div class="card" id="cardBigTitle">
+                                  <div class="card-body">
+
+                                    <h1>Características del Kernel</h1>
+
+                                  </div>
+                                </div>    
+
+                          </div>
+
+
+                              <div class="container">
+                                <div class="card" id="cardConcept">
+                                  <div class="card-body" id="cardTextConcept">
+                                    <p class="card-text">
+                                        <ol class="list-group">
+                                            <li class="list-group-item"><b>a) Manipulación de interrupciones.</b></li>
+                                            <li class="list-group-item"><b>b) Creacion y destruccion de procesos.</b></li>
+                                            <li class="list-group-item"><b>c) Cambio de estados de procesos.</b></li>
+                                            <li class="list-group-item"><b>d) Planificación de procesos.</b></li>
+                                            <li class="list-group-item"><b>e) Sincronización de procesos.</b></li>
+                                            <li class="list-group-item"><b>f) Comunicación entre procesos.</b></li>
+                                            <li class="list-group-item"><b>g) Manipulación de bloques de control de procesos.</b></li>
+                                            <li class="list-group-item"><b>h) Soporte de actividades de entrada y salida.</b></li>
+                                            <li class="list-group-item"><b>i) Asignación y liberación del almacenamiento.</b></li>
+                                            <li class="list-group-item"><b>j) Sistema de archivos.</b></li>
+                                            <li class="list-group-item"><b>k) Mecanismos de llamada y regreso del procedimientos y funciones contables del sistema.</b></li>
+                                        </ol>
+                                    </p>
+                                  </div>
+                                </div>
+                              
+                               
+                              </div>
+
+                          
+
+                        
+                    </section>
+                    <!--------------------------------SECTION--------------------> 
+
+
+                    <!--------------------------------SECTION--------------------> 
+                    <section>
+
+                       <div class="container">
+
+                                <div class="card" id="cardBigTitle">
+                                  <div class="card-body">
+
+                                    <h1>Funciones principales del Kernel</h1>
+
+                                  </div>
+                                </div>
+
+
+                                
+
+                                <div class="container">
+                                  <div class="card" id="cardConcept">
+                                    <div class="card-body" id="cardTextConcept">
+
+
+
+
+                                <!----------------------ACORDEON------------------------>
+                                <div class="accordion" id="accordionExample">
+
+
+
+
+
+                                  <!----------------------ITEM1------------------------>
+                                  <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                      <button class="accordion-button" id="accordion-btn2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                      Gestión del almacenamiento:
+                                      </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                      <div class="accordion-body" id="cardBtnConcept">
+                                        <p>
+                                           Controla cuánta memoria se utiliza y en dónde.
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <!----------------------ITEM1------------------------>
+
+
+
+
+
+
+
+
+
+                                  <!----------------------ITEM2------------------------>
+                                  <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                      <button class="accordion-button collapsed" id="accordion-btn1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Gestión de procesos:
+                                      </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                      <div class="accordion-body" id="cardBtnConcept">
+                                        <p>
+                                           Determina qué procesos puede utilizar la CPU, cuándo y durante cuánto tiempo.
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <!----------------------ITEM2------------------------>
+
+
+
+
+
+
+
+
+
+
+                                  <!----------------------ITEM3------------------------>
+                                  <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                      <button class="accordion-button collapsed" id="accordion-btn2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        Controlador de dispositivos:
+                                      </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample" >
+                                      <div class="accordion-body" id="cardBtnConcept">
+                                        <p>
+                                          Comunica el hardware con los procesos.
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <!----------------------ITEM3------------------------>
+
+
+
+
+
+
+
+                                  <!----------------------ITEM4------------------------>
+                                  <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingFour">
+                                      <button class="accordion-button collapsed" id="accordion-btn1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                        Llamadas al sistema y seguridad:
+                                      </button>
+                                    </h2>
+                                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                      <div class="accordion-body" id="cardBtnConcept">
+                                        <p>
+                                          Recibe peticiones de servicio de los procesos.
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <!----------------------ITEM4------------------------>
+
+
+                                </div>
+                                <!----------------------ACORDEON------------------------>
+
+
+
+                                        <p>
+                                          
+                                          Como se muestra en la siguiente imágen.
+
+                                          
+                                        </p>
+
+
+                                        <div class="text-center">
+
+                                          <img src="../images/fig4_kernel_etapas.png">
+
+                                          <p>
+                                            Fig 4. Kernel y sus etapas
+                                          </p>
+                                          
+                                        </div>
+                                    </div>
+                                  </div>
+                                </div>
+
+
+
+
+                          </div>
+                      
+                    </section>
+                    <!--------------------------------SECTION--------------------> 
 
 
 
