@@ -11,7 +11,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>1.3.2 Usuario y Kernel</title>
+        <title>1.4.3 Protección</title>
 
 
         <!--BOOTSTRAP CSS-->  
@@ -23,7 +23,7 @@
           <link rel="stylesheet" type="text/css" href="../css/hoverU1.css">
           <link rel="stylesheet" type="text/css" href="../css/navbar.css">
           <link rel="stylesheet" type="text/css" href="../css/wrapper.css">
-          <link rel="stylesheet" type="text/css" href="../css/sidebarItem_u1_11.css">
+          <link rel="stylesheet" type="text/css" href="../css/sidebarItem_u1_16.css">
           <link rel="stylesheet" type="text/css" href="../css/accordionBtn.css">
           <link rel="stylesheet" type="text/css" href="../css/cardTitle.css">
           <link rel="stylesheet" type="text/css" href="../css/carrouselBtn.css">
@@ -77,7 +77,7 @@
 
                 <div class="list-group list-group-flush">
 
-                   
+                  
                 <a
                 class="list-group-item list-group-item-action list-group-item-light p-3 disabled"
                 id="sidebarBtnDisabled"
@@ -195,56 +195,57 @@
               >
     
               <a
-              class="list-group-item list-group-item-action list-group-item-light p-3"
-              id="sidebarBtnU143"
-              href="1-4-3-proteccion.html"
-              >1.4.3 Protección</a
-            >
-  
-            <a
-              class="list-group-item list-group-item-action list-group-item-light p-3"
-              id="sidebarBtnU144"
-              href="1-4-4-diversos.html"
-              >1.4.4 Diversos</a
-            >
-  
-            <a
-              class="list-group-item list-group-item-action list-group-item-light p-3"
-              id="sidebarBtnU15"
-              href="1-5-shell.html"
-              >1.5 Shell</a
-            >
-  
-            <a
-              class="list-group-item list-group-item-action list-group-item-light p-3"
-              id="sidebarBtnU151"
-              href="1-5-1-argumentos-y-variables.html"
-              >1.5.1 Argumentos y variables</a
-            >
-  
-            <a
-              class="list-group-item list-group-item-action list-group-item-light p-3"
-              id="sidebarBtnU152"
-              href="1-5-2-estructuras-de-control.html"
-              >1.5.2 Estructuras de control</a
-            >
-  
-            <a
-              class="list-group-item list-group-item-action list-group-item-light p-3"
-              id="sidebarBtnU153"
-              href="1-5-3-manipulacion-de-cadenas.html"
-              >1.5.3 Manipulación de cadenas</a
-            >
-  
-  
-            <a
-              class="list-group-item list-group-item-action list-group-item-light p-3"
-              id="sidebarBtnU154"
-              href="1-5-4-funciones.html"
-              >1.5.4 Funciones</a
-            >
-  
-
+                class="list-group-item list-group-item-action list-group-item-light p-3"
+                id="sidebarBtnU143"
+                href="1-4-3-proteccion.html"
+                >1.4.3 Protección</a
+              >
+    
+              <a
+                class="list-group-item list-group-item-action list-group-item-light p-3"
+                id="sidebarBtnU144"
+                href="1-4-4-diversos.html"
+                >1.4.4 Diversos</a
+              >
+    
+              <a
+                class="list-group-item list-group-item-action list-group-item-light p-3"
+                id="sidebarBtnU15"
+                href="1-5-shell.html"
+                >1.5 Shell</a
+              >
+    
+              <a
+                class="list-group-item list-group-item-action list-group-item-light p-3"
+                id="sidebarBtnU151"
+                href="1-5-1-argumentos-y-variables.html"
+                >1.5.1 Argumentos y variables</a
+              >
+    
+              <a
+                class="list-group-item list-group-item-action list-group-item-light p-3"
+                id="sidebarBtnU152"
+                href="1-5-2-estructuras-de-control.html"
+                >1.5.2 Estructuras de control</a
+              >
+    
+              <a
+                class="list-group-item list-group-item-action list-group-item-light p-3"
+                id="sidebarBtnU153"
+                href="1-5-3-manipulacion-de-cadenas.html"
+                >1.5.3 Manipulación de cadenas</a
+              >
+    
+    
+              <a
+                class="list-group-item list-group-item-action list-group-item-light p-3"
+                id="sidebarBtnU154"
+                href="1-5-4-funciones.html"
+                >1.5.4 Funciones</a
+              >
+    
+              
+              
     
               <a
                 class="list-group-item list-group-item-action list-group-item-light p-3"
@@ -401,7 +402,7 @@
                                 <div class="card" id="cardBigTitle">
                                   <div class="card-body">
 
-                                    <h1>Modo usuario</h1>
+                                    <h1>Seguridad en archivos</h1>
 
                                   </div>
                                 </div>    
@@ -412,71 +413,22 @@
                               <div class="container">
                                 <div class="card" id="cardConcept">
                                   <div class="card-body" id="cardTextConcept">
-                                    <p class="card-text">
-                                      <b>El sistema operativo permite que uno o varios programas puedan gestionar solicitudes de recursos de hardware</b> en donde necesitan recursos para proveer sus servicios en aplicaciones y que requieren en modo privilegiado en diferencia con los demás programa, como lo muestra la siguiente imagen
+                                    <p>
+                                      Debido a que <b>el sistema es multiusuario es necesario proteger la información de cada usuario</b>, en muchos casos los usuarios se agrupan según el uso que tienen sobre un sistema por lo que se definen permisos sobre los archivos <b>tanto a nivel de usuario como de grupo</b>.
+
                                     </p>
-                                    <div class="text-center">
-
-                                      <img class="img-fluid" src="../images/Fig 14 Modo de usuario.png" style="width: 20%;">
-                                      <p>
-                                        <b>Fig 14. Modo de usuario</b>
-                                      </p>
-                                      
-                                    </div>
-                                  </div>
-
-
-                                </div>
-
-                              </div>
-
-                          
-
-                        
-                    </section>
-                    <!--------------------------------SECTION--------------------> 
-
-                    <!--------------------------------SECTION-------------------->   
-                    <section>
-
-                          <div class="container">
-
-                                <div class="card" id="cardBigTitle">
-                                  <div class="card-body">
-
-                                    <h1>Modo supervisor</h1>
-
-                                  </div>
-                                </div>    
-
-                          </div>
-
-
-                              <div class="container">
-                                <div class="card" id="cardConcept">
-                                  <div class="card-body" id="cardTextConcept">
-                                    <p class="card-text">
-                                      <b>También conocido como modo kernel</b>, es el modo en el que se ejecuta el sistema operativo y que se caracteriza por poder ejecutar todas las instrucciones de la máquina tengan privilegios o no por lo que al haber dos modos existirán dos interfaces que son:
+                                    <p>
+                                      Los <b>permisos más comunes</b> son de:
                                       <ul>
-                                        <li>
-                                          <p>
-                                            <b>Interfaz de llamadas al sistema: </b>
-                                            Denominado <b>system call interface en inglés</b>, esta interfaz interna, necesita (a nivel de programación) con la que los programas de usuario y los programadores de sistemas, tienen acceso a los servicios del sistema operativo con una llamada al sistema implica el cambio de modo de ejecución (de modo usuario a modo supervisor).
-                                          </p>
-                                        </li>
-                                        <li>
-                                          <p>
-                                            <b>Interfaz de Intérprete de órdenes  </b>
-                                            Denominado como <b>shell</b>,se encarga de proporcionar una interfaz externa (a nivel de usuario) a través de la cual, un usuario del sistema operativo puede solicitar sus servicios como se muestra en la siguiente imagen.
-                                            <div class="text-center">
-                                              <img class="img-fluid" src="../images/Fig 15 Modos de operación del sistema operativo y sus interfaces.png" style="width: 95%;">
-                                              <p><b>Fig 15. Modos de operación del sistema operativo y sus interfaces</b></p>
-                                            </div>
-                                          </p>
-                                        </li>
+                                        <li><b>Escritura</b></li>
+                                        <li><b>Lectura</b></li>
+                                        <li><b>Ejecución</b></li>
+                                        <li><b>Eliminar</b></li>
+                                        <li><b>Listar</b></li>
                                       </ul>
                                     </p>
-
+                                    
+                                    
                                   </div>
 
 
@@ -491,6 +443,7 @@
                     <!--------------------------------SECTION--------------------> 
 
 
+           
 
                 </div>
                 <!--------------------------------CONTENIDO PRINCIPAL-------------------->
