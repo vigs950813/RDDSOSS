@@ -11,7 +11,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>1.3.2 Usuario y Kernel</title>
+        <title>1.4.2 Directorios y archivos</title>
 
 
         <!--BOOTSTRAP CSS-->  
@@ -23,7 +23,7 @@
           <link rel="stylesheet" type="text/css" href="../css/hoverU1.css">
           <link rel="stylesheet" type="text/css" href="../css/navbar.css">
           <link rel="stylesheet" type="text/css" href="../css/wrapper.css">
-          <link rel="stylesheet" type="text/css" href="../css/sidebarItem_u1_11.css">
+          <link rel="stylesheet" type="text/css" href="../css/sidebarItem_u1_15.css">
           <link rel="stylesheet" type="text/css" href="../css/accordionBtn.css">
           <link rel="stylesheet" type="text/css" href="../css/cardTitle.css">
           <link rel="stylesheet" type="text/css" href="../css/carrouselBtn.css">
@@ -193,7 +193,7 @@
                 href="1-4-2-directorios-y-archivos.html"
                 >1.4.2 Directorios y archivos</a
               >
-    
+ 
     
               <a
                 class="list-group-item list-group-item-action list-group-item-light p-3"
@@ -350,7 +350,7 @@
                                 <div class="card" id="cardBigTitle">
                                   <div class="card-body">
 
-                                    <h1>Modo usuario</h1>
+                                    <h1>Directorios y archivos</h1>
 
                                   </div>
                                 </div>    
@@ -361,17 +361,14 @@
                               <div class="container">
                                 <div class="card" id="cardConcept">
                                   <div class="card-body" id="cardTextConcept">
-                                    <p class="card-text">
-                                      <b>El sistema operativo permite que uno o varios programas puedan gestionar solicitudes de recursos de hardware</b> en donde necesitan recursos para proveer sus servicios en aplicaciones y que requieren en modo privilegiado en diferencia con los demás programa, como lo muestra la siguiente imagen
+                                    <p>
+                                      <b>Es un sistema de organización de los archivos</b> que <b>permiten al usuario acceder y localizar los archivos</b> fácilmente presentan una visión lógica simple al usuario, muy diferente del modo de almacenamiento real. <b>Un directorio es un objeto o estructura de datos</b> compuesto de los elementos que agrupa, denominados entradas, cada entrada contiene información acerca del archivo al que referencia <b>(MS-DOS)</b> o un puntero a una estructura de datos que contenga dicha información.
                                     </p>
-                                    <div class="text-center">
-
-                                      <img class="img-fluid" src="../images/Fig 14 Modo de usuario.png">
-                                      <p>
-                                        <b>Fig 14. Modo de usuario</b>
-                                      </p>
-                                      
-                                    </div>
+                                    <p>
+                                      <b>Cada archivo dentro de la jerarquía de directorios se puede especificar dando su nombre</b> de ruta a partir del tope de la jerarquía de directorios, el directorio raíz. Semejantes nombres de ruta absolutos consisten en la lista de directorios por los que se debe pasar partiendo del directorio raíz para llegar al archivo, separando los componentes con diagonales.
+                                    </p>
+                                    
+                                    
                                   </div>
 
 
@@ -384,6 +381,7 @@
                         
                     </section>
                     <!--------------------------------SECTION--------------------> 
+
 
                     <!--------------------------------SECTION-------------------->   
                     <section>
@@ -393,7 +391,199 @@
                                 <div class="card" id="cardBigTitle">
                                   <div class="card-body">
 
-                                    <h1>Modo supervisor</h1>
+                                    <h1>Operaciones sobre los directorios</h1>
+
+                                  </div>
+                                </div>    
+
+                          </div>
+
+
+                          <div class="container">
+                            <div class="card" id="cardConcept">
+                              <div class="card-body" id="cardTextConcept">
+
+
+                                                <!----------------------ACORDEON------------------------>
+                                                <div class="accordion" id="accordionExample">
+
+
+
+
+
+                                                  <!----------------------ITEM1------------------------>
+                                                  <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="headingOne">
+                                                      <button class="accordion-button" id="accordion-btn2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                      Búsqueda
+                                                      </button>
+                                                    </h2>
+                                                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                                      <div class="accordion-body" id="cardBtnConcept">
+                                                        <p>
+                                                          Es necesario poder buscar un archivo en un directorio
+                                                        </p>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  <!----------------------ITEM1------------------------>
+
+
+
+
+
+
+
+
+
+                                                  <!----------------------ITEM2------------------------>
+                                                  <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="headingTwo">
+                                                      <button class="accordion-button collapsed" id="accordion-btn1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                        Crear un archivo
+                                                      </button>
+                                                    </h2>
+                                                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                                      <div class="accordion-body" id="cardBtnConcept">
+                                                        <p>
+                                                          Archivos nuevos deben ser creados e incorporados al directorio.
+                                                        </p>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  <!----------------------ITEM2------------------------>
+
+
+
+
+
+
+
+
+
+
+                                                  <!----------------------ITEM3------------------------>
+                                                  <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="headingThree">
+                                                      <button class="accordion-button collapsed" id="accordion-btn2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                        Eliminar
+                                                      </button>
+                                                    </h2>
+                                                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample" >
+                                                      <div class="accordion-body" id="cardBtnConcept">
+                                                        <p>
+                                                          Borrar un archivo del directorio.
+                                                        </p>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  <!----------------------ITEM3------------------------>
+
+
+
+
+
+
+
+                                                  <!----------------------ITEM4------------------------>
+                                                  <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="headingFour">
+                                                      <button class="accordion-button collapsed" id="accordion-btn1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                                        Listar
+                                                      </button>
+                                                    </h2>
+                                                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                                      <div class="accordion-body" id="cardBtnConcept">
+                                                        <p>
+                                                          Visualizar los archivos que están en un directorio.
+                                                        </p>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  <!----------------------ITEM4------------------------>
+
+
+
+
+
+
+
+
+
+                                                  <!----------------------ITEM5------------------------>
+                                                  <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="headingFive">
+                                                      <button class="accordion-button collapsed" id="accordion-btn2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                                        Renombrar un archivo
+                                                      </button>
+                                                    </h2>
+                                                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                                                      <div class="accordion-body" id="cardBtnConcept">
+                                                        <p>
+                                                          Cambiar el nombre de un archivo dentro del directorio.
+                                                        </p>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  <!----------------------ITEM5------------------------>
+
+
+
+
+
+
+
+
+                                                  <!----------------------ITEM6------------------------>
+                                                  <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="headingSix">
+                                                      <button class="accordion-button collapsed" id="accordion-btn1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                                        Permitir la navegación
+                                                      </button>
+                                                    </h2>
+                                                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                                                      <div class="accordion-body" id="cardBtnConcept">
+                                                        <p>
+                                                           Lograr acceder a todos los directorios del sistema de archivos.
+                                                        </p>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  <!----------------------ITEM6------------------------>
+
+
+
+
+                                                </div>
+                                                <!----------------------ACORDEON------------------------>
+
+                                
+                              </div>
+
+
+                            </div>
+
+                          </div>
+
+                      
+
+                        
+                    </section>
+                    <!--------------------------------SECTION--------------------> 
+
+
+
+
+
+                    <!--------------------------------SECTION-------------------->   
+                    <section>
+
+                          <div class="container">
+
+                                <div class="card" id="cardBigTitle">
+                                  <div class="card-body">
+
+                                    <h1>Estructuras de archivos</h1>
 
                                   </div>
                                 </div>    
@@ -404,28 +594,88 @@
                               <div class="container">
                                 <div class="card" id="cardConcept">
                                   <div class="card-body" id="cardTextConcept">
-                                    <p class="card-text">
-                                      <b>También conocido como modo kernel</b>, es el modo en el que se ejecuta el sistema operativo y que se caracteriza por poder ejecutar todas las instrucciones de la máquina tengan privilegios o no por lo que al haber dos modos existirán dos interfaces que son:
-                                      <ul>
-                                        <li>
-                                          <p>
-                                            <b>Interfaz de llamadas al sistema: </b>
-                                            Denominado <b>system call interface en inglés</b>, esta interfaz interna, necesita (a nivel de programación) con la que los programas de usuario y los programadores de sistemas, tienen acceso a los servicios del sistema operativo con una llamada al sistema implica el cambio de modo de ejecución (de modo usuario a modo supervisor).
-                                          </p>
-                                        </li>
-                                        <li>
-                                          <p>
-                                            <b>Interfaz de Intérprete de órdenes  </b>
-                                            Denominado como <b>shell</b>,se encarga de proporcionar una interfaz externa (a nivel de usuario) a través de la cual, un usuario del sistema operativo puede solicitar sus servicios como se muestra en la siguiente imagen.
-                                            <div class="text-center">
-                                              <img class="img-fluid" src="../images/Fig 15 Modos de operación del sistema operativo y sus interfaces.png">
-                                              <p><b>Fig 15. Modos de operación del sistema operativo y sus interfaces</b></p>
-                                            </div>
-                                          </p>
-                                        </li>
-                                      </ul>
-                                    </p>
 
+
+                                      <!----------------------ACORDEON------------------------>
+                                      <div class="accordion" id="accordionExample">
+
+
+
+
+
+                                        <!----------------------ITEM1------------------------>
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header" id="headingOne">
+                                            <button class="accordion-button" id="accordion-btn2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            a) Nivel único
+                                            </button>
+                                          </h2>
+                                          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body" id="cardBtnConcept">
+                                              <p>
+                                                El esquema más sencillo es tener un único nivel de directorios en el sistema de archivos.
+                                              </p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <!----------------------ITEM1------------------------>
+
+
+
+
+
+
+
+
+
+                                        <!----------------------ITEM2------------------------>
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header" id="headingTwo">
+                                            <button class="accordion-button collapsed" id="accordion-btn1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                              b) Árbol
+                                            </button>
+                                          </h2>
+                                          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body" id="cardBtnConcept">
+                                              <p>
+                                                Es ideal permitir varios niveles de directorios. Esto se logra permitiendo tener archivos de tipo directorio dentro de los directorios en donde se genera una estructura jerárquica de directorios en forma de árbol y se denomina ruta (path) absoluta de un archivo, al camino desde la raíz hasta el archivo.
+                                              </p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <!----------------------ITEM2------------------------>
+
+
+
+
+
+
+
+
+
+
+                                        <!----------------------ITEM3------------------------>
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header" id="headingThree">
+                                            <button class="accordion-button collapsed" id="accordion-btn2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                              c) Grafos
+                                            </button>
+                                          </h2>
+                                          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample" >
+                                            <div class="accordion-body" id="cardBtnConcept">
+                                              <p>
+                                                Para potenciar la estructura anterior de árbol sería deseable tener caminos de acceso directo a otros directorios, estos caminos se logran a través de archivos de tipo enlace simbólicos llamados (soft links) y a su vez, se permite que un archivo esté en más de un directorio (hard link).
+                                              </p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <!----------------------ITEM3------------------------>
+
+
+                                      </div>
+                                      <!----------------------ACORDEON------------------------>
+
+                                    
                                   </div>
 
 
@@ -438,6 +688,62 @@
                         
                     </section>
                     <!--------------------------------SECTION--------------------> 
+
+
+
+                    <!--------------------------------SECTION-------------------->   
+                    <section>
+
+                          <div class="container">
+
+                                <div class="card" id="cardBigTitle">
+                                  <div class="card-body">
+
+                                    <h1>Estructuras de archivos</h1>
+
+                                  </div>
+                                </div>    
+
+                          </div>
+
+
+                              <div class="container">
+                                <div class="card" id="cardConcept">
+                                  <div class="card-body" id="cardTextConcept">
+                                    <p>
+                                      <b>Es una estructura de datos dentro de una unidad lógica que permite al sistema operativo almacenar información</b> de forma organizada e independiente de los procesos que la utilizan, El sistema de archivos se encarga de abstraer propiedades físicas de diferentes dispositivos La información, al ser independiente de los procesos, se mantiene tras su finalización y,  puede ser utilizada por varios procesos como se observa en la siguiente imagen.
+                                    </p>
+                                    
+                                    <div class="text-center">
+                                      <img class="img-fluid" src="../images/Fig 20 Estructura de archivos.png">
+                                      <p>
+                                        <b>Fig 20. Estructura de archivos</b>
+                                      </p>
+                                    </div>
+                                    
+                                  </div>
+
+
+                                </div>
+
+                              </div>
+
+                          
+
+                        
+                    </section>
+                    <!--------------------------------SECTION--------------------> 
+
+
+
+
+
+
+
+
+
+
+
 
 
 

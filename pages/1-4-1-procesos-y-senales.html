@@ -11,7 +11,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Propósito de la unidad de aprendizaje</title>
+        <title>1.4.1 Procesos y señales</title>
 
 
         <!--BOOTSTRAP CSS-->  
@@ -23,9 +23,9 @@
           <link rel="stylesheet" type="text/css" href="../css/hoverU1.css">
           <link rel="stylesheet" type="text/css" href="../css/navbar.css">
           <link rel="stylesheet" type="text/css" href="../css/wrapper.css">
-          <link rel="stylesheet" type="text/css" href="../css/sidebarItem_u1_2.css">
-          <link rel="stylesheet" type="text/css" href="../css/cardTitle.css">
+          <link rel="stylesheet" type="text/css" href="../css/sidebarItem_u1_14.css">
           <link rel="stylesheet" type="text/css" href="../css/accordionBtn.css">
+          <link rel="stylesheet" type="text/css" href="../css/cardTitle.css">
           <link rel="stylesheet" type="text/css" href="../css/carrouselBtn.css">
           <link rel="stylesheet" type="text/css" href="../css/footerBG.css">
 
@@ -193,7 +193,8 @@
                 href="1-4-2-directorios-y-archivos.html"
                 >1.4.2 Directorios y archivos</a
               >
- 
+    
+         
               
     
               <a
@@ -334,67 +335,202 @@
 
 
 
-                    <!--------------------SECTION1-------------------->                  
+
+
+
+
+
+
+
+
+
+                    <!--------------------------------SECTION-------------------->   
                     <section>
-                        <!--------------------------------ASPECTOSBASICOSSO-------------------->
+
+                          <div class="container">
+
+                                <div class="card" id="cardBigTitle">
+                                  <div class="card-body">
+
+                                    <h1>Procesos y señales</h1>
+
+                                  </div>
+                                </div>    
+
+                          </div>
 
 
-                               <div class="container">
+                              <div class="container">
+                                <div class="card" id="cardConcept">
+                                  <div class="card-body" id="cardTextConcept">
+                                    <p>
+                                      <b>Los procesos son esenciales para que un programa se pueda ejecutar</b> ya que cada proceso tiene asociado un espacio de direcciones, una lista de ubicaciones de memoria que va desde algún mínimo el cual empieza con un valor 0 y puede obtener una valor máximo, por que un proceso incluye valores actuales del contador de programa, registros y variables. 
+                                    </p>
+                                    <p>
+                                      <b>Por lo que la unidad de control de procesos (CPU) conmuta sucesivamente de un proceso a otro</b>. Esta rápida conmutación de un proceso a otro en  algún orden se denomina multiprogramación.
+                                    </p>
+                                    
+                                    <p>
+                                      Es importante establecer la <b>diferencia entre un programa y un proceso</b>; <b></b>un <b>programa</b> es una entidad estática constituida por sentencias de programa que definen la conducta del proceso cuando se ejecutan utilizando un conjunto de datos y el <b>proceso</b> es la ejecución del programa  por el sistema operativo y de una forma más precisa, como la unidad de procesamiento gestionada por el sistema operativo.
+                                    </p>
+                                    <p>
+                                      <b>Dos o más procesos podrían estar ejecutando el mismo programa</b>, empleando sus propios datos y recursos, por ejemplo, si dos o más usuarios están usando simultáneamente el mismo editor de texto. El programa es el mismo, pero cada usuario tiene un proceso distinto (y con distintos datos).
+                                    </p>
+                                    <p>
+                                      Los sistemas operativos necesitan asegurar de alguna forma que puedan existir todos los procesos requeridos, <b>entonces es necesaria alguna manera de poder crear y destruir los procesos</b> según sea necesario durante la operación del sistema. Los cuatro principales sucesos que provocan la creación de nuevos procesos son:
+                                    </p>
+                                    <p>
+                                      <ul>
+                                        <li><b>La inicialización del sistema.</b></li>
+                                        <li><b>La ejecución por parte de un proceso (en ejecución) de una llamada al sistema de creación de un nuevo proceso.</b></li>
+                                        <li><b>La petición por parte del usuario de la creación de un nuevo proceso.</b></li>
+                                        <li><b>El inicio de un trabajo en batch (lotes).</b></li>
+                                      </ul>
+                                    </p>
+                                    <p>
+                                      <b>Cuando un sistema operativo arranca, se crean típicamente varios procesos</b>. Algunos de esos procesos son procesos <b>foreground (en primer plano)</b>, esto es, <b>procesos que interactúan con los usuarios y realizan trabajo para ellos</b>. Otros son procesos background (en segundo plano), que no están asociados con usuarios particulares, sino que tienen alguna función específica. Los procesos que se ejecutan como procesos background para llevar a cabo alguna actividad tal como el correo electrónico, las páginas web, la impresión de archivos de salida, se denominan demonios en Unix o servicios en Windows.
 
-                                      <div class="card" id="cardBigTitle">
-                                        <div class="card-body">
-
-                                          <h1>Propósito de la unidad de aprendizaje</h1>
-
-                                        </div>
-                                      </div>    
-
-                               </div>
-
-
-                                  <div class="container">
-                                        <div class="card" id="cardConcept">
-                                          <div class="card-body" id="cardTextConcept">
-                                            <p class="card-text">
-                                              Propone soluciones a las necesidades de sistemas computacionales actuales a partir del funcionamiento del sistema operativo.
-                                            </p>
-
-                                            <div class="text-center">
-
-                                              <img src="../images/solution_10553064.png" class="img-fluid" alt="..." id="logoESCOM">
-                                              <p>
-
-                                                Ícono por <a href="https://www.freepik.com/search?format=search&last_filter=query&last_value=solutions&query=solutions&sort=relevance&type=icon">Smashicons</a>
-                                                
-                                              </p>
-                                            
-                                              
-                                            </div>
-                                            
-                                            
-                                            
-                                          </div>
+                                    </p>
+                                    <p>
+                                      Ahora bien, <b>cada vez que se crea un proceso también se debe determinar cuando un comienza su ejecución</b> está realizando el trabajo que se le ha encomendado. Sin embargo tarde o temprano, el nuevo proceso debe terminar, usualmente debido a una de las siguientes causas:
+                                    </p>
+                                    <p>
+                                      <ul>
+                                        <li><b>El proceso completa su trabajo y termina (voluntariamente).</b></li>
+                                        <li><b>El proceso detecta un error y termina voluntariamente).</b></li>
+                                        <li><b>El sistema detecta un error fatal del proceso y fuerza su terminación.</b></li>
+                                        <li><b>Otro proceso fuerza la terminación del proceso (por ejemplo en UNIX mediante la llamada al sistema kill).</b></li>
+                                      </ul>
+                                    </p>
+                                    <p>
+                                      <b>Por lo general, La primera causa de terminar procesos es cuando terminan su ejecución debido a que han completado su trabajo</b>. Cuando un compilador ha compilado el programa que se le ha dado, el compilador ejecuta una llamada al sistema para decirle al sistema operativo que ha finalizado Los procesadores de texto, navegadores y programas similares cuentan siempre con un icono o una opción de menú para que el usuario pueda elegir con el ratón indicando al proceso que borre cualquier archivo temporal que esté abierto y a continuación termine y la segunda causa de terminación es que el proceso descubra un error fatal.
+                                    </p>
+                                    
+                                  </div>
 
 
-                                        </div>
+                                </div>
 
-                                  </div>                          
+                              </div>
 
+                          
 
-
-                        <!--------------------------------ASPECTOSBASICOSSO-------------------->
+                        
                     </section>
-                    <!--------------------SECTION1-------------------->                  
+                    <!--------------------------------SECTION--------------------> 
 
 
+                    <!--------------------------------SECTION-------------------->   
+                    <section>
+
+                          <div class="container">
+
+                                <div class="card" id="cardBigTitle">
+                                  <div class="card-body">
+
+                                    <h1>Estados de los procesos</h1>
+
+                                  </div>
+                                </div>    
+
+                          </div>
 
 
+                              <div class="container">
+                                <div class="card" id="cardConcept">
+                                  <div class="card-body" id="cardTextConcept">
+
+                                    <p>
+                                      <b>El estado de los procesos es muy importante</b> ya que durante su existencia un proceso pasa por una serie de estados discretos, siendo varias las circunstancias que pueden hacer que el mismo cambie de estado:
+                                    </p>
+                                    <p>
+                                      <ul>
+                                        <li>
+                                          <b>Nuevo (new).</b>
+                                        </li>
+                                      
+                                      <li>
+                                        <b>Ejecutándose (running). El proceso está siendo ejecutado en la CPU. Por lo tanto, un proceso puede estar en este estado en un computador uniprocesador.</b>
+                                      </li>
+                                      
+                                      <li>
+                                        <b>Listo para ejecutar (ready). El proceso está en condiciones de ejecutarse, pero debe esperar su turno de CPU.</b>
+                                      </li>
+                                        
+                                      
+                                      <li>
+                                        <b>Bloqueado o En espera (waiting) El proceso no está en condiciones de ejecutarse. Está esperando que algún evento ocurra, como la finalización de una operación de E/S.
+                                      </b>
+                                      </li>
+                                      
+                                      <li>
+                                        <b>También se dice que está suspendido o en espera.</b>
+                                      </li>
+
+                                      <li>
+                                        <b>Terminado (terminated).</b>
+                                      </li>
+                                        
+                                      </ul>
+                                    </p>
+                                    
+                                    <p>
+                                      Se puede <b>establecer una cola de Listos para los procesos “listos” y una cola de Bloqueados para los “bloqueados”</b>. La cola de Listos se mantiene en orden prioritario y la cola de Bloqueados está desordenada, ya que los procesos se desbloquean en el orden en que tienen lugar los eventos que están esperando.
+
+                                    </p>
+                                    <p>
+                                      <b>Al admitirse un trabajo en el sistema</b> se crea un proceso equivalente y es insertado en la última parte de la cola de listos.
+
+                                    </p>
+                                    <p>
+                                       <b>La asignación de la CPU al primer proceso</b> de la cola de Listos se denomina <b>“Despacho”</b>, que es ejecutado por una entidad del Sistema Operativo llamada <b>“Despachador” (dispatcher)</b>.
+
+                                    </p>
+                                    <p>
+                                      El “Bloqueo” es la única transición de estado iniciada por el propio proceso del usuario, <b>puesto que las otras transiciones son iniciadas por entidades ajenas al proceso</b>.
+
+                                    </p>
+                                    <p>
+                                      Toda la <b>información acerca de cada proceso</b>, aparte del contenido de su <b>propio espacio de direcciones</b>, se almacena en una tabla del sistema operativo llamada <b>tabla de procesos</b>, que es un arreglo (o lista enlazada) de estructuras, una para cada proceso existente en ese momento.
+
+
+                                    </p>
+                                    <p>
+                                      Así, <b>un proceso (suspendido)</b> consiste en su espacio de direcciones, por lo regular <b>llamado imagen de núcleo</b> (recordando las memorias de núcleos magnéticos que se usaban en el pasado), y su entrada en la tabla de procesos, que contiene sus registros, entre otras cosas.
+
+                                    </p>
+                                    <p>
+                                      Las  <b>llamadas</b> al sistema de administración para procesos clave <b>son las que se ocupan de la creación y terminación de procesos</b>. Consideremos un ejemplo representativo. Un proceso llamado intérprete de comandos o <b>shell lee comandos de una terminal</b>. El usuario acaba de teclear un comando solicitando la compilación de un programa. El <b>shell</b> debe crear ahora un proceso nuevo que ejecute el compilador. Cuando ese proceso haya terminado la compilación, ejecutará una llamada al sistema para terminarse a sí mismo.
+
+                                    </p>
+                                    <p>
+                                      <b>Cuando ha transcurrido el número de segundos que se especificó</b>, el sistema operativo envía una <b>señal</b> al proceso. La <b>señal hace que el proceso suspenda temporalmente lo que estaba haciendo</b>, guarde sus registros en la pila, y comience a ejecutar un procedimiento especial de manejo de señales, por ejemplo, para transmitir un mensaje que al parecer se perdió.
+                                    </p>
+
+                                    <p>
+                                      Una vez que el <b>manejador de señales termina</b>, el <b>proceso en ejecución se reinicia en el estado en que estaba</b> justo antes de la señal. Las señales son el análogo en software de las interrupciones de hardware, y pueden ser generadas por diversas causas además de la expiración de temporizadores.
+
+                                    </p>
+                                    
+                                  </div>
+
+
+                                </div>
+
+                              </div>
+
+                          
+
+                        
+                    </section>
+                    <!--------------------------------SECTION--------------------> 
 
 
                 </div>
                 <!--------------------------------CONTENIDO PRINCIPAL-------------------->
             </div>
 
+            <!----------------------------------CONTENIDO DE WRAPPER-------------------------------->            
         </div>
             <!--------------------------------------FOOTER--------------------------------------->
 
