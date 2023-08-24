@@ -23,10 +23,8 @@
           <link rel="stylesheet" type="text/css" href="../css/hoverBibRec.css">
           <link rel="stylesheet" type="text/css" href="../css/navbar.css">
           <link rel="stylesheet" type="text/css" href="../css/wrapper.css">
-          <link rel="stylesheet" type="text/css" href="../css/Item_u1_7.css">
-          <link rel="stylesheet" type="text/css" href="../css/accordionBtn.css">
+          <link rel="stylesheet" type="text/css" href="../css/sidebarItem_bibRec_1.css">
           <link rel="stylesheet" type="text/css" href="../css/cardTitle.css">
-          <link rel="stylesheet" type="text/css" href="../css/carrouselBtn.css">
           <link rel="stylesheet" type="text/css" href="../css/footerBG.css">
 
           <!-- Favicon-->
@@ -71,7 +69,38 @@
 
         <!------------------------------------------WRAPPER----------------------------------------->
         <div class="d-flex" id="wrapper">
+            <!--------------------------------------SIDEBAR---------------------------------------->
+            <div class="border-end bg-secondary" id="sidebar-wrapper">
 
+
+                <div class="list-group list-group-flush">
+
+                <a
+                  class="list-group-item list-group-item-action list-group-item-light p-3 disabled"
+                  id="sidebarBtnDisabled"
+                  href="unidad-1-estructura-de-un-sistema-operativo.html"
+                  >Bibliografía y recursos</a
+                >
+      
+                <a
+                  class="list-group-item list-group-item-action list-group-item-light p-3"
+                  id="sidebarBtnLibros"
+                  href="bibliografia-y-recursos.html"
+                  >Libros</a
+                >
+      
+                <a
+                  class="list-group-item list-group-item-action list-group-item-light p-3"
+                  id="sidebarBtnImagenes"
+                  href="#!"
+                  >Imágenes</a
+                >
+      
+               
+
+                </div>
+            </div>
+            <!--------------------------------------SIDEBAR---------------------------------------->
 
             <!----------------------------------CONTENIDO DE WRAPPER-------------------------------->
             <div id="page-content-wrapper">
@@ -80,6 +109,10 @@
 
                     <div class="container-fluid">
 
+                        <!------------------------------------TOGGLERSIDEBAR------------------------------------>
+                        <button class="btn btn-dark" type="submit"id="sidebarToggle" style="font-size: auto; vertical-align: center;">&#9868;
+                        </button>
+                        <!------------------------------------TOGGLERSIDEBAR------------------------------------>
                      
                         <!------------------------------------TOGGLERNAVBAR------------------------------------>
                         <button class="navbar-toggler" id="toggler1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -124,36 +157,36 @@
                                           &#8544;. Estructura de un sistema operativo
                                         </a>
                                         <!--------------------------UNIDAD 1------------------------->
-
-                                        <!--------------------------UNIDAD 2------------------------->
-                                        <a class="dropdown-item disabled" href="unidad-2-administracion-de-procesos.html">
+<!--
+                                        
+                                        <a class="dropdown-item disabled" href="pages/unidad-2-administracion-de-procesos.html">
                                           &#8545;. Administración de procesos
                                         </a>
-                                        <!--------------------------UNIDAD 2------------------------->
+                                        
 
-                                        <!--------------------------UNIDAD 3------------------------->
-                                        <a class="dropdown-item disabled" href="unidad-3-administracion-de-memoria.html">
+                                        
+                                        <a class="dropdown-item disabled" href="pages/unidad-3-administracion-de-memoria.html">
                                           &#8546;.  Administración de memoria
                                         </a>
-                                        <!--------------------------UNIDAD 3------------------------->
+                                        
 
-                                        <!--------------------------UNIDAD 4------------------------->
-                                        <a class="dropdown-item disabled" href="unidad-4-sistema-de-archivos.html">
+                                        
+                                        <a class="dropdown-item disabled" href="pages/unidad-4-sistema-de-archivos.html">
                                           &#8548;. Sistema de archivos
                                         </a>                                 
-                                        <!--------------------------UNIDAD 4------------------------->      
-                                        <!--------------------------UNIDAD 5------------------------->
-                                        <a class="dropdown-item disabled" href="unidad-5-dispositivos-de-entrada-y-salida.html">
+                                        
+                                        
+                                        <a class="dropdown-item disabled" href="pages/unidad-5-dispositivos-de-entrada-y-salida.html">
                                           &#8549;. Dispositivos de entrada y salida
                                         </a>                               
-                                        <!--------------------------UNIDAD 5------------------------->
+                                        
 
-                                        <!--------------------------UNIDAD 6------------------------->
-                                        <a class="dropdown-item disabled" href="unidad-6-seguridad-y-virtualizacion.html">
+                                        
+                                        <a class="dropdown-item disabled" href="pages/unidad-6-seguridad-y-virtualizacion.html">
                                           &#8549;. Seguridad y virtualización
                                         </a>                               
-                                        <!--------------------------UNIDAD 6------------------------->
-
+                                        
+-->
                                     </div>
                                 </li>
                                 <!--------------------------DROPDOWN MENU---------------------------->                                
@@ -170,20 +203,25 @@
                                 </li>
 
 
-                                
-                                <li class="nav-item active">
+                                           <!--
+
+                                  <li class="nav-item active">
                                   <div class="container" id="containerContactos">
-                                    <a class="nav-link" href="contactos.html">Contactos</a>
+                                    <a class="nav-link" href="pages/contactos.html">Contactos</a>
                                   </div>
                                 </li>
 
+                                -->
 
                                 <li class="nav-item active">
-                                  <div class="container" id="containerAcercaDe">
-                                    <a class="nav-link" href="#!">Acerca de</a>  
+                                  <div class="container" id="containerManual">
+                                    <a class="nav-link" href="#!">Manual de usuario</a>
                                   </div>
-
                                 </li>
+                                
+
+
+                              
                             </ul>
                         </div>
                     </div>
@@ -202,8 +240,6 @@
 
 
 
-
-
                     <!--------------------------------SECTION-------------------->   
                     <section>
 
@@ -212,7 +248,7 @@
                               <div class="card" id="cardBigTitle">
                                 <div class="card-body">
 
-                                  <h1>Bibliografía y recursos</h1>
+                                  <h1>Referencias bibliográficas</h1>
 
                                 </div>
                               </div>    
@@ -226,7 +262,45 @@
 
 
                                     <p>
-                                        Carretero, J. Anasagasti P de M. García, F. Pérez, F. (2007). <em>Sistemas operativos una visión aplicada</em>. McGraw-Hill. ISBN &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9788448156435. 
+                                        Carretero, J. Anasagasti P. de M. García, F. Pérez, F. (2007). <em>Sistemas operativos una visión aplicada</em>. McGraw-Hill. ISBN 978-844-81- <!---&nbsp;-->
+                                    </p>
+                                    <p>
+                                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5643-5.
+                                    </p>
+                                    
+
+                                  </div>
+
+
+                                </div>
+
+                              </div>
+
+                              <div class="container">
+                                <div class="card" id="cardConcept">
+                                  <div class="card-body" id="cardTextConcept">
+
+
+                                    <p>
+                                        Meza S. (2016). <em>Sistemas Operativos Multiusuarios</em>. ISBN 978-607-02-5790-2. 
+                                    </p>
+                                    
+
+                                  </div>
+
+
+                                </div>
+
+                              </div>
+
+
+                              <div class="container">
+                                <div class="card" id="cardConcept">
+                                  <div class="card-body" id="cardTextConcept">
+
+
+                                    <p>
+                                        Tantenbaum A. Woodhull A. (2003). <em>Sistemas Operativos</em>. Prentice Hall. ISBN 970-17-0165-8.
                                     </p>
                                     
 
@@ -242,10 +316,6 @@
                         
                     </section>
                     <!--------------------------------SECTION--------------------> 
-
-
-
-
 
 
 
