@@ -186,6 +186,24 @@
 }
 /*-----------------------U1121-------------------------------*/
 
+/*-----------------------Act1Res-------------------------------*/
+#sidebarBtnAct1{
+
+	color: white;
+	font-weight: bold;
+	background-color: #6FA6CA;
+	transition: background-color 0.15s linear 0s;
+
+}
+
+
+#sidebarBtnAct1:hover{
+
+	background-color: #7B8992;
+
+}
+/*-----------------------Act1Res-------------------------------*/
+
 /*-----------------------U13-------------------------------*/
 #sidebarBtnU13{
 

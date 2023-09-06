@@ -10,7 +10,7 @@
     />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>1.5.1 Argumentos y variables</title>
+    <title>Actividad de aprendizaje 1: Introducción a los sistemas operativos</title>
 
     <!--BOOTSTRAP CSS-->
     <link
@@ -26,7 +26,7 @@
     <link rel="stylesheet" type="text/css" href="../css/hoverU1.css" />
     <link rel="stylesheet" type="text/css" href="../css/navbar.css" />
     <link rel="stylesheet" type="text/css" href="../css/wrapper.css" />
-    <link rel="stylesheet" type="text/css" href="../css/sidebarItem_u1_20.css" />
+    <link rel="stylesheet" type="text/css" href="../css/sidebarItem_u1_act1.css" />
     <link rel="stylesheet" type="text/css" href="../css/accordionBtn.css" />
     <link rel="stylesheet" type="text/css" href="../css/cardTitle.css" />
     <link rel="stylesheet" type="text/css" href="../css/carrouselBtn.css" />
@@ -74,8 +74,7 @@
       <!--------------------------------------SIDEBAR---------------------------------------->
       <div class="border-end bg-secondary" id="sidebar-wrapper">
         <div class="list-group list-group-flush">
-      
-          
+
           <a
           class="list-group-item list-group-item-action list-group-item-light p-3 disabled"
           id="sidebarBtnDisabled"
@@ -139,6 +138,7 @@
                 >1.2.1 Tipos: monolítico, por capas, micro núcleo,
                 máquina virtual</a
               >
+
 
               <a
               class="list-group-item list-group-item-action list-group-item-light p-3"
@@ -248,6 +248,7 @@
           >1.5.4 Funciones</a
         >
 
+        
         
         <a
         class="list-group-item list-group-item-action list-group-item-light p-3"
@@ -401,8 +402,6 @@
                                 </li>
                                 
 
-
-               
               </ul>
             </div>
           </div>
@@ -411,12 +410,13 @@
 
         <!--------------------------------CONTENIDO PRINCIPAL-------------------->
         <div class="container-fluid">
-          <!--------------------------------SECTION-------------------->
+
+                      <!--------------------------------SECTION-------------------->
           <section>
             <div class="container">
               <div class="card" id="cardBigTitle">
-                <div class="card-body">
-                  <h1>1.5.1 Argumentos y variables</h1>
+                <div class="card-body" style="font-size: 35px;">
+                    Resumen
                 </div>
               </div>
             </div>
@@ -424,207 +424,130 @@
             <div class="container">
               <div class="card" id="cardConcept">
                 <div class="card-body" id="cardTextConcept">
-                  <p>
-                    <b>Es un tipo de variables</b> que se transmite al proceso shell cuando este es invocado. <b>Es un argumento para el proceso</b>.
-                  </p>
-                  <p>
-                    <ul>
-                      <li>
-                        <b>Asignación de valor:</b> Son argumentos que se añaden a la derecha del nombre del proceso cuando éste es invocado.
-                      </li>
-                      <li>
-                        <b>Uso de variable:</b> Son referenciadas dentro del proceso shell como.
-                        <ul>
-                          <li><b>$1</b> para el primer parámetro, aquel que se encuentra justo a la derecha del nombre del proceso shell.</li>
-                          <li><b>$2</b> para el segundo parámetro.</li>
-                          <li><b>$3</b> para el tercer parámetro y  así sucesivamente.</li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </p>
-
-                  <p>
-                    <b>Hay un límite de nueve argumentos</b> que pueden ser referenciados: <b>de $1 a $9</b>. Sin embargo, <b>existe la orden shift</b> que produce un desplazamiento hacia la derecha en la referenciación de los argumentos:
-                  </p>
-
-                  
-                    
-                  <!----------------------ACORDEON------------------------>
-                  <div class="accordion" id="accordionExample">
-                    <!----------------------ITEM1------------------------>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="headingOne">
-                        <button
-                          class="accordion-button"
-                          id="accordion-btn2"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#collapseOne"
-                          aria-expanded="true"
-                          aria-controls="collapseOne"
-                        >
-                         a) Si ejecuto una vez shift, la referenciación de argumentos es la siguiente
-                        </button>
-                      </h2>
-                      <div
-                        id="collapseOne"
-                        class="accordion-collapse collapse show"
-                        aria-labelledby="headingOne"
-                        data-bs-parent="#accordionExample"
-                      >
-                        <div class="accordion-body" id="cardBtnConcept">
-                          <p>
-                            <ul>
-                              <li><b>$1</b> para el segundo.</li>
-                              <li><b>$2</b> para el tercero.</li>
-                            </ul>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <!----------------------ITEM1------------------------>
-
-                    <!----------------------ITEM2------------------------>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="headingTwo">
-                        <button
-                          class="accordion-button collapsed"
-                          id="accordion-btn1"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#collapseTwo"
-                          aria-expanded="false"
-                          aria-controls="collapseTwo"
-                        >
-                        b) Si la ejecuto dos veces, la referenciación será:
-                        </button>
-                      </h2>
-                      <div
-                        id="collapseTwo"
-                        class="accordion-collapse collapse"
-                        aria-labelledby="headingTwo"
-                        data-bs-parent="#accordionExample"
-                      >
-                        <div class="accordion-body" id="cardBtnConcept">
-                          <p>
-                            <ul>
-                              <li><b>$1</b> para el tercero.</li>
-                              <li><b>$2</b> para el cuarto, y así sucesivamente.</li>
-                            </ul>
-                          </p>
-                          
-                        </div>
-                      </div>
-                    </div>
-                    <!----------------------ITEM2------------------------>
-
-                  
-                  </div>
-                  <!----------------------ACORDEON------------------------>
-                  
-                  <p>
-                    De esta forma es posible escribir un procedimiento que pueda tratar <b>más de 9 argumentos</b>.
-                  </p>
-                  <p>
-                    Otro modo de acceder a todos los argumentos es con <b>$*</b>. <b>Esta variable se expande a todos los argumentos especificados</b> cuando se invocó el procedimiento shell.
-                  </p>
-                  <p>
-                    El parámetro <b>$# toma el valor del número total de argumentos especificados</b>. 
-                  </p>
-                 
-                </div>
-              </div>
-            </div>
-          </section>
-          <!--------------------------------SECTION-------------------->
-
-          <!--------------------------------SECTION-------------------->
-          <section>
-            <div class="container">
-              <div class="card" id="cardBigTitle">
-                <div class="card-body">
-                  <h1>Variables</h1>
-                </div>
-              </div>
-            </div>
-
-            <div class="container">
-              <div class="card" id="cardConcept">
-                <div class="card-body" id="cardTextConcept">
-                  <p>
-                    <b>Los Shells soportan dos clases de variables</b>: locales al shell que estamos usando y que no están declaradas cuando abandonamos el shell y globales que permanecen activadas aunque cambiemos de shell.
-                  </p>
-                  <p>
-                    Existen dos tipos de variables:
-                    <ul>
-                      <li>
-                        <b>Las variables de entorno:</b>
-                        <ul>
-                          <li>
-                            <b>Sintaxis:</b> nombreVariable=valor
-                          </li>
-                          <li>
-                            <b>Uso de la variable:</b> El valor asignado puede recuperarse precediendo el nombre de la variable con el signo <b>$</b>.
-                          </li>
-                        </ul>
-                      </li>
-                      <li><b>Argumentos para los procedimientos shell.</b></li>
-                    </ul>
-                  </p>
-                  <p>
-                    Estas variables pueden crearse y usarse tanto dentro de un proceso shell, como en el modo interactivo desde el prompt del sistema. 
-                  </p>
-                  <p>
-                    Es muy importante que se considere que una variable sólo tendrá un valor dentro del proceso para el cual fue creada.
-                  </p>
-                  <p>
-                    Estas son algunas variables de entorno que se muestran en la siguiente imagen
-                  </p>
-                  <div class="text-center">
-                    <img class="img-fluid" src="../images/Fig 22 tabla de variables en shell.png" style="width: 65%;">
                     <p>
-                      <b>Fig 22. tabla de variables en shell</b>
+                        <b>Aspectos Fundamentales de los Sistemas Operativos</b>
                     </p>
-                  </div>
-                  <p>
-                    Para <b>observar el valor de todas las variables definidas</b> en un determinado instante, hay que ejecutar la <b>orden set</b>.
-                  </p>
-                  <p>
-                    <b>El valor asignado a una variable puede intervenir en otra variable</b>. Es recomendable en este caso, y a veces necesario, <b>identificar el nombre de esta variable encerrándose entre corchetes</b>. 
-                  </p>
-                  <p>
-                    <b>Cuando en el valor asignado existan varias palabras separadas por espacios</b>, hay que <b>usar comillas</b> para preservar estos espacios en la definición de la variable
-                  </p>
-                  <p>
-                    Se puede asignar como valor de una variable, <b>la salida de una orden UNIX</b>. En este caso, después del igual <b>se encierra la orden UNIX entre caracteres acento grave (`)</b>. 
-                  </p>
-                  <p>
-                    Asignación externa a variables del shell: <b>lectura de valores con READ</b>.
-                  </p>
-                  <p>
-                    <b>Los valores para las variables del shell se pueden capturar a través del teclado o de otros ficheros mediante la sentencia read</b>, con un funcionamiento similar a la lectura de una variable en cualquier lenguaje de programación.
-                  </p>
-                  <p>
-                    A continuación se presentan ejemplos de uso de variables.
-                  </p>
-                  <div class="text-center">
-
-                    <img class="img-fluid" src="../images/Fig 23 Uso de variables en terminal.png" style="width: 40%;">
-                    <p><b>Fig 23. Uso de variables en terminal</b></p>
-                  </div>
-
+                    <p>
+                        En el mundo de la informática, todos los componentes de una computadora son esenciales para su funcionamiento, pero el encargado principal de garantizar un funcionamiento fluido es el sistema operativo.
+                    </p>
+                    <p>
+                        <b>¿Qué es un Sistema Operativo?</b>
+                    </p>
+                    <p>
+                        Un sistema operativo es un conjunto de programas informáticos diseñados para administrar y controlar los recursos de una computadora. Imagina al sistema operativo como el director de una orquesta, coordinando y dirigiendo todas las partes para que trabajen juntas armoniosamente.
+                    </p>
+                    
+                    <p>
+                        <b>Objetivos de un Sistema Operativo</b>
+                    </p>
+                    <p>
+                        Se dividen en dos categorías principales:
+                    </p>
+                    <p>
+                        <ul>
+                            <li>
+                                <b>a) Programas del Sistema</b>: Estos programas controlan el funcionamiento general de la computadora.
+                                
+                            </li>
+                            <li>
+                                <b>b) Programas de Aplicación</b>: Son programas diseñados para resolver problemas específicos que los usuarios pueden tener.
+                            </li>
+                        </ul>
+                    </p>    
+                    <p>
+                        <b>Funciones Clásicas de un Sistema Operativo</b>
+                    </p>
+                    <p>
+                        Se agrupan en tres categorías:
+                        <ul>
+                            <li>
+                                <b>1. Gestión de Recursos de la Computadora</b>: El sistema operativo asigna recursos como el procesador, la memoria y los dispositivos periféricos a los programas en ejecución. Debe mantener un registro de los recursos utilizados y disponibles, resolviendo problemas cuando varios programas compiten por los mismos recursos.
+                            </li>
+                            <li>
+                                <b>2. Ejecución de Servicios para Programas</b>: El sistema operativo ejecuta los comandos e instrucciones de los usuarios y asegura que se realicen de manera eficiente y sin problemas.
+                            </li>
+                            <li>
+                                <b>3. Abstracción y Administración</b>: El sistema operativo actúa como intermediario entre los usuarios y el hardware. Proporciona abstracciones que facilitan a los programadores y usuarios interactuar con la computadora sin preocuparse por los detalles técnicos.
+                            </li>
+                        </ul>
+                    </p>
+                    <p>
+                        <b>Características Clave de un Sistema Operativo</b>
+                    </p>
+                    <p>
+                        <ul>
+                            <li>
+                                <b>Facilidad de Uso</b>: El sistema operativo hace que la computadora sea fácil de usar al proporcionar interfaces amigables.
+                            </li>
+                            <li>
+                                <b>Eficiencia</b>: Optimiza el uso de recursos, garantizando que la computadora funcione de manera eficiente.
+                            </li>
+                            <li>
+                                <b>Capacidad de Evolución</b>: : Puede adaptarse y mejorar con el tiempo sin afectar su funcionalidad actual.
+                            </li>
+                        </ul>
+                    </p>
+                    <p>
+                        <b>Objetivo Principal del Sistema Operativo</b>
+                    </p>                    
+                    <p>
+                        El objetivo fundamental del sistema operativo es administrar, controlar y distribuir los recursos entre los usuarios y el sistema de manera organizada, teniendo en cuenta la prioridad de cada tarea.
+                    </p>
+                    <p>
+                        <b>Evolución de los Sistemas Operativos</b>
+                    </p>
+                    <p>
+                        A lo largo del tiempo, los sistemas operativos han evolucionado enormemente para adaptarse a las crecientes demandas de la tecnología. Estas evoluciones han permitido mejorar la eficiencia, la facilidad de uso y la capacidad de administración.
+                    </p>
+                    <p>
+                        <b>Tipos de Sistemas Operativos</b>
+                    </p>
+                    <p>
+                        Hay varios tipos de sistemas operativos, cada uno con un propósito específico:
+                        <ul>
+                            <li>
+                                <b>Mainframe</b>: Diseñados para manejar múltiples tareas simultáneamente, como procesamiento por lotes y tiempo compartido.
+                            </li>
+                            <li>
+                                <b>Servidor</b>: Se enfocan en administrar recursos para ofrecer servicios a otros dispositivos en una red.
+                            </li>
+                            <li>
+                                <b>Multiprocesador</b>: Diseñados para funcionar en sistemas con múltiples procesadores trabajando juntos.
+                            </li>
+                            <li>
+                                <b>Embebidos</b>: Integrados en dispositivos y máquinas, como electrodomésticos y automóviles.
+                            </li>
+                            <li>
+                                <b>Tiempo Real</b>: Priorizan el procesamiento inmediato de eventos, utilizados en aplicaciones críticas como control de tráfico aéreo y sistemas de producción.
+                            </li>
+                        </ul>
+                    </p>
+                    <p>
+                        <b>Conclusión</b>
+                    </p>
+                    <p>
+                        El sistema operativo es como el director de una orquesta, coordina todas las partes y recursos para que funcionen en armonía. Sus objetivos principales incluyen facilitar la interacción entre usuarios y hardware, administrar recursos eficientemente y evolucionar con las demandas tecnológicas en constante cambio. Los diferentes tipos de sistemas operativos se adaptan a diversas necesidades, desde servidores hasta dispositivos embebidos y sistemas en tiempo real.
+                    </p>
+                    
+                    <div class="text-center">
+                        <p><b>SISTEMAS OPERATIVOS | ¿Que son?¿Como Funcionan? | TIPOS de SISTEMAS OPERATIVOS | Explicación Facil</b></p>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/watch?v=fsuroRYmagw" frameborder="0" allowfullscreen></iframe>
+                    </div>
+ 
                 </div>
               </div>
             </div>
           </section>
           <!--------------------------------SECTION-------------------->
 
+
+
           <!--------------------------------SECTION-------------------->
           <section>
             <div class="container">
               <div class="card" id="cardBigTitle">
-                <div class="card-body">
-                  <h1>Variables shell predefinidas</h1>
+                <div class="card-body" style="font-size: 35px;">
+                  Actividad de aprendizaje 1: Introducción a los sistemas operativos
                 </div>
               </div>
             </div>
@@ -632,43 +555,88 @@
             <div class="container">
               <div class="card" id="cardConcept">
                 <div class="card-body" id="cardTextConcept">
-                  <p>
-                    El shell tiene predefinidas una serie de variables de entorno. Algunas de ellas pueden modificarse, asignándole otro valor distinto al de defecto. Otras son de sólo lectura, pueden ser usadas, pero no modificadas. Las variables predefinidas modificables más interesantes son:
-                  </p>
-                  <p>
-                    <ul>
-                      <li>
-                        <b>HOME:</b> Su valor por defecto es la ruta del directorio del usuario. Es el argumento por defecto de la <b>orden cd</b>.
-                      </li>
-                      <li>
-                        <b>OSTYPE:</b> Otorga información del tipo de sistema operativo que se ejecuta en la computadora.
-                      </li>
-                      <li>
-                        <b>PATH:</b> Es el grupo de directorios donde el sistema busca los ficheros ejecutables.
-                      </li>
-                      <li>
-                        <b>PS1:</b> Define la cadena de caracteres que aparecen como prompt del sistema. <b>Por defecto su valor es $</b>. 
-                      </li>
-                      <li>
-                        <b>PS2:</b> Es un segundo prompt de sistema que se utiliza cuando se esperan entradas adicionales. Por defecto, <b>despliega “>” para diferenciarse del prompt principal</b>.
-                      </li>
-                      <li>
-                        <b>PS3:</b> Es un tercer prompt, <var>se caracteriza por desplegar un bucle de selección utilizando la palabra reservada “select”</var>.
-                      </li>
-                      <li>
-                        <b>PWD:</b> Su valor por defecto es el directorio de trabajo actual donde el usuario se encuentra ubicado.
-                      </li>
-                      <li>
-                        <b>RANDOM:</b> Su valor es un número entero de 16 bits pseudo aleatorio en el <b>rango de 0 a 32767</b>.
-                      </li>
-                      <li>
-                        <b>SECONDS:</b> <b>Indica el número de segundos</b> en los que un script de bash ha estado ejecutándose.
-                      </li>
-                      <li>
-                        <b>USER:</b> Su valor por defecto es el directorio del usuario actual.
-                      </li>
-                    </ul>
-                  </p>
+                  
+                    <div class="question">
+                        <h2>1. ¿Cuál es la función principal de un sistema operativo?</h2>
+                        <input type="radio" name="q1" value="a"> a) Crear aplicaciones para usuarios. <br>
+                        <input type="radio" name="q1" value="b"> b) Gestionar y controlar los recursos de una computadora. <br>
+                        <input type="radio" name="q1" value="c">  c) Diseñar interfaces gráficas atractivas. <br>
+                        <input type="radio" name="q1" value="d"> d) Proveer servicios de red. <br>
+                        <button onclick="checkAnswer('q1', 'a')">Enviar respuesta</button>
+                        <p id="feedback-q1"></p>
+                    </div>
+                    <div class="question">
+                        <h2>2. ¿Qué tipos de programas son gestionados por un sistema operativo?</h2>
+                        <input type="radio" name="q2" value="a">a) Solo programas de sistema.<br>
+                        <input type="radio" name="q2" value="b"> b) Solo programas de aplicación. <br>
+                        <input type="radio" name="q2" value="c"> c) Programas de sistema y programas de aplicación. <br>
+                        <input type="radio" name="q2" value="d"> d) Programas de diseño gráfico. <br>
+                        <button onclick="checkAnswer('q2', 'c')">Enviar respuesta</button>
+                        <p id="feedback-q2"></p>
+                    </div>
+                    <div class="question">
+                        <h2>3. ¿Qué categorías abarcan las funciones clásicas de un sistema operativo? </h2>
+                        <input type="radio" name="q3" value="a"> a) Gestión de recursos, diseño de programas y seguridad.<br>
+                        <input type="radio" name="q3" value="b"> b) Gestión de recursos, ejecución de servicios y administración de usuarios.<br>
+                        <input type="radio" name="q3" value="c"> c) Diseño de interfaces, administración de procesadores y seguridad.<br>
+                        <input type="radio" name="q3" value="d"> d) Administración de tareas, planificación de proyectos y control de dispositivos.<br>
+                        <button onclick="checkAnswer('q3', 'b')">Enviar respuesta</button>
+                        <p id="feedback-q3"></p>
+                    </div>
+                    <div class="question">
+                        <h2>4. ¿Cuál de los siguientes recursos es considerado un recurso físico manejado por el sistema operativo? </h2>
+                        <input type="radio" name="q4" value="a"> a) Archivos de usuario.<br>
+                        <input type="radio" name="q4" value="b"> b) Redes de comunicación.<br>
+                        <input type="radio" name="q4" value="c"> c) Espacio de almacenamiento.<br>
+                        <input type="radio" name="q4" value="d"> d) Interfaces de usuario. <br>
+                        <button onclick="checkAnswer('q4', 'c')">Enviar respuesta</button>
+                        <p id="feedback-q4"></p>
+                    </div>
+                    <div class="question">
+                        <h2>5. ¿Qué función del sistema operativo permite a varios programas ejecutarse al mismo tiempo?</h2>
+                        <input type="radio" name="q5" value="a"> a) Aislamiento.<br>
+                        <input type="radio" name="q5" value="b"> b) Abstracción.<br>
+                        <input type="radio" name="q5" value="c"> c) Administración de recursos.<br>
+                        <input type="radio" name="q5" value="d"> d) Ejecución de servicios.<br>
+                        <button onclick="checkAnswer('q5', 'c')">Enviar respuesta</button>
+                        <p id="feedback-q5"></p>
+                    </div> 
+                    <div class="question">
+                        <h2>6. ¿Qué característica define a un sistema operativo multiusuario?</h2>
+                        <input type="radio" name="q6" value="a"> a) Solo permite un usuario a la vez.<br>
+                        <input type="radio" name="q6" value="b"> b) Permite compartir recursos entre usuarios en red.<br>
+                        <input type="radio" name="q6" value="c"> c) Solo ejecuta una tarea a la vez.<br>
+                        <input type="radio" name="q6" value="d"> d) No permite acceso remoto. <br>
+                        <button onclick="checkAnswer('q6', 'b')">Enviar respuesta</button>
+                        <p id="feedback-q6"></p>
+                    </div>    
+                    <div class="question">
+                        <h2>7. ¿Cuál de los siguientes sistemas es una aplicación de un sistema operativo en tiempo real?</h2>
+                        <input type="radio" name="q7" value="a"> a) Sistemas de oficina y procesamiento de texto.<br>
+                        <input type="radio" name="q7" value="b">  b) Sistemas de diseño gráfico y modelado 3D. <br>
+                        <input type="radio" name="q7" value="c"> c) Sistemas de control de tráfico aéreo y telecomunicaciones.<br>
+                        <input type="radio" name="q7" value="d"> d) Sistemas de entretenimiento y redes sociales.<br>
+                        <button onclick="checkAnswer('q7', 'c')">Enviar respuesta</button>
+                        <p id="feedback-q7"></p>
+                    </div>    
+                    <div class="question">
+                        <h2>8. ¿Qué caracteriza a un sistema operativo distribuido? </h2>
+                        <input type="radio" name="q8" value="a"> a) Solo permite ejecutar programas locales.<br>
+                        <input type="radio" name="q8" value="b"> b) Permite la ejecución de un único programa en múltiples computadoras.<br>
+                        <input type="radio" name="q8" value="c"> c) Facilita la distribución de tareas entre procesadores.<br>
+                        <input type="radio" name="q8" value="d"> d) Limita la comunicación entre procesos.<br>
+                        <button onclick="checkAnswer('q8', 'c')">Enviar respuesta</button>
+                        <p id="feedback-q8"></p>
+                    </div>    
+                    <div class="question">
+                        <h2>9. ¿Cuál es uno de los objetivos principales de un sistema operativo? </h2>
+                        <input type="radio" name="q9" value="a"> a) Permitir que los recursos estén disponibles desde cualquier dispositivo.<br>
+                        <input type="radio" name="q9" value="b"> b) Asegurar que los recursos sean accesibles para todos los procesos y los usuarios de manera libre. <br>
+                        <input type="radio" name="q9" value="c"> c) Administrar, controlar y distribuir recursos de manera organizada. <br>
+                        <input type="radio" name="q9" value="d"> d) Permitir al usuario la interacción directa con el hardware.<br>
+                        <button onclick="checkAnswer('q9', 'c')">Enviar respuesta</button>
+                        <p id="feedback-q9"></p>
+                    </div>    
                  
                 </div>
               </div>
@@ -683,38 +651,38 @@
 
       <!----------------------------------CONTENIDO DE WRAPPER-------------------------------->
     </div>
-       <!--------------------------------------FOOTER--------------------------------------->
+        <!--------------------------------------FOOTER--------------------------------------->
 
-       <footer>
+        <footer>
     
-        <div class="footerBG">
-    
-          <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">
-            <img alt="Licencia Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png"/>
-          </a>
-          <br />
-          <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/InteractiveResource" property="dct:title" rel="dct:type">
-            Unidad 1 - Estructura de un sistema operativo
-          </span>
-           por 
-           <a xmlns:cc="http://creativecommons.org/ns#" href=" https://vigs950813.github.io/RDDSOSS/index.html" property="cc:attributionName" rel="cc:attributionURL">
-            Tanibet Pérez de los Santos Mondragón, Benjamín Cruz Torres e Israel Salas Ramírez.
-           </a> <br>Se distribuye bajo una 
-          <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">
-            Licencia Creative Commons Atribución-NoComercial 4.0 Internacional
-          </a>.
-          <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">
-            <br>Basada en una obra en https://github.com/vigs950813/RDDSOSS
-          </a>.
-    
-          <br>Fecha de elaboración: Julio de 2023
-    
-        </div>
-    
-      </footer>
-    
-    
-      <!--------------------------------------FOOTER--------------------------------------->
+          <div class="footerBG">
+      
+            <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">
+              <img alt="Licencia Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png"/>
+            </a>
+            <br />
+            <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/InteractiveResource" property="dct:title" rel="dct:type">
+              Unidad 1 - Estructura de un sistema operativo
+            </span>
+             por 
+             <a xmlns:cc="http://creativecommons.org/ns#" href=" https://vigs950813.github.io/RDDSOSS/index.html" property="cc:attributionName" rel="cc:attributionURL">
+              Tanibet Pérez de los Santos Mondragón, Benjamín Cruz Torres e Israel Salas Ramírez.
+             </a> <br>Se distribuye bajo una 
+            <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">
+              Licencia Creative Commons Atribución-NoComercial 4.0 Internacional
+            </a>.
+            <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">
+              <br>Basada en una obra en https://github.com/vigs950813/RDDSOSS
+            </a>.
+      
+            <br>Fecha de elaboración: Julio de 2023
+      
+          </div>
+      
+        </footer>
+      
+      
+        <!--------------------------------------FOOTER--------------------------------------->
     <!------------------------------------------WRAPPER----------------------------------------->
 
     <!--------------------------------SCRIPTS------------------------------------------------->
@@ -723,6 +691,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <script src="../js/scripts.js"></script>
+    <!-- Checked Answers Actividad 1-->
+    <script src="../js/actividad1.js"></script>
 
     <!--------------------------------SCRIPTS------------------------------------------------->
   </body>

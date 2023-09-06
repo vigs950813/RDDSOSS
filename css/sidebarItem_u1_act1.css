@@ -1,3 +1,4 @@
+
 /*-----------------------FONDOSIDEBAR-------------------------------*/
 #sidebar-wrapper{
 	--bs-bg-opacity: 0.15;
@@ -75,7 +76,7 @@
 
 	color: white;
 	font-weight: bold;
-	background-color: #7B8992;
+	background-color: #6FA6CA;
 	transition: background-color 0.15s linear 0s;
 
 }
@@ -83,8 +84,8 @@
 
 #sidebarBtnU11:hover{
 
-	background-color: #6FA6CA;
-	
+	background-color: #7B8992;
+
 }
 
 /*-----------------------U11-------------------------------*/
@@ -149,7 +150,6 @@
 }
 /*-----------------------U113-------------------------------*/
 
-
 /*-----------------------U12-------------------------------*/
 #sidebarBtnU12{
 
@@ -191,7 +191,7 @@
 
 	color: white;
 	font-weight: bold;
-	background-color: #6FA6CA;
+	background-color: #7B8992;
 	transition: background-color 0.15s linear 0s;
 
 }
@@ -199,10 +199,11 @@
 
 #sidebarBtnAct1:hover{
 
-	background-color: #7B8992;
+	background-color: #6FA6CA;
 
 }
 /*-----------------------Act1Res-------------------------------*/
+
 
 /*-----------------------U13-------------------------------*/
 #sidebarBtnU13{
@@ -458,17 +459,6 @@
 
 }
 /*-----------------------U154-------------------------------*/
-
-
-
-
-
-
-
-
-
-
-
 
 
 
