@@ -450,9 +450,43 @@
                     En la siguientes imágenes se muestra la sintaxis y uso de las funciones en Bash.
                   </p>
 
+                  <div class="card" id="cardCode">
+
+                    <code class="codeComment">
+                      #!/bin/bash
+                    </code>
+
+                    <code class="codeComment">
+                      #Definición de una función de saludo
+                    </code>
+
+                    <code class="codeNormal">
+                      nombreFuncion(){
+                    </code>
+
+                    
+
+                    <code class="codeComment">
+                      &nbsp;&nbsp;#argumentos
+                    </code>
+
+                    <br>
+
+                    <code class="codeComment">
+                      &nbsp;&nbsp;#instrucciones
+                    </code>
+
+                    
+
+                    <code class="codeNormal">
+                      }
+                    </code>
+
+                  </div>
+
                   <div class="text-center">
 
-                    <img class="img-fluid" src="../images/Ejemplo 1 Sintaxis de funcion.png" alt="">
+                    <!--<img class="img-fluid" src="../images/Ejemplo 1 Sintaxis de funcion.png" alt="">-->
                     <p><b>Ejemplo 1. Sintaxis de funcion en bash</b></p>
 
                   </div>
@@ -485,17 +519,98 @@
                   </p>
 
 
-                  <div class="text-center">
+                  <div class="card" id="cardCode">
 
-                    <img class="img-fluid" src="../images/Ejemplo 1 Declaracion y uso de funcion sin retorno ni argumentos.png" alt="">
-                    <p><b>Ejemplo 1. Declaración y uso de función sin retorno ni argumentos</b></p>
+                    <code class="codeComment">
+                      #!/bin/bash
+                    </code>
+
+                    <code class="codeComment">
+                      #Definición de una función de saludo
+                    </code>
+
+                    <code class="codeNormal">
+                      saludar(){
+                    </code>
+
+                    <code class="codeNormal">
+                      &nbsp;&nbsp;local nombre=$1
+                    </code>
+
+                    <code class="codeNormal">
+                      &nbsp;&nbsp;echo "¡Hola, $nombre!"
+                    </code>
+
+                    <code class="codeNormal">
+                      }
+                    </code>
+
+                    <code class="codeComment">
+                      #Llamada a la función
+                    </code>
+
+                    <code class="codeNormal">
+                      saludar "Juan"
+                    </code>
 
                   </div>
 
 
                   <div class="text-center">
 
-                    <img class="img-fluid" src="../images/Ejemplo 2 Uso de funcion con retorno y dos argumentos.png" alt="">
+                    <!--<img class="img-fluid" src="../images/Ejemplo 1 Declaracion y uso de funcion sin retorno ni argumentos.png" alt="">-->
+                    <p><b>Ejemplo 1. Declaración y uso de función sin retorno ni argumentos</b></p>
+
+                  </div>
+
+                  <div class="card" id="cardCode">
+
+                    <code class="codeComment">
+                      #!/bin/bash
+                    </code>
+
+                    <code class="codeComment">
+                      #Definición de una función que retorna un valor
+                    </code>
+
+                    <code class="codeNormal">
+                      funcion_con_retorno(){
+                    </code>
+
+                    <code class="codeNormal">
+                      &nbsp;&nbsp;local resultado=$(( $1 + $2 ))
+                    </code>
+
+                    <code class="codeNormal">
+                      &nbsp;&nbsp;echo $resultado
+                    </code>
+
+                    <code class="codeNormal">
+                      }
+                    </code>
+
+                    <code class="codeComment">
+                      #Llamada a la función y captura del valor retornado
+                    </code>
+
+                    <code class="codeNormal">
+                      resultado=$(funcion_con_retorno 5 3)
+                    </code>
+
+                    <code class="codeComment">
+                      #Imprimir el resultado capturado
+                    </code>
+
+                    <code class="codeNormal">
+                      echo "El resultado es: $resultado"
+                    </code>
+
+                  </div>
+
+
+                  <div class="text-center">
+
+                    <!--<img class="img-fluid" src="../images/Ejemplo 2 Uso de funcion con retorno y dos argumentos.png" alt="">-->
                     <p><b>Ejemplo 2. Uso de función con retorno y dos argumentos</b></p>
 
                   </div>
@@ -627,13 +742,59 @@
                     A continuación se presentan algunos ejemplos de uso de cadenas.
                   </p>
 
-                  <div class="text-center">
-                    <img class="img-fluid" src="../images/Ejemplo 1 Declaración concatenación e impresión de cadena en pantalla.png" alt="">
-                    <p><b>Ejemplo 1. Declaración, concatenación e impresión de cadena en pantalla</b></p>
+
+                  <div class="card" id="cardCode">
+
+                    <code class="codeComment">
+                      #!/bin/bash
+                    </code>
+
+                    <code class="codeComment">
+                      #Operaciones con cadenas
+                    </code>
+
+                    <code class="codeNormal">
+                      nombre="Juan"
+                    </code>
+
+                    <code class="codeNormal">
+                      saludo="Hola, $nombre"
+                    </code>
+
                   </div>
 
                   <div class="text-center">
-                    <img class="img-fluid" src="../images/Ejemplo 2 Longitud de una cadena.png" alt="">
+                  <!--<img class="img-fluid" src="../images/Ejemplo 1 Declaración concatenación e impresión de cadena en pantalla.png" alt="">-->  
+                    <p><b>Ejemplo 1. Declaración, concatenación e impresión de cadena en pantalla</b></p>
+                  </div>
+
+
+                  <div class="card" id="cardCode">
+
+                    <code class="codeComment">
+                      #!/bin/bash
+                    </code>
+
+                    <code class="codeComment">
+                      #Operaciones con cadenas
+                    </code>
+
+                    <code class="codeNormal">
+                      cadena="Ejemplo"
+                    </code>
+
+                    <code class="codeNormal">
+                      longitud=${#cadena}
+                    </code>
+
+                    <code class="codeNormal">
+                      echo "La longitud de la cadena es $longitud"
+                    </code>
+
+                  </div>
+
+                  <div class="text-center">
+                    <!--<img class="img-fluid" src="../images/Ejemplo 2 Longitud de una cadena.png" alt="">-->
                     <p><b>Ejemplo 2. Longitud de una cadena</b></p>
                   </div>
                   

@@ -523,36 +523,272 @@
                     A continuación se presentan algunos ejemplos de uso de estructuras de control.
                   </p>
 
+                  <div class="card" id="cardCode">
+
+                    <code class="codeComment">
+                      #!/bin/bash
+                    </code>
+
+                    <code class="codeComment">
+                      #Ejemplo de estructura if-else
+                    </code>
+
+                    <code class="codeNormal">
+                      edad=20
+                    </code>
+
+                    <code class="codeNormal">
+                      if[$edad -ge 18]; then
+                    </code>
+
+                    <code class="codeNormal">
+                      echo "Eres mayor de edad."
+                    </code>
+
+                    <code class="codeNormal">
+                      else
+                    </code>
+
+                    <code class="codeNormal">
+                      echo "Eres menor de edad."
+                    </code>
+
+                    <code class="codeNormal">
+                      fi
+                    </code>
+
+                  </div>
+
                   <div class="text-center">
-                    <img class="img-fluid" src="../images/Ejemplo 1 Uso de if-else.png" style="width: 30%;">
+                    <!--<img class="img-fluid" src="../images/Ejemplo 1 Uso de if-else.png" style="width: 30%;">-->
                     <p>
                       <b>Ejemplo 1. Uso de if-else</b>
                     </p>
                   </div>
 
+
+                  <div class="card" id="cardCode">
+
+                    <code class="codeComment">
+                      #!/bin/bash
+                    </code>
+
+                    <code class="codeComment">
+                      #Ejemplo de estructura case
+                    </code>
+
+                    <code class="codeNormal">
+                      dia="martes"
+                    </code>
+
+                    <code class="codeNormal">
+                      case $dia in
+                    </code>
+
+                    <code class="codeNormal">
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lunes)
+                    </code>
+
+                    <code class="codeNormal">
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo "Hoy es lunes."
+                    </code>
+
+                    <code class="codeNormal">
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;;
+                    </code>
+
+                    <code class="codeNormal">
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;martes)
+                    </code>
+
+                    <code class="codeNormal">
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo "Hoy es martes."
+                    </code>
+
+                    <code class="codeNormal">
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;;
+                    </code>
+
+                    <code class="codeNormal">
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;miercoles|jueves)
+                    </code>
+
+                    <code class="codeNormal">
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo "Hoy es mitad de semana."
+                    </code>
+
+                    <code class="codeNormal">
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;;
+                    </code>
+
+                    <code class="codeNormal">
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;viernes)
+                    </code>
+
+                    <code class="codeNormal">
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo "Hoy es viernes. ¡Casi fin de semana!"
+                    </code>
+
+                    <code class="codeNormal">
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;;
+                    </code>
+
+                    <code class="codeNormal">
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sabado|domingo)
+                    </code>
+
+                    <code class="codeNormal">
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo "¡Es fin de semana!."
+                    </code>
+
+                    <code class="codeNormal">
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;;
+                    </code>
+
+                    <code class="codeNormal">
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*)
+                    </code>
+
+                    <code class="codeNormal">
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo "Día no reconocido."
+                    </code>
+
+                    <code class="codeNormal">
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;;
+                    </code>
+
+                    <code class="codeNormal">
+                      esac
+                    </code>
+
+                  </div>
+                 
+                  
+
                   <div class="text-center">
-                    <img class="img-fluid" src="../images/Ejemplo 2 Uso de case.png" style="width: 40%;">
+                   <!--<img class="img-fluid" src="../images/Ejemplo 2 Uso de case.png" style="width: 40%;">--> 
                     <p>
                       <b>Ejemplo 2. Uso de case</b>
                     </p>
                   </div>
 
+                  <div class="card" id="cardCode">
+
+                    <code class="codeComment">
+                      #!/bin/bash
+                    </code>
+
+                    <code class="codeComment">
+                      #Ejemplo de estructura while
+                    </code>
+
+                    <code class="codeNormal">
+                      contador=1
+                    </code>
+
+                    <code class="codeNormal">
+                      while[$contador -le 5]; do
+                    </code>
+
+                    <code class="codeNormal">
+                      &nbsp;&nbsp;&nbsp;echo "Iteracion $contador"
+                    </code>
+
+                    <code class="codeNormal">
+                      &nbsp;&nbsp;&nbsp;contador=$(( contador + 1 ))
+                    </code>
+
+                    <code class="codeNormal">
+                      done
+                    </code>
+
+                    <code class="codeNormal">
+                      echo "Bucle completado"
+                    </code>
+
+             
+
+                  </div>
+
                   <div class="text-center">
-                    <img class="img-fluid" src="../images/Ejemplo 3 Uso de while.png" style="width: 30%;">
+                    <!--<img class="img-fluid" src="../images/Ejemplo 3 Uso de while.png" style="width: 30%;">-->
                     <p>
                       <b>Ejemplo 3. Uso de while</b>
                     </p>
                   </div>
 
+                  <div class="card" id="cardCode">
+
+                    <code class="codeComment">
+                      #!/bin/bash
+                    </code>
+
+                    <code class="codeComment">
+                      #Ejemplo de estructura for
+                    </code>
+
+                    <code class="codeNormal">
+                      for numero in 1 2 3 4 5; do
+                    </code>
+
+                    <code class="codeNormal">
+                      &nbsp;&nbsp;&nbsp;echo "Número: $numero"
+                    </code>
+
+                    <code class="codeNormal">
+                      done
+                    </code>
+
+                    <code class="codeNormal">
+                      echo "Bucle completado."
+                    </code>
+             
+
+                  </div>
+
                   <div class="text-center">
-                    <img class="img-fluid" src="../images/Ejemplo 4 Uso de for.png" style="width: 30%;">
+                   <!--<img class="img-fluid" src="../images/Ejemplo 4 Uso de for.png" style="width: 30%;">-->
                     <p>
                       <b>Ejemplo 4. Uso de for</b>
                     </p>
                   </div>
 
+                  <div class="card" id="cardCode">
+
+                    <code class="codeComment">
+                      #!/bin/bash
+                    </code>
+
+                    <code class="codeComment">
+                      #Ejemplo de estructura for-in
+                    </code>
+
+                    <code class="codeNormal">
+                      frutas=("manzana" "banana" "naranja" "uva" "pera")
+                    </code>
+
+                    <code class="codeNormal">
+                      for fruta in "${frutas[@]}"; do
+                    </code>
+
+                    <code class="codeNormal">
+                      &nbsp;&nbsp;&nbsp;echo "Me gusta la $fruta"
+                    </code>
+
+                    <code class="codeNormal">
+                      done
+                    </code>
+
+                    <code class="codeNormal">
+                      echo "Bucle completado."
+                    </code>
+             
+
+                  </div>
+
+
                   <div class="text-center">
-                    <img class="img-fluid" src="../images/Ejemplo 5 Uso de for-in.png" style="width: 50%;">
+                    <!--<img class="img-fluid" src="../images/Ejemplo 5 Uso de for-in.png" style="width: 50%;">-->
                     <p>
                       <b>Ejemplo 5. Uso de for-in</b>
                     </p>

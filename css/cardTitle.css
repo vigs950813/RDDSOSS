@@ -62,3 +62,23 @@
 
 
 }
+
+
+/*----------------------------cardCode---------------------------*/
+#cardCode{
+	padding: 10px;
+	background-color: #303030;
+}
+
+#cardCode > code{
+	font-size: 20px;
+}
+
+#cardCode > .codeComment{
+	color: #999999;
+}
+
+#cardCode > .codeNormal{
+	color: #4591EF;
+}
+/*----------------------------cardCode---------------------------*/
