@@ -65,6 +65,7 @@
 
 
 /*----------------------------cardCode---------------------------*/
+
 #cardCode{
 	padding: 10px;
 	background-color: #303030;
@@ -76,9 +77,13 @@
 
 #cardCode > .codeComment{
 	color: #999999;
+	white-space: nowrap;
 }
 
 #cardCode > .codeNormal{
 	color: #4591EF;
+	white-space: nowrap;
 }
+
+
 /*----------------------------cardCode---------------------------*/

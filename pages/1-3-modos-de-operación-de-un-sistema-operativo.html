@@ -425,6 +425,10 @@
                                       Los modos de operación de un sistema operativo <b>se refieren a los distintos niveles de privilegios y control que el sistema otorga a los programas y procesos que se ejecutan en una computadora</b>. Estos modos determinan cómo los programas pueden interactuar con el hardware y acceder a recursos críticos del sistema. A continuación se presentan algunos de los modos de operación de los sitemas operativos.
                                     </p>
 
+                                    <p>
+                                      La gestión efectiva de estos modos de operación es esencial para la seguridad, estabilidad y eficiencia de un sistema operativo, permitiendo un equilibrio entre la ejecución de programas de usuario y la protección de los recursos críticos del sistema.
+                                    </p>  
+
                                                     <!----------------------ACORDEON------------------------>
                                                     <div class="accordion" id="accordionExample">
 
@@ -473,7 +477,7 @@
                                                         <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample" >
                                                           <div class="accordion-body" id="cardBtnConcept">
                                                             <p>
-                                                              Presente en procesadores x86 más modernos, el modo protegido <b>proporciona una mayor protección de memoria y control de acceso en comparación con el modo real</b>. Permite la ejecución de múltiples tareas en un entorno más seguro, donde los programas en modo usuario están aislados entre sí y del kernel. Además, el sistema puede usar paginación y multitarea más eficiente en este modo.
+                                                              Proporciona una mayor protección de memoria y control de acceso en comparación con el modo real, ya que permite la ejecución de múltiples tareas en un entorno más seguro, donde los programas en modo usuario están aislados del kernel, gracias al uso de paginación y multitarea.
                                                             </p>
 
                                                         
@@ -505,7 +509,10 @@
                                                         <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                                                           <div class="accordion-body" id="cardBtnConcept">
                                                             <p>
-                                                              <b>Este modo se encuentra principalmente en sistemas más antiguos</b>, como las computadoras basadas en procesadores x86 antes de la introducción de los modos protegidos. En el modo real, los programas tienen acceso directo a todo el hardware, lo que puede ser peligroso, ya que no hay protección de memoria ni control de acceso, lo que podría llevar a que un programa dañe el sistema.
+                                                              <b>Este modo se encuentra principalmente en sistemas más antiguos</b>, como las computadoras basadas en procesadores x86 en las cuales no existía el modo protegido.
+                                                            </p>
+                                                            <p>
+                                                              En el modo real, <b>los programas tienen acceso directo a todo el hardware, lo que puede ser peligroso</b>, ya que no hay protección de memoria ni control de acceso, lo que podría llevar a que un programa dañe el sistema.
                                                             </p>
 
                                                             
@@ -558,9 +565,7 @@
                                                     </div>
                                                     <!----------------------ACORDEON------------------------>
 
-                                    <p>
-                                      La gestión efectiva de estos modos de operación es esencial para la seguridad, estabilidad y eficiencia de un sistema operativo, permitiendo un equilibrio entre la ejecución de programas de usuario y la protección de los recursos críticos del sistema.
-                                    </p>                        
+                                                          
             
 
                                     
