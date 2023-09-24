@@ -56,7 +56,7 @@
         <h2>Instituto Politécnico Nacional</h2>
         <h3>Escuela Superior de Cómputo</h3>
         <h4>Recurso Didáctico Digital</h4>
-        <h5>Sistemas Operativos</h5>
+        <h5>Unidad 1: Estructura de un sistema operativo</h5>
       </div>
       <div class="column">
         <img
@@ -630,87 +630,81 @@
               <div class="card" id="cardConcept">
                 <div class="card-body" id="cardTextConcept">
                   
-                    <div class="question">
-                        <h2>1. ¿Cuál es la función principal de un sistema operativo?</h2>
-                        <input type="radio" name="q1" value="a"> a) Crear aplicaciones para usuarios. <br>
-                        <input type="radio" name="q1" value="b"> b) Gestionar y controlar los recursos de una computadora. <br>
-                        <input type="radio" name="q1" value="c">  c) Diseñar interfaces gráficas atractivas. <br>
-                        <input type="radio" name="q1" value="d"> d) Proveer servicios de red. <br>
-                        <button onclick="checkAnswer('q1', 'a')">Revisar Respuesta</button>
-                        <p id="feedback-q1"></p>
-                    </div>
-                    <div class="question">
-                        <h2>2. ¿Qué tipos de programas son gestionados por un sistema operativo?</h2>
-                        <input type="radio" name="q2" value="a">a) Solo programas de sistema.<br>
-                        <input type="radio" name="q2" value="b"> b) Solo programas de aplicación. <br>
-                        <input type="radio" name="q2" value="c"> c) Programas de sistema y programas de aplicación. <br>
-                        <input type="radio" name="q2" value="d"> d) Programas de diseño gráfico. <br>
-                        <button onclick="checkAnswer('q2', 'c')">Revisar Respuesta</button>
-                        <p id="feedback-q2"></p>
-                    </div>
-                    <div class="question">
-                        <h2>3. ¿Qué categorías abarcan las funciones clásicas de un sistema operativo? </h2>
-                        <input type="radio" name="q3" value="a"> a) Gestión de recursos, diseño de programas y seguridad.<br>
-                        <input type="radio" name="q3" value="b"> b) Gestión de recursos, ejecución de servicios y administración de usuarios.<br>
-                        <input type="radio" name="q3" value="c"> c) Diseño de interfaces, administración de procesadores y seguridad.<br>
-                        <input type="radio" name="q3" value="d"> d) Administración de tareas, planificación de proyectos y control de dispositivos.<br>
-                        <button onclick="checkAnswer('q3', 'b')">Revisar Respuesta</button>
-                        <p id="feedback-q3"></p>
-                    </div>
-                    <div class="question">
-                        <h2>4. ¿Cuál de los siguientes recursos es considerado un recurso físico manejado por el sistema operativo? </h2>
-                        <input type="radio" name="q4" value="a"> a) Archivos de usuario.<br>
-                        <input type="radio" name="q4" value="b"> b) Redes de comunicación.<br>
-                        <input type="radio" name="q4" value="c"> c) Espacio de almacenamiento.<br>
-                        <input type="radio" name="q4" value="d"> d) Interfaces de usuario. <br>
-                        <button onclick="checkAnswer('q4', 'c')">Revisar Respuesta</button>
-                        <p id="feedback-q4"></p>
-                    </div>
-                    <div class="question">
-                        <h2>5. ¿Qué función del sistema operativo permite a varios programas ejecutarse al mismo tiempo?</h2>
-                        <input type="radio" name="q5" value="a"> a) Aislamiento.<br>
-                        <input type="radio" name="q5" value="b"> b) Abstracción.<br>
-                        <input type="radio" name="q5" value="c"> c) Administración de recursos.<br>
-                        <input type="radio" name="q5" value="d"> d) Ejecución de servicios.<br>
-                        <button onclick="checkAnswer('q5', 'c')">Revisar Respuesta</button>
-                        <p id="feedback-q5"></p>
-                    </div> 
-                    <div class="question">
-                        <h2>6. ¿Qué característica define a un sistema operativo multiusuario?</h2>
-                        <input type="radio" name="q6" value="a"> a) Solo permite un usuario a la vez.<br>
-                        <input type="radio" name="q6" value="b"> b) Permite compartir recursos entre usuarios en red.<br>
-                        <input type="radio" name="q6" value="c"> c) Solo ejecuta una tarea a la vez.<br>
-                        <input type="radio" name="q6" value="d"> d) No permite acceso remoto. <br>
-                        <button onclick="checkAnswer('q6', 'b')">Revisar Respuesta</button>
-                        <p id="feedback-q6"></p>
-                    </div>    
-                    <div class="question">
-                        <h2>7. ¿Cuál de los siguientes sistemas es una aplicación de un sistema operativo en tiempo real?</h2>
-                        <input type="radio" name="q7" value="a"> a) Sistemas de oficina y procesamiento de texto.<br>
-                        <input type="radio" name="q7" value="b">  b) Sistemas de diseño gráfico y modelado 3D. <br>
-                        <input type="radio" name="q7" value="c"> c) Sistemas de control de tráfico aéreo y telecomunicaciones.<br>
-                        <input type="radio" name="q7" value="d"> d) Sistemas de entretenimiento y redes sociales.<br>
-                        <button onclick="checkAnswer('q7', 'c')">Revisar Respuesta</button>
-                        <p id="feedback-q7"></p>
-                    </div>    
-                    <div class="question">
-                        <h2>8. ¿Qué caracteriza a un sistema operativo distribuido? </h2>
-                        <input type="radio" name="q8" value="a"> a) Solo permite ejecutar programas locales.<br>
-                        <input type="radio" name="q8" value="b"> b) Permite la ejecución de un único programa en múltiples computadoras.<br>
-                        <input type="radio" name="q8" value="c"> c) Facilita la distribución de tareas entre procesadores.<br>
-                        <input type="radio" name="q8" value="d"> d) Limita la comunicación entre procesos.<br>
-                        <button onclick="checkAnswer('q8', 'c')">Revisar Respuesta</button>
-                        <p id="feedback-q8"></p>
-                    </div>    
-                    <div class="question">
-                        <h2>9. ¿Cuál es uno de los objetivos principales de un sistema operativo? </h2>
-                        <input type="radio" name="q9" value="a"> a) Permitir que los recursos estén disponibles desde cualquier dispositivo.<br>
-                        <input type="radio" name="q9" value="b"> b) Asegurar que los recursos sean accesibles para todos los procesos y los usuarios de manera libre. <br>
-                        <input type="radio" name="q9" value="c"> c) Administrar, controlar y distribuir recursos de manera organizada. <br>
-                        <input type="radio" name="q9" value="d"> d) Permitir al usuario la interacción directa con el hardware.<br>
-                        <button onclick="checkAnswer('q9', 'c')">Revisar Respuesta</button>
-                        <p id="feedback-q9"></p>
-                    </div>    
+                  <div class="question">
+                    <h2>1. ¿Cuál es la función principal de un sistema operativo?</h2>
+                    <input type="radio" name="q1" value="a"> a) Crear aplicaciones para usuarios. <br>
+                    <input type="radio" name="q1" value="b"> b) Gestionar y controlar los recursos de una computadora. <br>
+                    <input type="radio" name="q1" value="c"> c) Diseñar interfaces gráficas atractivas. <br>
+                    <input type="radio" name="q1" value="d"> d) Proveer servicios de red. <br>
+                    <span id="feedback-q1"></span>
+                </div>
+                <div class="question">
+                    <h2>2. ¿Qué tipos de programas son gestionados por un sistema operativo?</h2>
+                    <input type="radio" name="q2" value="a"> a) Solo programas de sistema.<br>
+                    <input type="radio" name="q2" value="b"> b) Solo programas de aplicación. <br>
+                    <input type="radio" name="q2" value="c"> c) Programas de sistema y programas de aplicación. <br>
+                    <input type="radio" name="q2" value="d"> d) Programas de diseño gráfico. <br>
+                    <span id="feedback-q2"></span>
+                </div>
+                <div class="question">
+                    <h2>3. ¿Qué categorías abarcan las funciones clásicas de un sistema operativo? </h2>
+                    <input type="radio" name="q3" value="a"> a) Gestión de recursos, diseño de programas y seguridad.<br>
+                    <input type="radio" name="q3" value="b"> b) Gestión de recursos, ejecución de servicios y administración de usuarios.<br>
+                    <input type="radio" name="q3" value="c"> c) Diseño de interfaces, administración de procesadores y seguridad.<br>
+                    <input type="radio" name="q3" value="d"> d) Administración de tareas, planificación de proyectos y control de dispositivos.<br>
+                    <span id="feedback-q3"></span>
+                </div>
+                <div class="question">
+                    <h2>4. ¿Cuál de los siguientes recursos es considerado un recurso físico manejado por el sistema operativo? </h2>
+                    <input type="radio" name="q4" value="a"> a) Archivos de usuario.<br>
+                    <input type="radio" name="q4" value="b"> b) Redes de comunicación.<br>
+                    <input type="radio" name="q4" value="c"> c) Espacio de almacenamiento.<br>
+                    <input type="radio" name="q4" value="d"> d) Interfaces de usuario. <br>
+                    <span id="feedback-q4"></span>
+                </div>
+                <div class="question">
+                    <h2>5. ¿Qué función del sistema operativo permite a varios programas ejecutarse al mismo tiempo?</h2>
+                    <input type="radio" name="q5" value="a"> a) Aislamiento.<br>
+                    <input type="radio" name="q5" value="b"> b) Abstracción.<br>
+                    <input type="radio" name="q5" value="c"> c) Administración de recursos.<br>
+                    <input type="radio" name="q5" value="d"> d) Ejecución de servicios.<br>
+                    <span id="feedback-q5"></span>
+                </div> 
+                <div class="question">
+                    <h2>6. ¿Qué característica define a un sistema operativo multiusuario?</h2>
+                    <input type="radio" name="q6" value="a"> a) Solo permite un usuario a la vez.<br>
+                    <input type="radio" name="q6" value="b"> b) Permite compartir recursos entre usuarios en red.<br>
+                    <input type="radio" name="q6" value="c"> c) Solo ejecuta una tarea a la vez.<br>
+                    <input type="radio" name="q6" value="d"> d) No permite acceso remoto. <br>
+                    <span id="feedback-q6"></span>
+                </div>    
+                <div class="question">
+                    <h2>7. ¿Cuál de los siguientes sistemas es una aplicación de un sistema operativo en tiempo real?</h2>
+                    <input type="radio" name="q7" value="a"> a) Sistemas de oficina y procesamiento de texto.<br>
+                    <input type="radio" name="q7" value="b"> b) Sistemas de diseño gráfico y modelado 3D. <br>
+                    <input type="radio" name="q7" value="c"> c) Sistemas de control de tráfico aéreo y telecomunicaciones.<br>
+                    <input type="radio" name="q7" value="d"> d) Sistemas de entretenimiento y redes sociales.<br>
+                    <span id="feedback-q7"></span>
+                </div>    
+                <div class="question">
+                    <h2>8. ¿Qué caracteriza a un sistema operativo distribuido? </h2>
+                    <input type="radio" name="q8" value="a"> a) Solo permite ejecutar programas locales.<br>
+                    <input type="radio" name="q8" value="b"> b) Permite la ejecución de un único programa en múltiples computadoras.<br>
+                    <input type="radio" name="q8" value="c"> c) Facilita la distribución de tareas entre procesadores.<br>
+                    <input type="radio" name="q8" value="d"> d) Limita la comunicación entre procesos.<br>
+                    <span id="feedback-q8"></span>
+                </div>    
+                <div class="question">
+                    <h2>9. ¿Cuál es uno de los objetivos principales de un sistema operativo? </h2>
+                    <input type="radio" name="q9" value="a"> a) Permitir que los recursos estén disponibles desde cualquier dispositivo.<br>
+                    <input type="radio" name="q9" value="b"> b) Asegurar que los recursos sean accesibles para todos los procesos y los usuarios de manera libre. <br>
+                    <input type="radio" name="q9" value="c"> c) Administrar, controlar y distribuir recursos de manera organizada. <br>
+                    <input type="radio" name="q9" value="d"> d) Permitir al usuario la interacción directa con el hardware.<br>
+                    <span id="feedback-q9"></span>
+                </div>  
+                
+                <button onclick="checkAnswers()">Validar respuestas</button>
+                
                  
                 </div>
               </div>
@@ -740,13 +734,14 @@
             </span>
              por 
              <a xmlns:cc="http://creativecommons.org/ns#" href=" https://vigs950813.github.io/RDDSOSS/index.html" property="cc:attributionName" rel="cc:attributionURL">
-              Tanibet Pérez de los Santos Mondragón, Benjamín Cruz Torres e Israel Salas Ramírez.
-             </a> <br>Se distribuye bajo una 
+              
+             </a>Tanibet Pérez de los Santos Mondragón, Benjamín Cruz Torres e Israel Salas Ramírez. <br>Se distribuye bajo una 
             <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">
               Licencia Creative Commons Atribución-NoComercial 4.0 Internacional
             </a>.
+            <br> Basada en una obra en 
             <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">
-              <br>Basada en una obra en https://github.com/vigs950813/RDDSOSS
+              https://github.com/vigs950813/RDDSOSS
             </a>.
       
             <br>Fecha de elaboración: Julio de 2023
