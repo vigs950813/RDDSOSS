@@ -36,6 +36,18 @@
     <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="../css/styles.css" rel="stylesheet" />
+    <style>
+      .sortable-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .sortable-list li {
+            background-color: #f9f9f9;
+            padding: 10px;
+            margin-bottom: 5px;
+            cursor: move;
+        }
+    </style>
   </head>
 
   <!------------------------------------------HEAD------------------------------------------------>
@@ -134,6 +146,13 @@
         >1.1.3 Tipos: mainframe, servidor, multiprocesador, embebidos y tiempo real</a
       >
 
+      <a
+      class="list-group-item list-group-item-action list-group-item-light p-3"
+      id="sidebarBtnAct1"
+      href="actividad-1.html"
+      >Actividad de aprendizaje 1: introducción a los sistemas operativos</a
+    >
+
       <!-- <a
       class="list-group-item list-group-item-action list-group-item-light p-3"
       id="sidebarBtn12ObjComp"
@@ -159,10 +178,13 @@
 
       <a
       class="list-group-item list-group-item-action list-group-item-light p-3"
-      id="sidebarBtnAct1"
-      href="actividad-1.html"
-      >Actividad de aprendizaje 1: introducción a los sistemas operativos</a
+      id="sidebarBtnAct2"
+      href="actividad-2.html"
+      >Actividad de aprendizaje 2: introducción a los sistemas operativos</a
     >
+
+
+   
 
     <!-- <a
     class="list-group-item list-group-item-action list-group-item-light p-3"
@@ -198,6 +220,13 @@
         href="1-3-3-contadores.html"
         >1.3.3 Contadores</a
       >
+
+      <a
+      class="list-group-item list-group-item-action list-group-item-light p-3"
+      id="sidebarBtnAct3"
+      href="actividad-3.html"
+      >Actividad de aprendizaje 3: Modos de operación de un sistema operativo</a
+    >
 <!-- 
       <a
       class="list-group-item list-group-item-action list-group-item-light p-3"
@@ -243,6 +272,13 @@
       >1.4.4 Diversos</a
     >
 
+    <a
+    class="list-group-item list-group-item-action list-group-item-light p-3"
+    id="sidebarBtnAct4"
+    href="actividad-4.html"
+    >Actividad de aprendizaje 4: Llamadas al sistema</a
+  >
+
     <!-- <a
     class="list-group-item list-group-item-action list-group-item-light p-3"
     id="sidebarBtn15ObjComp"
@@ -286,7 +322,13 @@
       >1.5.4 Funciones</a
     >
 
-      
+    <a
+    class="list-group-item list-group-item-action list-group-item-light p-3"
+    id="sidebarBtnAct5"
+    href="actividad-5.html"
+    >Actividad de aprendizaje 5: Fundamentos de shell</a
+  >
+
       
 
       
@@ -620,7 +662,7 @@
           <section>
             <div class="container">
               <div class="card" id="cardBigTitle">
-                <div class="card-body" style="font-size: 35px;">
+                <div class="card-body" style="font-size: 28px;">
                     Actividad de aprendizaje 2: Fundamentos del núcleo o kernel del sistema operativo
                 </div>
               </div>
@@ -630,78 +672,80 @@
               <div class="card" id="cardConcept">
                 <div class="card-body" id="cardTextConcept">
                   
-                    <div class="question">
-                        <h2>1. ¿Cuál es la función principal del kernel del sistema operativo?</h2>
-                        <input type="radio" name="q1" value="a"> a) Administrar aplicaciones. <br>
-                        <input type="radio" name="q1" value="b"> b) Proporcionar una interfaz gráfica. <br>
-                        <input type="radio" name="q1" value="c"> c) Construir un entorno en el que múltiples procesos se puedan ejecutar de manera eficiente y coordinada.<br>
-                        <input type="radio" name="q1" value="d"> d) Realizar tareas de procesamiento de texto. <br>
-                        <button onclick="checkAnswer('q1', 'c')">Revisar Respuesta</button>
-                        <p id="feedback-q1"></p>
-                    </div>
-                    <div class="question">
-                        <h2>2. ¿Cuál de las siguientes NO es una función del kernel?</h2>
-                        <input type="radio" name="q2" value="a">a) Planificación de procesos.<br>
-                        <input type="radio" name="q2" value="b"> b) Soporte de actividades de entrada y salida. <br>
-                        <input type="radio" name="q2" value="c"> c) Manipulación de interrupciones. <br>
-                        <input type="radio" name="q2" value="d"> d) Creación de interfaces de usuario. <br>
-                        <button onclick="checkAnswer('q2', 'd')">Revisar Respuesta</button>
-                        <p id="feedback-q2"></p>
-                    </div>
-                    <div class="question">
-                        <h2>3. ¿Qué tipo de kernel asigna recursos a máquinas virtuales para garantizar la separación y evitar conflictos? </h2>
-                        <input type="radio" name="q3" value="a"> a) Monolítico.<br>
-                        <input type="radio" name="q3" value="b"> b) Microkernel.<br>
-                        <input type="radio" name="q3" value="c"> c) Por capas.<br>
-                        <input type="radio" name="q3" value="d"> d) Exokernel.<br>
-                        <button onclick="checkAnswer('q3', 'd')">Revisar Respuesta</button>
-                        <p id="feedback-q3"></p>
-                    </div>
-                    <div class="question">
-                        <h2>4. ¿Cuál es la principal ventaja que ofrece un microkernel?  </h2>
-                        <input type="radio" name="q4" value="a"> a) Mayor rendimiento.<br>
-                        <input type="radio" name="q4" value="b"> b) Mayor simplicidad.<br>
-                        <input type="radio" name="q4" value="c"> c) Mayor velocidad de ejecución.<br>
-                        <input type="radio" name="q4" value="d"> d) Mayor modularidad y seguridad. <br>
-                        <button onclick="checkAnswer('q4', 'd')">Revisar Respuesta</button>
-                        <p id="feedback-q4"></p>
-                    </div>
-                    <div class="question">
-                        <h2>5. Selecciona el orden de las capas que componen un kernel por capas</h2>
-                        <input type="radio" name="q5" value="a"> a) Administración de memoria, interfaz de usuario, programas de usuario, administración de entrada y salida, administración de procesos, hardware.<br>
-                        <input type="radio" name="q5" value="b"> b) Interfaz de usuario, hardware, administración de memoria, programas de usuario, administración de procesos, administración de entrada y salida.<br>
-                        <input type="radio" name="q5" value="c"> c) Hardware, adminsitración de memoria, administración de procesos, administración de entrada y salida, programas de usuario, interfaz de usuario.<br>
-                        <input type="radio" name="q5" value="d"> d) Programas de usuario, interfaz de uzuario, hardware, administración de memoria, administración de entrada y salida, administración de procesos.<br>
-                        <button onclick="checkAnswer('q5', 'c')">Revisar Respuesta</button>
-                        <p id="feedback-q5"></p>
-                    </div> 
-                    <div class="question">
-                        <h2>6. ¿Qué tipo de kernel permite la virtualización de hardware? </h2>
-                        <input type="radio" name="q6" value="a"> a) Por capas.<br>
-                        <input type="radio" name="q6" value="b"> b) Monolítico.<br>
-                        <input type="radio" name="q6" value="c"> c) Exokernel.<br>
-                        <input type="radio" name="q6" value="d"> d) Máquina virtual. <br>
-                        <button onclick="checkAnswer('q6', 'd')">Revisar Respuesta</button>
-                        <p id="feedback-q6"></p>
-                    </div>    
-                    <div class="question">
-                        <h2>7. ¿Qué función realiza el kernel en la comunicación entre procesos?</h2>
-                        <input type="radio" name="q7" value="a"> a) Administra el hardware de red.<br>
-                        <input type="radio" name="q7" value="b">  b) Facilita la comunicación y sincronización entre procesos.<br>
-                        <input type="radio" name="q7" value="c"> c) Ejecuta los procesos de usuario.<br>
-                        <input type="radio" name="q7" value="d"> d) Controla la interfaz gráfica de usuario.<br>
-                        <button onclick="checkAnswer('q7', 'b')">Revisar Respuesta</button>
-                        <p id="feedback-q7"></p>
-                    </div>    
-                    <div class="question">
-                        <h2>8. ¿Cuál de las siguientes NO es una característica del kernel? </h2>
-                        <input type="radio" name="q8" value="a"> a) Comunicación entre procesos.<br>
-                        <input type="radio" name="q8" value="b"> b) Acceso total a recursos.<br>
-                        <input type="radio" name="q8" value="c"> c) Desarrollo de aplicaciones de usuario .<br>
-                        <input type="radio" name="q8" value="d"> d) Controlador de dispositivos.<br>
-                        <button onclick="checkAnswer('q8', 'c')">Revisar Respuesta</button>
-                        <p id="feedback-q8"></p>
-                    </div>    
+                  <div class="question">
+                    <h2>1. ¿Cuál es la función principal del kernel del sistema operativo?</h2>
+                    <input type="radio" name="q1" value="a"> a) Administrar aplicaciones. <br>
+                    <input type="radio" name="q1" value="b"> b) Proporcionar una interfaz gráfica. <br>
+                    <input type="radio" name="q1" value="c"> c) Construir un entorno en el que múltiples procesos se puedan ejecutar de manera eficiente y coordinada. <br>
+                    <input type="radio" name="q1" value="d"> d) Realizar tareas de procesamiento de texto. <br>
+                    <span id="feedback-q1"></span>
+                </div>
+                <div class="question">
+                    <h2>2. ¿Cuál de las siguientes NO es una función del kernel? </h2>
+                    <input type="radio" name="q2" value="a"> a) Planificación de procesos.<br>
+                    <input type="radio" name="q2" value="b"> b) Soporte de actividades de entrada y salida. <br>
+                    <input type="radio" name="q2" value="c"> c) Manipulación de interrupciones. <br>
+                    <input type="radio" name="q2" value="d"> d) Creación de interfaces de usuario. <br>
+                    <span id="feedback-q2"></span>
+                </div>
+                <div class="question">
+                    <h2>3. ¿Qué tipo de kernel asigna recursos a máquinas virtuales para garantizar la separación y evitar conflictos? </h2>
+                    <input type="radio" name="q3" value="a"> a) Monolítico.<br>
+                    <input type="radio" name="q3" value="b"> b) Microkernel.<br>
+                    <input type="radio" name="q3" value="c"> c) Por capas.<br>
+                    <input type="radio" name="q3" value="d"> d) Exokernel.<br>
+                    <span id="feedback-q3"></span>
+                </div>
+                <div class="question">
+                    <h2>4. ¿Cuál es la principal ventaja que ofrece un microkernel? </h2>
+                    <input type="radio" name="q4" value="a"> a) Mayor rendimiento.<br>
+                    <input type="radio" name="q4" value="b"> b) Mayor simplicidad.<br>
+                    <input type="radio" name="q4" value="c"> c) Mayor velocidad de ejecución.<br>
+                    <input type="radio" name="q4" value="d"> d) Mayor modularidad y seguridad. <br>
+                    <span id="feedback-q4"></span>
+                </div>
+                <div class="question">
+                    <h2>5. ¿Cuál de las siguientes NO es una característica del kernel?</h2>
+                    <input type="radio" name="q5" value="a"> a) Comunicación entre procesos.<br>
+                    <input type="radio" name="q5" value="b"> b) Acceso total a recursos.<br>
+                    <input type="radio" name="q5" value="c"> c) Desarrollo de aplicaciones de usuario.<br>
+                    <input type="radio" name="q5" value="d"> d) Controlador de dispositivos.<br>
+                    <span id="feedback-q5"></span>
+                </div> 
+                <div class="question">
+                    <h2>6. Acomoda en orden las capas que componen un kernel por capas</h2>
+                    <ul id="sortable-options" class="sortable-list">
+                        <li data-value="a">Hardware</li>
+                        <li data-value="b">Administración de memoria </li>
+                        <li data-value="c">Interfaz de usuario</li>
+                        <li data-value="d">Programas de usuario</li>
+                        <li data-value="e">Administración de entrada y salida</li>
+                        <li data-value="f">Administración de procesos</li>
+                    </ul>
+                    <span id="feedback-q6"></span>
+                </div>
+                <button onclick="checkSorting()">Verificar orden</button>
+            
+                <div class="question">
+                    <h2>7. ¿Qué tipo de kernel permite la virtualización de hardware? </h2>
+                    <input type="radio" name="q7" value="a"> a) Por capas.<br>
+                    <input type="radio" name="q7" value="b"> b) Monolítico. <br>
+                    <input type="radio" name="q7" value="c"> c) Exokernel.<br>
+                    <input type="radio" name="q7" value="d"> d) Máquina virtual.<br>
+                    <span id="feedback-q7"></span>
+                </div>    
+                <div class="question">
+                    <h2>8. ¿Qué función realiza el kernel en la comunicación entre procesos? </h2>
+                    <input type="radio" name="q8" value="a"> a) Administra el hardware de red.<br>
+                    <input type="radio" name="q8" value="b"> b) Facilita la comunicación y sincronización entre procesos.<br>
+                    <input type="radio" name="q8" value="c"> c) Ejecuta los procesos de usuario .<br>
+                    <input type="radio" name="q8" value="d"> d) Controla la interfaz gráfica de usuario.<br>
+                    <span id="feedback-q8"></span>
+                </div>
+                
+                <button onclick="checkAnswers()">Validar respuestas</button>
+
+            
                     
                 </div>
               </div>
@@ -753,13 +797,19 @@
 
     <!--------------------------------SCRIPTS------------------------------------------------->
 
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <script src="../js/scripts.js"></script>
     <!-- Checked Answers Actividad 1-->
     <script src="../js/actividad2.js"></script>
+    
 
+    
     <!--------------------------------SCRIPTS------------------------------------------------->
   </body>
   <!------------------------------------------BODY------------------------------------------------>
