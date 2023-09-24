@@ -247,6 +247,117 @@
 }
 /*-----------------------Act1Res-------------------------------*/
 
+
+
+/*-----------------------Act2Res-------------------------------*/
+#sidebarBtnAct2{
+
+	color: white;
+	font-weight: bold;
+	background-color: #6FA6CA;
+	transition: background-color 0.15s linear 0s;
+
+}
+
+
+#sidebarBtnAct2:hover{
+
+	background-color: #7B8992;
+
+}
+
+/*-----------------------Act2Res-------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------------Act3Res-------------------------------*/
+#sidebarBtnAct3{
+
+	color: white;
+	font-weight: bold;
+	background-color: #6FA6CA;
+	transition: background-color 0.15s linear 0s;
+
+}
+
+
+#sidebarBtnAct3:hover{
+
+	background-color: #7B8992;
+
+}
+/*-----------------------Act3Res-------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------------Act4Res-------------------------------*/
+#sidebarBtnAct4{
+
+	color: white;
+	font-weight: bold;
+	background-color: #6FA6CA;
+	transition: background-color 0.15s linear 0s;
+
+}
+
+
+#sidebarBtnAct4:hover{
+
+	background-color: #7B8992;
+
+}
+/*-----------------------Act4Res-------------------------------*/
+
+
+
+
+
+
+
+
+
+
+/*-----------------------Act5Res-------------------------------*/
+#sidebarBtnAct5{
+
+	color: white;
+	font-weight: bold;
+	background-color: #6FA6CA;
+	transition: background-color 0.15s linear 0s;
+
+}
+
+
+#sidebarBtnAct5:hover{
+
+	background-color: #7B8992;
+
+}
+/*-----------------------Act5Res-------------------------------*/
+
+
+
+
 /*-----------------------1.3 ObjComp-------------------------------*/
 #sidebarBtn13ObjComp{
 

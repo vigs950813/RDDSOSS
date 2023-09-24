@@ -1,3 +1,4 @@
+
 /*-----------------------FONDOSIDEBAR-------------------------------*/
 #sidebar-wrapper{
 	--bs-bg-opacity: 0.15;
@@ -43,7 +44,6 @@
 
 	font-weight: bold;
 	background-color: #7B8992;
-	
 
 }
 
@@ -71,7 +71,6 @@
 
 /*-----------------------PROPOSITO UA-------------------------------*/
 
-
 /*-----------------------1.1 ObjComp-------------------------------*/
 #sidebarBtn11ObjComp{
 
@@ -89,9 +88,6 @@
 
 }
 /*-----------------------1.1 ObjComp-------------------------------*/
-
-
-
 
 
 /*-----------------------U11-------------------------------*/
@@ -116,21 +112,12 @@
 
 
 
-
-
-
-
-
-
-
-
-
 /*-----------------------U111-------------------------------*/
 #sidebarBtnU111{
 
 	color: white;
 	font-weight: bold;
-	background-color: #6FA6CA;	
+	background-color: #6FA6CA;
 	transition: background-color 0.15s linear 0s;
 
 }
@@ -139,7 +126,6 @@
 #sidebarBtnU111:hover{
 
 	background-color: #7B8992;
-	
 
 }
 
@@ -170,7 +156,7 @@
 
 	color: white;
 	font-weight: bold;
-    background-color: #6FA6CA;
+	background-color: #6FA6CA;
 	transition: background-color 0.15s linear 0s;
 
 }
@@ -178,7 +164,7 @@
 
 #sidebarBtnU113:hover{
 
-	background-color: #7B8992;	
+	background-color: #7B8992;
 
 }
 /*-----------------------U113-------------------------------*/
@@ -203,13 +189,12 @@
 }
 /*-----------------------1.2 ObjComp-------------------------------*/
 
-
 /*-----------------------U12-------------------------------*/
 #sidebarBtnU12{
 
 	color: white;
 	font-weight: bold;
-    background-color: #6FA6CA;	
+	background-color: #6FA6CA;
 	transition: background-color 0.15s linear 0s;
 
 }
@@ -227,7 +212,7 @@
 
 	color: white;
 	font-weight: bold;
-    background-color: #7B8992;
+	background-color: #6FA6CA;
 	transition: background-color 0.15s linear 0s;
 
 }
@@ -235,7 +220,7 @@
 
 #sidebarBtnU121:hover{
 
-    background-color: #6FA6CA;
+	background-color: #7B8992;
 
 }
 /*-----------------------U1121-------------------------------*/
@@ -274,7 +259,8 @@
 
 #sidebarBtnAct2:hover{
 
-	background-color: #7B8992;
+    background-color: #7B8992;
+	
 
 }
 
@@ -296,7 +282,7 @@
 
 	color: white;
 	font-weight: bold;
-	background-color: #6FA6CA;
+	background-color: #7B8992;
 	transition: background-color 0.15s linear 0s;
 
 }
@@ -304,7 +290,7 @@
 
 #sidebarBtnAct3:hover{
 
-	background-color: #7B8992;
+	background-color: #6FA6CA;
 
 }
 /*-----------------------Act3Res-------------------------------*/
@@ -366,6 +352,7 @@
 
 }
 /*-----------------------Act5Res-------------------------------*/
+
 
 
 
@@ -461,6 +448,8 @@
 }
 /*-----------------------U1133-------------------------------*/
 
+
+
 /*-----------------------1.4 ObjComp-------------------------------*/
 #sidebarBtn14ObjComp{
 
@@ -478,6 +467,7 @@
 
 }
 /*-----------------------1.4 ObjComp-------------------------------*/
+
 
 /*-----------------------U14-------------------------------*/
 #sidebarBtnU14{
@@ -680,14 +670,6 @@
 
 }
 /*-----------------------U154-------------------------------*/
-
-
-
-
-
-
-
-
 
 
 
