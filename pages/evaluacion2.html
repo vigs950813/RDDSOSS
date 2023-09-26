@@ -10,7 +10,7 @@
     />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>1.5 Shell</title>
+    <title>Evaluación</title>
 
     <!--BOOTSTRAP CSS-->
     <link
@@ -26,7 +26,7 @@
     <link rel="stylesheet" type="text/css" href="../css/hoverU1.css" />
     <link rel="stylesheet" type="text/css" href="../css/navbar.css" />
     <link rel="stylesheet" type="text/css" href="../css/wrapper.css" />
-    <link rel="stylesheet" type="text/css" href="../css/sidebarItem_u1_19.css" />
+    <link rel="stylesheet" type="text/css" href="../css/sidebarItem_u1_evaluacion.css" />
     <link rel="stylesheet" type="text/css" href="../css/accordionBtn.css" />
     <link rel="stylesheet" type="text/css" href="../css/cardTitle.css" />
     <link rel="stylesheet" type="text/css" href="../css/carrouselBtn.css" />
@@ -172,7 +172,7 @@
     >
 
 
-     
+    
 
     <!-- <a
     class="list-group-item list-group-item-action list-group-item-light p-3"
@@ -213,7 +213,7 @@
       class="list-group-item list-group-item-action list-group-item-light p-3"
       id="sidebarBtnAct3"
       href="actividad-3.html"
-      >Actividad de aprendizaje 3: Modos de operación de un sistema operativo</a
+      >Actividad de aprendizaje 3: Llamadas al sistema</a
     >
 <!-- 
       <a
@@ -481,12 +481,50 @@
 
         <!--------------------------------CONTENIDO PRINCIPAL-------------------->
         <div class="container-fluid">
-          <!--------------------------------SECTION-------------------->
-          <section>
+
+         
+
+                      <!--------------------------------SECTION-------------------->
+
+                      <section>
+
+                        <div class="container">
+                          <div class="card" id="cardBigTitle">
+                            <div class="card-body" style="font-size: 35px;">
+                              Instrucciones
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="container">
+                          <div class="card" id="cardConcept">
+                            <div class="card-body" id="cardTextConcept">
+                              
+                              <p>
+                                Proceda a responder el <b>cuestionario de opción múltiple que consta de 20 preguntas en total</b>.
+                              </p>
+
+                              <p>
+                                Cada pregunta está acompañada de un <b>botón para verificar si su respuesta es correcta o no</b>.
+                              </p>
+
+                              <p>
+                                Es importante destacar que <b>este cuestionario no tiene validez tanto en la calificación final como en la de cada parcial</b>; su único propósito es servir como una herramienta de prueba para reforzar el aprendizaje que ha desarrollado hasta este punto. Utilice esta oportunidad para evaluar su comprensión y conocimientos, y no dude en utilizar los botones de revisión para obtener retroalimentación inmediata sobre sus respuestas.
+                              </p>
+                              
+                            </div>
+
+
+                          </div>
+
+                        </div>
+
+                      </section>
+          <!-- <section>
             <div class="container">
-              <div class="card" id="cardBigTitle">
-                <div class="card-body">
-                  <h1>1.5 Shell</h1>
+              
+                <div class="card-body" style="font-size: 35px;">
+                    Resumen
                 </div>
               </div>
             </div>
@@ -494,54 +532,126 @@
             <div class="container">
               <div class="card" id="cardConcept">
                 <div class="card-body" id="cardTextConcept">
-
-                  <p>
-                    <b>Objetivos</b>
-                  </p>
-
-                  <p>
-                    Este tema te ayudará a comprender la funcionalidad que tiene el shell como el mediador entre el usuario y el núcleo del sistema operativo, así mismo identificarás argumentos, líneas de comando, estructuras de control cadenas y funciones que son parte medular para que los procesos que generé el sistema operativo se lleven a cabo.
-                  </p>
-
-                  <p>
-                    <b
-                      >El shell o intérprete de órdenes es la interfaz primaria
-                      entre el usuario y el sistema operativo</b
-                    >
-                    en modo carácter.
-                    <b
-                      >Un shell es un programa que lee una orden (o un fichero
-                      con múltiples órdenes) introducida por un usuario</b
-                    >, la analiza y la ejecuta. Para ello realiza las llamadas
-                    al sistema que son necesarias para ejecutar una orden, como
-                    se observa en la siguiente imagen
-                  </p>
-
-                  <div class="text-center">
-                    <img
-                      class="img-fluid"
-                      src="../images/Fig  21 Esquema básico de los componentes de un sistema operativo.png"
-                      style="width: 65%;"
-                    />
                     <p>
-                      <b
-                        >Fig 21. Esquema básico de los componentes de un sistema
-                        operativo.</b
-                      >
+                        <b>Aspectos Fundamentales de los Sistemas Operativos</b>
                     </p>
-                  </div>
+                    <p>
+                        En el mundo de la informática, todos los componentes de una computadora son esenciales para su funcionamiento, pero el encargado principal de garantizar un funcionamiento fluido es el sistema operativo.
+                    </p>
+                 
+                    <p>
+                        <b>Objetivos de un Sistema Operativo</b>
+                    </p>
+                    <p>
+                        Se dividen en dos categorías principales:
+                    </p>
+                    <p>
+                        <ul>
+                            <li>
+                                <b>a) Programas del Sistema</b>: Estos programas controlan el funcionamiento general de la computadora.
+                                
+                            </li>
+                            <li>
+                                <b>b) Programas de Aplicación</b>: Son programas diseñados para resolver problemas específicos que los usuarios pueden tener.
+                            </li>
+                        </ul>
+                    </p>    
+                    <p>
+                        <b>Funciones Clásicas de un Sistema Operativo</b>
+                    </p>
+                    <p>
+                        Se agrupan en tres categorías:
+                        <ul>
+                            <li>
+                                <b>1. Gestión de Recursos de la Computadora</b>: El sistema operativo asigna recursos como el procesador, la memoria y los dispositivos periféricos a los programas en ejecución. Debe mantener un registro de los recursos utilizados y disponibles, resolviendo problemas cuando varios programas compiten por los mismos recursos.
+                            </li>
+                            <li>
+                                <b>2. Ejecución de Servicios para Programas</b>: El sistema operativo ejecuta los comandos e instrucciones de los usuarios y asegura que se realicen de manera eficiente y sin problemas.
+                            </li>
+                            <li>
+                                <b>3. Abstracción y Administración</b>: El sistema operativo actúa como intermediario entre los usuarios y el hardware. Proporciona abstracciones que facilitan a los programadores y usuarios interactuar con la computadora sin preocuparse por los detalles técnicos.
+                            </li>
+                        </ul>
+                    </p>
+                    <p>
+                        <b>Características Clave de un Sistema Operativo</b>
+                    </p>
+                    <p>
+                        <ul>
+                            <li>
+                                <b>Facilidad de Uso</b>: El sistema operativo hace que la computadora sea fácil de usar al proporcionar interfaces amigables.
+                            </li>
+                            <li>
+                                <b>Eficiencia</b>: Optimiza el uso de recursos, garantizando que la computadora funcione de manera eficiente.
+                            </li>
+                            <li>
+                                <b>Capacidad de Evolución</b>: : Puede adaptarse y mejorar con el tiempo sin afectar su funcionalidad actual.
+                            </li>
+                        </ul>
+                    </p>
+                    <p>
+                        <b>Objetivo Principal del Sistema Operativo</b>
+                    </p>                    
+                    <p>
+                        El objetivo fundamental del sistema operativo es administrar, controlar y distribuir los recursos entre los usuarios y el sistema de manera organizada, teniendo en cuenta la prioridad de cada tarea.
+                    </p>
+                    <p>
+                        <b>Evolución de los Sistemas Operativos</b>
+                    </p>
+                    <p>
+                        A lo largo del tiempo, los sistemas operativos han evolucionado enormemente para adaptarse a las crecientes demandas de la tecnología. Estas evoluciones han permitido mejorar la eficiencia, la facilidad de uso y la capacidad de administración.
+                    </p>
+                    <p>
+                        <b>Tipos de Sistemas Operativos</b>
+                    </p>
+                    <p>
+                        Hay varios tipos de sistemas operativos, cada uno con un propósito específico:
+                        <ul>
+                            <li>
+                                <b>Mainframe</b>: Diseñados para manejar múltiples tareas simultáneamente, como procesamiento por lotes y tiempo compartido.
+                            </li>
+                            <li>
+                                <b>Servidor</b>: Se enfocan en administrar recursos para ofrecer servicios a otros dispositivos en una red.
+                            </li>
+                            <li>
+                                <b>Multiprocesador</b>: Diseñados para funcionar en sistemas con múltiples procesadores trabajando juntos.
+                            </li>
+                            <li>
+                                <b>Embebidos</b>: Integrados en dispositivos y máquinas, como electrodomésticos y automóviles.
+                            </li>
+                            <li>
+                                <b>Tiempo Real</b>: Priorizan el procesamiento inmediato de eventos, utilizados en aplicaciones críticas como control de tráfico aéreo y sistemas de producción.
+                            </li>
+                        </ul>
+                    </p>
+                    <p>
+                        <b>Conclusión</b>
+                    </p>
+                    <p>
+                        El sistema operativo es como el director de una orquesta, coordina todas las partes y recursos para que funcionen en armonía. Sus objetivos principales incluyen facilitar la interacción entre usuarios y hardware, administrar recursos eficientemente y evolucionar con las demandas tecnológicas en constante cambio. Los diferentes tipos de sistemas operativos se adaptan a diversas necesidades, desde servidores hasta dispositivos embebidos y sistemas en tiempo real.
+                    </p>
+                    
+                    <div class="text-center">
+                        <p><b>SISTEMAS OPERATIVOS | ¿Que son?¿Como Funcionan? | TIPOS de SISTEMAS OPERATIVOS | Explicación Facil</b></p>
+                        <iframe width="1072" height="603" src="https://www.youtube.com/embed/fsuroRYmagw" title="✔🔝SISTEMAS OPERATIVOS | ¿Que son?¿Como Funcionan? | TIPOS de SISTEMAS OPERATIVOS | Explicación Facil" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+
+                    
+ 
                 </div>
               </div>
             </div>
-          </section>
+          </section> -->
           <!--------------------------------SECTION-------------------->
+
+
 
           <!--------------------------------SECTION-------------------->
           <section>
             <div class="container">
               <div class="card" id="cardBigTitle">
-                <div class="card-body">
-                  <h1>Características de Shell</h1>
+                <div class="card-body" style="font-size: 35px;">
+                    Evaluación
                 </div>
               </div>
             </div>
@@ -549,212 +659,158 @@
             <div class="container">
               <div class="card" id="cardConcept">
                 <div class="card-body" id="cardTextConcept">
-                  <p>
-                    El shell <b>posee una serie de características</b> entre las
-                    que destacan:
-                  </p>
-
-                  <!----------------------ACORDEON------------------------>
-                  <div class="accordion" id="accordionExample">
-                    <!----------------------ITEM1------------------------>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="headingOne">
-                        <button
-                          class="accordion-button"
-                          id="accordion-btn2"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#collapseOne"
-                          aria-expanded="true"
-                          aria-controls="collapseOne"
-                        >
-                          Órdenes internas y externas
-                        </button>
-                      </h2>
-                      <div
-                        id="collapseOne"
-                        class="accordion-collapse collapse show"
-                        aria-labelledby="headingOne"
-                        data-bs-parent="#accordionExample"
-                      >
-                        <div class="accordion-body" id="cardBtnConcept">
-                          <p>
-                            Las órdenes internas están implementadas en el
-                            propio shell.
-                          </p>
-                        </div>
-                      </div>
+                    <div class="question">
+                        <h2>1. La capa de intérprete de mandatos (instrucciones) o Shell es aquella que se encarga de: Forma de una interfaz de programación o API y donde el sistema operativo puede disponer de una máquina virtual.</h2>
+                        <input type="radio" name="q1" value="a"> a) Verdadero <br>
+                        <input type="radio" name="q1" value="b"> b) Falso <br>
+                        <span id="feedback-q1"></span>
+                        <!-- <h2>1. ¿Qué es un shell en sistemas Unix y Linux?</h2>
+                        <input type="radio" name="q1" value="a"> a) Un programa de edición de texto. <br>
+                        <input type="radio" name="q1" value="b"> b) Una interfaz entre el usuario y el sistema operativo. <br>
+                        <input type="radio" name="q1" value="c"> c) Una herramienta de procesamiento de imágenes. <br>
+                        <input type="radio" name="q1" value="d"> d) Un lenguaje de programación de bajo nivel. <br>
+                        <span id="feedback-q1"></span> -->
                     </div>
-                    <!----------------------ITEM1------------------------>
-
-                    <!----------------------ITEM2------------------------>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="headingTwo">
-                        <button
-                          class="accordion-button collapsed"
-                          id="accordion-btn1"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#collapseTwo"
-                          aria-expanded="false"
-                          aria-controls="collapseTwo"
-                        >
-                          Redirecciones
-                        </button>
-                      </h2>
-                      <div
-                        id="collapseTwo"
-                        class="accordion-collapse collapse"
-                        aria-labelledby="headingTwo"
-                        data-bs-parent="#accordionExample"
-                      >
-                        <div class="accordion-body" id="cardBtnConcept">
-                          <p>
-                            Se permite redirigir la entrada o salida estándar a
-                            un fichero.
-                          </p>
-                        </div>
-                      </div>
+                    <div class="question">
+                        <h2>2. La capa de gestión de recursos kernel o núcleo que es la que se encarga de: Dialogar en forma interactiva con el usuario, donde el Shell recibe las instrucciones u órdenes del usuario, los interpreta y si son instrucciones entendibles las ejecuta.</h2>
+                        <input type="radio" name="q2" value="a"> a) Falso<br>
+                        <input type="radio" name="q2" value="b"> b) Verdadero <br>
+                        <span id="feedback-q2"></span>
                     </div>
-                    <!----------------------ITEM2------------------------>
-
-                    <!----------------------ITEM3------------------------>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="headingThree">
-                        <button
-                          class="accordion-button collapsed"
-                          id="accordion-btn2"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#collapseThree"
-                          aria-expanded="false"
-                          aria-controls="collapseThree"
-                        >
-                          Tuberías
-                        </button>
-                      </h2>
-                      <div
-                        id="collapseThree"
-                        class="accordion-collapse collapse"
-                        aria-labelledby="headingThree"
-                        data-bs-parent="#accordionExample"
-                      >
-                        <div class="accordion-body" id="cardBtnConcept">
-                          <p>
-                            Conocidos como pipes en inglés, permiten encadenar
-                            la ejecución de varias órdenes.
-                          </p>
-                        </div>
-                      </div>
+                    <div class="question">
+                        <h2>3.- ¿Cuáles son los modos de operación de un sistema operativo?. </h2>
+                        <input type="radio" name="q3" value="a"> a) Usuario sin protección, protegido y real<br>
+                        <input type="radio" name="q3" value="b"> b) Ejecución, manejador de archivos y gestión de memoria<br>
+                       
+                        <span id="feedback-q3"></span>
                     </div>
-                    <!----------------------ITEM3------------------------>
-
-                    <!----------------------ITEM4------------------------>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="headingFour">
-                        <button
-                          class="accordion-button collapsed"
-                          id="accordion-btn1"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#collapseFour"
-                          aria-expanded="false"
-                          aria-controls="collapseFour"
-                        >
-                          Ejecución en segundo plano
-                        </button>
-                      </h2>
-                      <div
-                        id="collapseFour"
-                        class="accordion-collapse collapse"
-                        aria-labelledby="headingFour"
-                        data-bs-parent="#accordionExample"
-                      >
-                        <div class="accordion-body" id="cardBtnConcept">
-                          <p>
-                            Permite ejecutar una orden sin que el shell se quede
-                            bloqueado esperando su terminación.
-                          </p>
-                        </div>
-                      </div>
+                    <div class="question">
+                        <h2>4.- La capa de servicio o llamadas al sistema ofrece a los programas ss la que se encarga de gestionar los recursos de hardware en el sistema.</h2>
+                        <input type="radio" name="q4" value="a"> a) Verdadero<br>
+                        <input type="radio" name="q4" value="b"> b) Falso<br>
+                        <span id="feedback-q4"></span>
                     </div>
-                    <!----------------------ITEM4------------------------>
-
-                    <!----------------------ITEM4------------------------>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="headingFive">
-                        <button
-                          class="accordion-button collapsed"
-                          id="accordion-btn2"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#collapseFive"
-                          aria-expanded="false"
-                          aria-controls="collapseFive"
-                        >
-                          Variables
-                        </button>
-                      </h2>
-                      <div
-                        id="collapseFive"
-                        class="accordion-collapse collapse"
-                        aria-labelledby="headingFive"
-                        data-bs-parent="#accordionExample"
-                      >
-                        <div class="accordion-body" id="cardBtnConcept">
-                          <p>
-                            El shell permite definir y manejar variables de
-                            entorno ($PATH, $HOME, etc).
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <!----------------------ITEM4------------------------>
-
-                    <!----------------------ITEM4------------------------>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="headingSix">
-                        <button
-                          class="accordion-button collapsed"
-                          id="accordion-btn1"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#collapseSix"
-                          aria-expanded="false"
-                          aria-controls="collapseSix"
-                        >
-                          Control de flujo
-                        </button>
-                      </h2>
-                      <div
-                        id="collapseSix"
-                        class="accordion-collapse collapse"
-                        aria-labelledby="headingSix"
-                        data-bs-parent="#accordionExample"
-                      >
-                        <div class="accordion-body" id="cardBtnConcept">
-                          <p>
-                            Los usuarios pueden programar su propio shell dotándolo de
-                            mandatos más o menos complejos en función de sus
-                            necesidades.
-                          </p>
-                          <p>
-                            El shell permite su programación con sentencias de
-                            control de flujo.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <!----------------------ITEM4------------------------>
-                  </div>
-                  <!----------------------ACORDEON------------------------>
-
+                    <div class="question">
+                        <h2>5.- Los recursos que son manejados por el sistema operativo son: Físicos (Procesador, memoria principal y los periféricos) y Lógicos (Archivos y puertos de comunicación).</h2>
+                        <input type="radio" name="q5" value="a"> a) Verdadero<br>
+                        <input type="radio" name="q5" value="b"> b) Falso<br>
                  
+                        <span id="feedback-q5"></span>
+                    </div> 
+                    <div class="question">
+                        <h2>6. El sistema operativo debe de garantizar la protección de la información y confidencialización del usuario para que nadie interfiera con el trabajo de este.</h2>
+                        <input type="radio" name="q6" value="a"> a) Verdadero<br>
+                        <input type="radio" name="q6" value="b"> b) Falso<br>
+                       
+                        <span id="feedback-q6"></span>
+                    </div>    
+                    <div class="question">
+                        <h2>7. Cuales son las funciones de los contadores en el sistema operativo.</h2>
+                        <input type="radio" name="q7" value="a"> a) Política de prioridades, identificación de módulos, reconocimiento de interrupción<br>
+                        <input type="radio" name="q7" value="b"> b) Incremento de valor en tabla de procesos, detección de pulsos, manejo de instrucciones<br>
+                       
+                        <span id="feedback-q7"></span>
+                    </div>    
+                    <div class="question">
+                        <h2>8. La memoria permite medir la cantidad de recursos que durante su ejecución utiliza cada programa (monitoreo de aplicaciones).</h2>
+                        <input type="radio" name="q8" value="a"> a) Falso<br>
+                        <input type="radio" name="q8" value="b"> b) Verdadero<br>
+                        <span id="feedback-q8"></span>
+                    </div>    
+                    <div class="question">
+                        <h2>9. El sistema operativo ofrece a los programas un conjunto de servicios o conocidos como llamadas al sistema y manipulación de archivos.</h2>
+                        <input type="radio" name="q9" value="a"> a) Falso<br>
+                        <input type="radio" name="q9" value="b"> b) Verdadero  <br>
+                        
+                        <span id="feedback-q9"></span>
+                    </div>  
+                    <div class="question">
+                        <h2>10. El procesador se encarga de realizar la ejecución de un programa, en donde su función principal es la de crear, ejecutar y destruir procesos.</h2>
+                        <input type="radio" name="q10" value="a"> a) Falso<br>
+                        <input type="radio" name="q10" value="b"> b) Verdadero  <br>
+                        
+                        <span id="feedback-q10"></span>
+                    </div>  
+                    <div class="question">
+                        <h2>11. Los métodos que utiliza el sistema operativo para administrar las operaciones de E/S son.</h2>
+                        <input type="radio" name="q11" value="a"> a) Interrupciones y polling<br>
+                        <input type="radio" name="q11" value="b"> b) Detección de módulos E/s, redirecciones y control de flujo  <br>
+                        
+                        <span id="feedback-q11"></span>
+                    </div>  
+                    <div class="question">
+                        <h2>12. Los sistemas operativos monousuarios son aquellos que están conformados por máquina como conjunto procesadores que comparten el acceso a una memoria principal común.</h2>
+                        <input type="radio" name="q12" value="a"> a) Falso<br>
+                        <input type="radio" name="q12" value="b"> b) Verdadero<br>
+                        
+                        <span id="feedback-q12"></span>
+                    </div>  
+                    <div class="question">
+                        <h2>13. Los sistemas operativos embebidos son útiles en aplicaciones de mediana a gran escala con una mayor cantidad de tareas a planificar.</h2>
+                        <input type="radio" name="q13" value="a"> a) Falso<br>
+                        <input type="radio" name="q13" value="b"> b) Verdadero<br>
+                        
+                        <span id="feedback-q13"></span>
+                    </div>  
+                    <div class="question">
+                        <h2>14. Todos los sistemas operativos de tiempo real son embebidos.</h2>
+                        <input type="radio" name="q14" value="a"> a) Falso<br>
+                        <input type="radio" name="q14" value="b"> b) Verdadero<br>
+                        
+                        <span id="feedback-q14"></span>
+                    </div>  
+                    <div class="question">
+                        <h2>15. Un sistema operativo de tiempo real es un programa que presenta: Planifica la ejecución de tareas teniendo en cuenta restricciones de tiempo y administra los recursos del sistema.</h2>
+                        <input type="radio" name="q15" value="a"> a) Falso<br>
+                        <input type="radio" name="q15" value="b"> b) Verdadero<br>
+                        
+                        <span id="feedback-q15"></span>
+                    </div>  
+                    <div class="question">
+                        <h2>16. Las peticiones se procesan de forma estructurada en las siguientes capas: Manejadores de interrupción y manejadores de dispositivos o drivers.</h2>
+                        <input type="radio" name="q16" value="a"> a) Falso<br>
+                        <input type="radio" name="q16" value="b"> b) Verdadero<br>
+                        
+                        <span id="feedback-q16"></span>
+                    </div>  
+                    <div class="question">
+                        <h2>17. Los archivos ofrecen un nivel de abstracción mayor que el de las órdenes de E/S, permitiendo operaciones tales como creación, borrado, renombrado, apertura, escritura y lectura de archivos.</h2>
+                        <input type="radio" name="q17" value="a"> a) Falso<br>
+                        <input type="radio" name="q17" value="b"> b) Verdadero<br>
+                        
+                        <span id="feedback-q17"></span>
+                    </div> 
+                    <div class="question">
+                        <h2>18. Los archivos ofrecen un nivel de abstracción mayor que el de las órdenes de E/S, permitiendo operaciones tales como creación, borrado, renombrado, apertura, escritura y lectura de archivos.</h2>
+                        <input type="radio" name="q18" value="a"> a) Falso<br>
+                        <input type="radio" name="q18" value="b"> b) Verdadero<br>
+                        
+                        <span id="feedback-q18"></span>
+                    </div> 
+                    <div class="question">
+                        <h2>19. Detección y tratamiento de errores se encarga de tratar todas las condiciones de error que detecte el hardware: Errores en las operaciones de E/S y Errores de paridad en los accesos a memoria o en los buses.</h2>
+                        <input type="radio" name="q19" value="a"> a) Verdadero<br>
+                        <input type="radio" name="q19" value="b"> b) Falso<br>
+                        
+                        <span id="feedback-q19"></span>
+                    </div> 
+                    <div class="question">
+                        <h2>20. Las cuatro funciones del kernel pueden derivarse de sus componentes.</h2>
+                        <input type="radio" name="q20" value="a"> a) Gestión de procesos, memoria, E/S y sistema de archivos<br>
+                        <input type="radio" name="q20" value="b"> b) Administración, comunicación, controlar y acceder a dispositivos de E/S<br>
+                        
+                        <span id="feedback-q20"></span>
+                    </div> 
+                    
+                    <button onclick="checkAnswers()">Validar respuestas</button>
+                     
                 </div>
               </div>
             </div>
           </section>
           <!--------------------------------SECTION-------------------->
+
+
         </div>
         <!--------------------------------CONTENIDO PRINCIPAL-------------------->
       </div>
@@ -762,6 +818,7 @@
       <!----------------------------------CONTENIDO DE WRAPPER-------------------------------->
     </div>
         <!--------------------------------------FOOTER--------------------------------------->
+
         <footer>
     
           <div class="footerBG">
@@ -791,6 +848,7 @@
       
         </footer>
       
+      
         <!--------------------------------------FOOTER--------------------------------------->
     <!------------------------------------------WRAPPER----------------------------------------->
 
@@ -800,6 +858,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <script src="../js/scripts.js"></script>
+    <!-- Checked Answers Actividad 1-->
+    <script src="../js/evaluacion2.js"></script>
 
     <!--------------------------------SCRIPTS------------------------------------------------->
   </body>
