@@ -495,7 +495,7 @@
               <div class="card" id="cardConcept">
                 <div class="card-body" id="cardTextConcept">
                   <p>
-                    <b>Es un tipo de variables</b> que se transmite al proceso shell cuando este es invocado. <b>Es un argumento para el proceso</b>.
+                    <b>Es un tipo de variables que se envían al proceso shell cuando se llama</b>. Es un argumento de proceso, los argumentos de asignación de valor se agregan a la derecha del nombre del proceso cuando se invoca.
                   </p>
                   <p>
                     <ul>
@@ -503,18 +503,18 @@
                         <b>Asignación de valor:</b> Son argumentos que se añaden a la derecha del nombre del proceso cuando éste es invocado.
                       </li>
                       <li>
-                        <b>Uso de variable:</b> Son referenciadas dentro del proceso shell como.
+                        <b>Se utiliza una variable</b>: Dentro del proceso Shell, se les denomina como: 
                         <ul>
                           <li><b>$1</b> para el primer parámetro, aquel que se encuentra justo a la derecha del nombre del proceso shell.</li>
                           <li><b>$2</b> para el segundo parámetro.</li>
-                          <li><b>$3</b> para el tercer parámetro y  así sucesivamente.</li>
+                          <li><b>$3</b> para el tercer parámetro, etc.</li>
                         </ul>
                       </li>
                     </ul>
                   </p>
 
                   <p>
-                    <b>Hay un límite de nueve argumentos</b> que pueden ser referenciados: <b>de $1 a $9</b>. Sin embargo, <b>existe la orden shift</b> que produce un desplazamiento hacia la derecha en la referenciación de los argumentos:
+                    <b>Hay un límite de nueve argumentos que se pueden citar</b>: de $1 a $9. No obstante, la orden de cambio produce un desplazamiento hacia la derecha en la referencia de argumentos:
                   </p>
 
                   
@@ -533,7 +533,7 @@
                           aria-expanded="true"
                           aria-controls="collapseOne"
                         >
-                         a) Si ejecuto una vez shift, la referenciación de argumentos es la siguiente
+                         a)	Si ejecuta Shift, la referencia de argumentos se muestra como sigue
                         </button>
                       </h2>
                       <div
@@ -566,7 +566,7 @@
                           aria-expanded="false"
                           aria-controls="collapseTwo"
                         >
-                        b) Si la ejecuto dos veces, la referenciación será:
+                        b) Si se ejecuta dos veces, la referenciación será:
                         </button>
                       </h2>
                       <div
@@ -579,7 +579,7 @@
                           <p>
                             <ul>
                               <li><b>$1</b> para el tercero.</li>
-                              <li><b>$2</b> para el cuarto, y así sucesivamente.</li>
+                              <li><b>$2</b> para el cuarto, etc.</li>
                             </ul>
                           </p>
                           
@@ -593,13 +593,13 @@
                   <!----------------------ACORDEON------------------------>
                   
                   <p>
-                    De esta forma es posible escribir un procedimiento que pueda tratar <b>más de 9 argumentos</b>.
+                    De esta manera, se puede crear un procedimiento que <b>pueda abordar más de nueve argumentos</b>.
                   </p>
                   <p>
-                    Otro modo de acceder a todos los argumentos es con <b>$*</b>. <b>Esta variable se expande a todos los argumentos especificados</b> cuando se invocó el procedimiento shell.
+                    Se puede acceder a todos los argumentos de otra manera utilizando $*. Cuando se usa el procedimiento shell, esta variable se expande a todos los argumentos especificados.
                   </p>
                   <p>
-                    El parámetro <b>$# toma el valor del número total de argumentos especificados</b>. 
+                    El parámetro <b>$#</b> recibe el valor de todos los argumentos especificados.
                   </p>
                  
                 </div>
@@ -620,19 +620,19 @@
               <div class="card" id="cardConcept">
                 <div class="card-body" id="cardTextConcept">
                   <p>
-                    <b>Los Shells soportan dos clases de variables</b>: locales al shell que estamos usando y que no están declaradas cuando abandonamos el shell y globales que permanecen activadas aunque cambiemos de shell.
+                    <b>Los shells soportan dos clases de variables</b>: locales, que pertenecen al shell que estamos usando y no se declaran cuando salimos del shell, y globales, que permanecen activas, aunque cambiemos de shell.
                   </p>
                   <p>
-                    Existen dos tipos de variables:
+                    Las variables se clasifican en dos categorías:
                     <ul>
                       <li>
-                        <b>Las variables de entorno:</b>
+                        <b>De entorno:</b>
                         <ul>
                           <li>
                             <b>Sintaxis:</b> nombreVariable=valor
                           </li>
                           <li>
-                            <b>Uso de la variable:</b> El valor asignado puede recuperarse precediendo el nombre de la variable con el signo <b>$</b>.
+                            <b>Uso de la variable:</b> El símbolo <b>$</b> se puede agregar al nombre de la variable para obtener el valor asignado.
                           </li>
                         </ul>
                       </li>
@@ -640,14 +640,13 @@
                     </ul>
                   </p>
                   <p>
-                    Estas variables pueden crearse y usarse tanto dentro de un proceso shell, como en el modo interactivo desde el prompt del sistema. 
+                    <b>Es posible crear y utilizar estas variables tanto dentro de un proceso shell como en el modo interactivo desde el indicador del sistema</b>. 
                   </p>
                   <p>
-                    Es muy importante que se considere que una variable sólo tendrá un valor dentro del proceso para el cual fue creada.
+                    Es crucial tener en cuenta que una variable solo tendrá un valor dentro del proceso para el que fue creada.
                   </p>
                   <p>
-                    Estas son algunas variables de entorno que se muestran en la siguiente imagen
-                  </p>
+                    Estas son algunas variables de entorno que se muestran en la siguiente imagenLa siguiente imagen muestra algunas variables de entorno.
                   <div class="text-center">
                     <img class="img-fluid" src="../images/Fig 22 tabla de variables en shell.png" style="width: 65%;">
                     <p>
@@ -655,25 +654,25 @@
                     </p>
                   </div>
                   <p>
-                    Para <b>observar el valor de todas las variables definidas</b> en un determinado instante, hay que ejecutar la <b>orden set</b>.
+                    <b>Hay que ejecutar la orden establecida</b> para ver el valor de todas las variables definidas en un instante determinado.
                   </p>
                   <p>
-                    <b>El valor asignado a una variable puede intervenir en otra variable</b>. Es recomendable en este caso, y a veces necesario, <b>identificar el nombre de esta variable encerrándose entre corchetes</b>. 
+                    <b>El valor que se le da a una variable puede afectar a otra variable</b>. En situaciones como esta, es conveniente y a veces necesario identificar el nombre de la variable entre corchetes.
                   </p>
                   <p>
-                    <b>Cuando en el valor asignado existan varias palabras separadas por espacios</b>, hay que <b>usar comillas</b> para preservar estos espacios en la definición de la variable
+                    <b>Cuando hay varias palabras separadas por espacios en el valor asignado</b>, se deben usar comillas para mantener estos espacios en la definición de la variable.
                   </p>
                   <p>
-                    Se puede asignar como valor de una variable, <b>la salida de una orden UNIX</b>. En este caso, después del igual <b>se encierra la orden UNIX entre caracteres acento grave (`)</b>. 
+                    <b>La salida de una orden UNIX se puede asignar como valor de una variable</b>. En este ejemplo, la orden UNIX se cierra entre caracteres con acento grave (`) después de igual.
                   </p>
                   <p>
-                    Asignación externa a variables del shell: <b>lectura de valores con READ</b>.
+                    <b>La lectura de valores utilizando READ</b> es una asignación externa a las variables del shell.
                   </p>
                   <p>
-                    <b>Los valores para las variables del shell se pueden capturar a través del teclado o de otros ficheros mediante la sentencia read</b>, con un funcionamiento similar a la lectura de una variable en cualquier lenguaje de programación.
+                    <b>La sentencia READ se puede usar para capturar los valores de las variables del shell a través del teclado o de otros ficheros</b>, lo que es similar a la lectura de una variable en cualquier lenguaje de programación.
                   </p>
                   <p>
-                    A continuación se presentan ejemplos de uso de variables.
+                    Estos son algunos ejemplos de uso de variables.
                   </p>
 
                   <div class="card" id="cardCode">
@@ -796,27 +795,26 @@
               <div class="card" id="cardConcept">
                 <div class="card-body" id="cardTextConcept">
                   <p>
-                    El shell tiene predefinidas una serie de variables de entorno. Algunas de ellas pueden modificarse, asignándole otro valor distinto al de defecto. Otras son de sólo lectura, pueden ser usadas, pero no modificadas. Las variables predefinidas modificables más interesantes son:
+                    <b>El shell tiene una serie de variables de entorno predefinidas. Algunas de ellas se pueden cambiar asignándole un valor diferente al que está incorrecto</b>.  Algunos son solo de lectura y pueden ser usados, pero no modificados. Las variables predefinidas modificables más fascinantes son: 
                   </p>
                   <p>
                     <ul>
                       <li>
-                        <b>HOME:</b> Su valor por defecto es la ruta del directorio del usuario. Es el argumento por defecto de la <b>orden cd</b>.
+                        <b>HOME:</b> Su valor por defecto es la ruta del directorio del usuario. Es el argumento de la orden <b>cd</b> por defecto.
+                      <li>
+                        <b>OSTYPE:</b> Proporciona información sobre el tipo de sistema operativo de la computadora. 
                       </li>
                       <li>
-                        <b>OSTYPE:</b> Otorga información del tipo de sistema operativo que se ejecuta en la computadora.
+                        <b>PATH:</b> El grupo de directorios donde el sistema busca ficheros ejecutables se conoce como PATH.
                       </li>
                       <li>
-                        <b>PATH:</b> Es el grupo de directorios donde el sistema busca los ficheros ejecutables.
-                      </li>
-                      <li>
-                        <b>PS1:</b> Define la cadena de caracteres que aparecen como prompt del sistema. <b>Por defecto su valor es $</b>. 
+                        <b>PS1:</b> Establece la cadena de caracteres que se mostrará como mensaje de advertencia del sistema. Su valor predeterminado es <b>$</b>.
                       </li>
                       <li>
                         <b>PS2:</b> Es un segundo prompt de sistema que se utiliza cuando se esperan entradas adicionales. Por defecto, <b>despliega “>” para diferenciarse del prompt principal</b>.
                       </li>
                       <li>
-                        <b>PS3:</b> Es un tercer prompt, <var>se caracteriza por desplegar un bucle de selección utilizando la palabra reservada “select”</var>.
+                        <b>PS3:</b> Es un tercer prompt, se caracteriza por desplegar un bucle de selección utilizando la palabra reservada <var>“select”</var>.
                       </li>
                       <li>
                         <b>PWD:</b> Su valor por defecto es el directorio de trabajo actual donde el usuario se encuentra ubicado.

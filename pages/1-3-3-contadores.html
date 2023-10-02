@@ -490,19 +490,19 @@
                                 <div class="card" id="cardConcept">
                                   <div class="card-body" id="cardTextConcept">
                                     <p class="card-text">
-                                      <b>En un sistema con controladores de interrupciones se adiciona un elemento especializado para gestionar  las peticiones de interrupción que denominamos controlador de interrupciones</b>. Las líneas de petición de interrupción y de reconocimiento de cada módulo de entrada y salida están conectadas al controlador de interrupciones. De esta manera el procesador solo debe tener una línea de petición de interrupción y una de reconocimiento conectadas al controlador de interrupción para gestionar las peticiones provenientes de los módulos de entrada y salida.
+                                      <b>El controlador de interrupciones es un componente adicional</b> y un sistema con controladores de interrupciones que se utiliza para gestionar las peticiones de interrupciones. Cada módulo de entrada y salida tiene líneas de petición de interrupción y reconocimiento conectadas al controlador de interrupciones. De esta manera, el procesador solo debe tener una línea de petición de interrupción y una de reconocimiento conectadas al controlador de interrupción para gestionar las peticiones de entrada y salida.
                                     </p>
                                     <p>
                                       <b>Las funciones del controlador de interrupción</b> son las siguientes:
                                       <ul>
                                         <li>
-                                          <b>Definir una política de prioridades</b> para los módulos de entrada y salida conectados al controlador.  
+                                          <b>Establecer una política de prioridades</b> para los módulos de entrada y salida del controlador.
                                         </li>
                                         <li>
-                                          <b>Identificar</b> qué módulo de entrada y salida que solicita atención e informar el procesador.
+                                          <b>Destacar</b> qué módulo de entrada y salida necesita atención e informe al procesador.
                                         </li>
                                         <li>
-                                          <b>La gestión de una interrupción en este sistema es análoga</b> a la gestión de una interrupción con un único módulo de entrada y salida, y varía la fase de reconocimiento de la interrupción para gestionar las prioridades e identificar qué periférico pide atención.
+                                          <b>La gestión de interrupciones de este sistema es similar a la gestión de interrupciones con un solo módulo de entrada y salida</b>, por lo que ajuste la etapa de reconocimiento de interrupciones para administrar las prioridades y determinar qué atención periférica necesita.
                                         </li>
                                       </ul>
                                       Como se muestra en la siguiente imagen
@@ -515,21 +515,31 @@
                                       </p>
                                       
                                     </div>
+                                    
                                     <p>
-                                      <b>El proceso que se lleva a cabo</b> para el reconocimiento de la interrupción es el siguiente.
+                                      <b>El siguiente es el procedimiento utilizado para reconocer una interrupción</b>.
                                     </p>
+
                                     <p>
-                                      Con el <b>identificar del periférico que solicita la atención y obtener la dirección</b> de la RSI que tiene que atender la petición,se un sistema de vectorización en el cual no es necesario que el módulo de entrada y salida tenga un registro vector, por lo que el controlador de interrupciones dispone de un conjunto de registros vector donde se guardan los vectores de interrupción asociados a cada línea.
+                                      <b>Se crea un sistema de vectorización en el cual no es necesario que el módulo de entrada y salida tenga un registro vectorial</b>. Esto significa que el controlador de interrupciones tiene un conjunto de registros vectoriales donde se guardan los vectores de interrupción asociados, a cada línea.
                                     </p>
+
                                     <p>
-                                      Por lo que cuando se haga la petición de interrupción de un módulo de entrada y salida y realice la petición de prioridad, <b>el controlador de interrupciones hace la petición al procesador activando la señal INT y el procesador contesta activando la señal INTA</b>. Cuando el controlador de interrupciones recibe la señal INTA coloca el vector de interrupción, correspondiente al módulo de entrada y salida que ha hecho la petición, en el bus de datos y el procesador lee el vector. De esta manera, el procesador puede obtener la dirección de la RSI y empezar la ejecución de la rutina para hacer la transferencia de datos, comunicándose directamente con el módulo de entrada y salida. y la  transferencia de datos no se gestiona mediante el controlador de interrupciones.
+                                      Por lo tanto, cuando se realiza una solicitud de prioridad y se solicita una interrupción de un módulo de entrada y salida.
                                     </p>
+
                                     <p>
-                                      Las principales <b>ventajas de este sistema con un controlador de interrupción</b> son que la identificación del periférico es inmediata y la gestión de prioridades flexible, por lo que el procesador solo necesita disponer de una línea INT y una INTA para gestionar múltiples módulos de entrada y salida.
+                                      <b>El controlador de interrupciones hace la petición de prioridad al procesador activando la señal INT</b>, y el procesador responde activando la señal INTA. Cuando el controlador de interrupciones recibe la señal INTA, coloca el vector de interrupción, correspondiente al módulo de entrada y salida solicitado, en el bus de datos. El vector luego es leído por el procesador. De esta manera, el procesador puede obtener la dirección de RSI e iniciar la ejecución de la rutina para realizar la transferencia de datos, comunicándose directamente con el módulo de entrada y salida. y el controlador de interrupciones no controla la transferencia de datos.
                                     </p>
+
                                     <p>
-                                      La <b>desventaja es la gestión de prioridades que hace que el controlador no salvaguarde el nivel de ejecución de manera automática</b>, sino que se debe realizar ejecutando un pequeño programa que acceda al controlador de interrupciones y esto provoca que el estado sea más lento, como se observa en la siguiente imagen
+                                      <b>Los principales beneficios de este sistema</b> en comparación con un controlador de la gestión de prioridades flexible y la identificación inmediata del periférico hacen que el procesador solo necesite una línea INT y una INTA para administrar múltiples módulos de entrada y salida.
                                     </p>
+
+                                    <p>
+                                      <b>La desventaja de la gestión de prioridades</b> es que requiere la ejecución de un pequeño programa que acceda al nivel de ejecución para que el controlador lo haga automáticamente la interrupción, lo que hace que el estado sea más lento, como se muestra en la imagen siguiente. 
+                                    </p>
+                                  
                                     <div class="text-center">
 
                                       <img class="img-fluid" src="../images/Fig 17 Proceso reconocimiento de la interrupción.png" style="width: 85%;">
@@ -539,7 +549,7 @@
                                       
                                     </div>
                                     <p>
-                                      Si tenemos un sistema que utiliza controladores de interrupción y queremos aumentar el número de módulos de entrada y salida, se debe conectar el controlador de interrupción en cascada, pero es importante que los controladores se encuentren diseñados específicamente para conectarlos de esta manera.
+                                      Si queremos aumentar el número de módulos de entrada y salida en un sistema que utiliza controladores de interrupción, debemos conectar el controlador de interrupción en cascada. Sin embargo, es importante que los controladores se encuentren diseñados específicamente para conectarse de esta manera.
                                     </p>
                                     
                                   </div>

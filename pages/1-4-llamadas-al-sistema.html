@@ -491,12 +491,7 @@
                                             </p>
 
                                             <p class="card-text">
-                                                <b>Son la interfaz entre el sistema operativo y un programa en ejecución</b>. 
-                                                Pueden ser instrucciones en <b>lenguaje ensamblador (MSDOS)</b> o pueden hacerse desde <b>lenguajes de alto nivel como C (Unix, Minix, Linux, Windows NT)</b>.
-                                                <b>El control</b> pasa al vector de interrupciones para que una rutina la atienda. 
-                                                <b>El bit de modo</b> se pone en modo monitor. 
-                                                <b>El monitor analiza</b> la instrucción que provocó la interrupción. 
-                                                <b>Así se ejecuta la solicitud</b> y vuelve el control a la instrucción siguiente a la llamada al sistema. Los parámetros asociados a las llamadas pueden pasarse de varias maneras: por registros, bloques o tablas en memoria o pilas. Hay varias categorías de llamadas al sistema:
+                                              <b>Son la conexión entre un programa en ejecución y el sistema operativo</b>. Las instrucciones pueden venir de MSDOS o de lenguajes de alto nivel como C (Unix, Minix, Linux, Windows NT). Para que una rutina atienda las interrupciones, el control pasa al vector de interrupciones.  El bit de modo cambia a modo monitor. El monitor examina la instrucción que provocó el problema. Por lo tanto, la solicitud se ejecuta y el control se vuelve a la instrucción siguiente a la llamada al sistema. Los parámetros de llamadas pueden transferirse a través de registros, bloques o tablas en memoria o pilas. Hay varias categorías de llamadas disponibles para el sistema que pueden ser utilizados son:
                                             </p>
 
                                                 <!----------------------ACORDEON------------------------>
@@ -637,7 +632,8 @@
                                                 </p>
 
                                                 <p>
-                                                    Ahora bien hay que considerar que <b>una computadora con una unidad de control de procesos</b> puede ejecutar solo una instrucción a la vez, por lo que si esta está ejecutando un programa del usuario va a necesitar un servicio del sistema como por ejemplo leer datos de un documento, por lo que tendrá que ejecutar la instrucción trap para así poder transferir el control al sistema operativo, en donde este inspeccionará los parámetros y con ello realizará la llamada al sistema y tendrá un regreso en el cual llevará el control de la instrucción para que con ello exista la llamada al sistema por lo que se genera un proceso y a su entrada al kernel.
+                                                  Hay que tener en cuenta que <b>una computadora que tiene una unidad de control de procesos solo puede ejecutar una instrucción a la vez</b>, por lo que, si esta está en el proceso de ejecutar un programa del usuario, se requerirá un servicio del sistema, como la lectura de datos de un documento. Para transferir el control al sistema operativo, este inspeccionará los parámetros y realizará la llamada al sistema, y luego tendrá un regreso. que llevará el control de la instrucción para que exista la llamada al sistema, lo que generará un proceso y su ejecución.
+                                                  De esta manera, el sistema realiza una serie de pasos para leer, el primero de los cuales es la lectura del archivo, el segundo se dirige al buffer y el tercero indica el número de bytes que se deben leer, como se muestra en la siguiente operación.  
                                                 </p>
 
                                                 <p>
@@ -649,7 +645,7 @@
                                                 </div>
                                                 
                                                 <p>
-                                                    <b>Es por ello que su preparación para llamar al procedimiento de una biblioteca de lectura que es la que se encarga de realizar la llamada al sistema operativo primero debe de ingresar los parámetros en la estructura llamada pila y siguiente los pasos anteriores</b>, como se muestra en la siguiente imagen.
+                                                  Por lo tanto, <b>al preparar la llamada al procedimiento de la biblioteca de lectura</b>, que es responsable de realizar la llamada al sistema operativo, primero debe ingresar los parámetros en la estructura llamada pila y luego seguir los pasos anteriores, como se muestra en la siguiente imagen.
                                                 </p>
 
                                                 <div class="text-center">
@@ -658,12 +654,11 @@
                                                 </div>
                                                 
                                                 <p>
-                                                    Por lo que <b>el procedimiento de biblioteca establece por lo general la llamada al sistema</b> para evitar que el sistema se quede en espera como un registro, al tener ello entonces se ejecuta en la instrucción de trap para cambiar de modo de usuario al modo de kernel y con ello la ejecución en una dirección fija dentro del núcleo.
+                                                  <b>Como resultado, el procedimiento de biblioteca establece la llamada al sistema</b> para evitar que el sistema se quede en espera como un registro. Una vez que lo tenga, se ejecuta en la instrucción de trap para cambiar de modo de usuario al modo de núcleo, lo que significa que la ejecución se lleva a cabo en una dirección específica dentro del núcleo. 
                                                 </p>
 
                                                 <p>
-                                                    Por lo que <b>los sistemas operativos basados en llamadas al sistema son más eficientes</b> que los basados en paso de mensajes, ya que éstos requieren crear un mensaje, copiarlo al espacio de direcciones del proceso del sistema y pasar a ejecutar este proceso.
-
+                                                  <b>Debido a que los sistemas operativos basados en llamadas al sistema requieren crear un mensaje</b>, copiarlo al espacio de direcciones del proceso del sistema y luego pasar a ejecutar este proceso, son más eficientes que los sistemas operativos basados en paso de mensajes.
                                                 </p>
 
                                                 <p>
@@ -680,13 +675,13 @@
                                                     <div class="accordion-item">
                                                         <h2 class="accordion-header" id="headingSix">
                                                         <button class="accordion-button collapsed" id="accordion-btn1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                                            Control de procesos
+                                                            Control de operaciones
                                                         </button>
                                                         </h2>
                                                         <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
                                                         <div class="accordion-body" id="cardBtnConcept">
                                                             <p>
-                                                                Estas son las llamadas que permiten crear, eliminar, cambiar la prioridad y poner en espera  de procesos. En este caso, están estrechamente relacionadas con el scheduler o planificador del sistema operativo, y con la gestión de la memoria y el uso de CPU.
+                                                              Estas llamadas permiten la creación, eliminación, cambio de prioridad y puesta en espera de procesos. En este caso, están estrechamente relacionados con el planificador o cronograma del sistema operativo, así como con la gestión de la memoria y el uso de la CPU.
                                                             </p>
                                                         </div>
                                                         </div>
@@ -706,13 +701,13 @@
                                                     <div class="accordion-item">
                                                         <h2 class="accordion-header" id="headingSeven">
                                                         <button class="accordion-button collapsed" id="accordion-btn2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                                                            Gestión de archivos
+                                                            Administración de archivos
                                                         </button>
                                                         </h2>
                                                         <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
                                                         <div class="accordion-body" id="cardBtnConcept">
                                                             <p>
-                                                                En este caso son syscalls que se dedican específicamente a la manipulación de archivos, como pueden ser crear un nuevo archivo, leer, escribir y eliminarlo. En este caso están estrechamente relacionadas con el control de los sistemas de archivos (FS) de las diferentes unidades de almacenamiento disponibles, tanto las internas como las externas o extraíbles.
+                                                              En este caso son syscalls que se ocupan de la manipulación de archivos, como crear un nuevo archivo, leer, escribir y eliminarlo. En este escenario, están estrechamente relacionados con el control de los sistemas de archivos (FS) de todas las unidades de almacenamiento disponibles, ya sean internas, externas o extraíbles.
                                                             </p>
                                                         </div>
                                                         </div>
@@ -732,13 +727,13 @@
                                                     <div class="accordion-item">
                                                         <h2 class="accordion-header" id="headingEight">
                                                         <button class="accordion-button collapsed" id="accordion-btn1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                                                            Gestión de dispositivos
+                                                            Administrar dispositivos
                                                         </button>
                                                         </h2>
                                                         <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
                                                         <div class="accordion-body" id="cardBtnConcept">
                                                             <p>
-                                                                Son las llamadas al sistema encargadas de administrar dispositivos y que permiten hacer uso de ellos, como conectar, desconectar y liberar. Están estrechamente ligadas a los periféricos o dispositivos que se pueden manejar.
+                                                              Son las llamadas al sistema que se utilizan para administrar los dispositivos y permitir sus funciones, como conectar, desconectar y liberar. Están muy cerca de los periféricos o dispositivos que se pueden manejar.
                                                             </p>
                                                         </div>
                                                         </div>
@@ -760,13 +755,13 @@
                                                     <div class="accordion-item">
                                                         <h2 class="accordion-header" id="headingNine">
                                                         <button class="accordion-button collapsed" id="accordion-btn2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
-                                                            Mantenimiento de la información
+                                                            Mantenimiento de información
                                                         </button>
                                                         </h2>
                                                         <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample">
                                                         <div class="accordion-body" id="cardBtnConcept">
                                                             <p>
-                                                                Es un tipo de syscall que se usa para mantener informaciones básicas sobre el sistema operativo, como puede ser la hora y fecha, que son importantes para algunas aplicaciones.
+                                                              Es un tipo de syscall que almacena información básica del sistema operativo, como la hora y la fecha, que son importantes para algunas aplicaciones.
                                                             </p>
                                                         </div>
                                                         </div>
@@ -785,13 +780,13 @@
                                                     <div class="accordion-item">
                                                         <h2 class="accordion-header" id="headingTen">
                                                         <button class="accordion-button collapsed" id="accordion-btn1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
-                                                            De comunicaciones
+                                                          Comunicación
                                                         </button>
                                                         </h2>
                                                         <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen" data-bs-parent="#accordionExample">
                                                         <div class="accordion-body" id="cardBtnConcept">
                                                             <p>
-                                                                Estas llamadas al sistema, como su propio nombre indica se encargan de las comunicaciones entre procesos. Es decir, de gestionar los mensajes o señales que se envían los procesos para transmitir información.
+                                                              Como su propio nombre indica, estas llamadas al sistema se encargan de las comunicaciones entre procesos. En otras palabras, administre los mensajes o señales que se envían durante los procesos de transmisión de información.
                                                             </p>
                                                         </div>
                                                         </div>

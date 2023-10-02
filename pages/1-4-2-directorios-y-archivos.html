@@ -488,10 +488,11 @@
                                 <div class="card" id="cardConcept">
                                   <div class="card-body" id="cardTextConcept">
                                     <p>
-                                      <b>Es un sistema de organización de los archivos</b> que <b>permiten al usuario acceder y localizar los archivos</b> fácilmente presentan una visión lógica simple al usuario, muy diferente del modo de almacenamiento real. <b>Un directorio es un objeto o estructura de datos</b> compuesto de los elementos que agrupa, denominados entradas, cada entrada contiene información acerca del archivo al que referencia <b>(MS-DOS)</b> o un puntero a una estructura de datos que contenga dicha información.
+                                      <b>Es un sistema de organización de archivos que permite al usuario acceder y localizar fácilmente los archivos y ofrece una visión lógica simple al usuario</b>, muy diferente del modo de almacenamiento auténtico. Un directorio es un objeto o estructura de datos compuesto de entradas, cada una de las cuales contiene información sobre el archivo al que se refiere (MS-DOS) o un puntero y una estructura de datos que contiene dicha información.
                                     </p>
+
                                     <p>
-                                      <b>Cada archivo dentro de la jerarquía de directorios se puede especificar dando su nombre</b> de ruta a partir del tope de la jerarquía de directorios, el directorio raíz. Semejantes nombres de ruta absolutos consisten en la lista de directorios por los que se debe pasar partiendo del directorio raíz para llegar al archivo, separando los componentes con diagonales.
+                                      <b>El nombre de ruta de cada archivo dentro de la clasificación de directorios se puede obtener desde el directorio raíz</b>, el punto más alto de la clasificación de directorios.  Los nombres de ruta absolutos similares incluyen la lista de directorios que se deben pasar partiendo del para acceder al archivo, divida los componentes con diagonales.
                                     </p>
                                     
                                     
@@ -543,7 +544,7 @@
                                                     <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                                       <div class="accordion-body" id="cardBtnConcept">
                                                         <p>
-                                                          Es necesario poder buscar un archivo en un directorio
+                                                          La capacidad de buscar un archivo en un directorio es necesaria.
                                                         </p>
                                                       </div>
                                                     </div>
@@ -594,7 +595,7 @@
                                                     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample" >
                                                       <div class="accordion-body" id="cardBtnConcept">
                                                         <p>
-                                                          Borrar un archivo del directorio.
+                                                          Borrar un archivo de un directorio.
                                                         </p>
                                                       </div>
                                                     </div>
@@ -617,7 +618,7 @@
                                                     <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                                                       <div class="accordion-body" id="cardBtnConcept">
                                                         <p>
-                                                          Visualizar los archivos que están en un directorio.
+                                                          Puede ver los archivos en un directorio.
                                                         </p>
                                                       </div>
                                                     </div>
@@ -642,7 +643,7 @@
                                                     <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
                                                       <div class="accordion-body" id="cardBtnConcept">
                                                         <p>
-                                                          Cambiar el nombre de un archivo dentro del directorio.
+                                                          Convertir el nombre de un archivo en un directorio o en un mismo archivo que usa los distintos tipos de extensión.
                                                         </p>
                                                       </div>
                                                     </div>
@@ -666,7 +667,7 @@
                                                     <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
                                                       <div class="accordion-body" id="cardBtnConcept">
                                                         <p>
-                                                           Lograr acceder a todos los directorios del sistema de archivos.
+                                                          Permita el acceso a todos los directorios del sistema de archivos.
                                                         </p>
                                                       </div>
                                                     </div>
@@ -717,7 +718,13 @@
                                 <div class="card" id="cardConcept">
                                   <div class="card-body" id="cardTextConcept">
                                     <p>
-                                      <b>Es una estructura de datos dentro de una unidad lógica que permite al sistema operativo almacenar información</b> de forma organizada e independiente de los procesos que la utilizan, El sistema de archivos se encarga de abstraer propiedades físicas de diferentes dispositivos La información, al ser independiente de los procesos, se mantiene tras su finalización y,  puede ser utilizada por varios procesos como se observa en la siguiente imagen.
+                                        <b>Es una estructura de datos que se encuentra dentro de una unidad lógica que permite al sistema operativo almacenar datos de manera organizada e independiente de los procesos que los utilizan</b>.
+                                    </p>
+                                    <p>
+                                      Las propiedades físicas de varios dispositivos son abstraídas por el sistema de archivos.
+                                    </p>
+                                    <p>
+                                      La siguiente imagen muestra cómo la información se almacena después de completar los procesos y puede utilizarse para varios procesos.
                                     </p>
                                     
                                     <div class="text-center">
@@ -770,13 +777,13 @@
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="headingOne">
                       <button class="accordion-button" id="accordion-btn2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      a) Nivel único
+                      a) Un solo nivel de directorios (nivel único)
                       </button>
                     </h2>
                     <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                       <div class="accordion-body" id="cardBtnConcept">
                         <p>
-                          El esquema más sencillo es tener un único nivel de directorios en el sistema de archivos.
+                          Tener un solo nivel de directorios en el sistema de archivos es el método más sencillo.
                         </p>
                       </div>
                     </div>
@@ -801,7 +808,7 @@
                     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                       <div class="accordion-body" id="cardBtnConcept">
                         <p>
-                          Es ideal permitir varios niveles de directorios. Esto se logra permitiendo tener archivos de tipo directorio dentro de los directorios en donde se genera una estructura jerárquica de directorios en forma de árbol y se denomina ruta (path) absoluta de un archivo, al camino desde la raíz hasta el archivo.
+                          Permitir múltiples niveles de directorios es ideal. Esto se puede lograr mediante la inclusión de archivos de tipo directorio dentro de los directorios en los que se crea una la estructura jerárquica de directorios en forma de árbol se conoce como ruta absoluta de un archivo, que es el camino desde la raíz del archivo hasta el final. 
                         </p>
                       </div>
                     </div>
@@ -827,7 +834,7 @@
                     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample" >
                       <div class="accordion-body" id="cardBtnConcept">
                         <p>
-                          Para potenciar la estructura anterior de árbol sería deseable tener caminos de acceso directo a otros directorios, estos caminos se logran a través de archivos de tipo enlace simbólicos llamados (soft links) y a su vez, se permite que un archivo esté en más de un directorio (hard link).
+                          Sería deseable tener caminos para fortalecer la estructura del árbol anterior, los archivos de tipo enlace simbólico, también conocidos como enlaces suaves, permiten el acceso directo a otros directorios y permiten que un archivo esté en más de un directorio.
                         </p>
                       </div>
                     </div>

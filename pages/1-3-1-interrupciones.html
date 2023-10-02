@@ -493,13 +493,13 @@
                                 <div class="card" id="cardConcept">
                                   <div class="card-body" id="cardTextConcept">
                                     <p class="card-text">
-                                      <b>Las  interrupciones funcionan en donde se  transfiere el control a la rutina de servicio de la misma</b>, generalmente por medio del vector de interrupción, que contiene las direcciones de todas las rutinas de servicio, estas interrupciones entrantes son deshabilitadas mientras otra interrupción está siendo procesada para prevenir una pérdida de interrupción. 
+                                     <b>Las interrupciones ocurren cuando el control se transfiere a la rutina de servicio</b> , generalmente a través del vector de interrupción, que contiene las direcciones de todas las rutinas de servicio. Estas interrupciones entrantes son deshabilitadas mientras se procesa otra interrupción para evitar una pérdida de interrupción.
                                     </p>
                                     <p>
-                                      Es por ello que <b>cuando un dispositivo de entrada y salida (E/S) ha terminado el trabajo que se le asignó, genera un interrupción que es gestionada por el manejador de interrupciones</b>, en donde despierta al proceso que había solicitado la entrada y salida (en caso de que esta fuese síncrona) y Libera los recursos ocupados por la operación entrada y salida, generalmente  por medio del vector de interrupción, que contiene las direcciones de todas las rutinas de servicio <b>generando un trap</b>.
+                                      Por lo tanto, <b>cuando un dispositivo de entrada y salida (E/S) termina el trabajo que se le asignó, genera una interrupción que es gestionada por un manejador de interrupciones</b> . Este controlador despierta al proceso que solicita la entrada y salida y gestiona la interrupción, por lo que al salir (en caso de ser síncrona) utiliza un vector de interrupción, que contiene las direcciones de todas las rutinas de servicio, para liberar los recursos ocupados por las operaciones de entrada y salida.
                                     </p>
                                     <p>
-                                      <b>Un trap es una interrupción generada por el software </b>causada por un error o por un requerimiento del usuario.
+                                      <b>Un trap es una interrupción del software</b>, ocurre debido a un error o un requerimiento del usuario.
                                     </p>
 
                                   </div>
@@ -523,7 +523,7 @@
                                 <div class="card" id="cardBigTitle">
                                  
 
-                                    Manejo de Interrupciones
+                                  Administración de interrupciones 
 
                                 </div>    
 
@@ -534,7 +534,7 @@
                                 <div class="card" id="cardConcept">
                                   <div class="card-body" id="cardTextConcept">
                                     <p class="card-text">
-                                      <b>El sistema operativo preserva el estado de la CPU almacenando los registros y el contador de programa</b>, por lo que determina qué tipo de interrupción ha ocurrido que puedes ser:
+                                      <b>El sistema operativo almacena los registros y el contador de programa</b> para mantener el estado de la CPU e identificar qué tipo de interrupción ha ocurrido que puede ser:
                                     </p>
 
                                     <ul>
@@ -542,18 +542,18 @@
                                       <li>
                                         <b>Polling</b>
                                           <p>
-                                            Las interrupciones parten del requerimiento que presentan los dispositivos y periféricos de enviar información al procesador de una computadora, es por ello que <b>la técnica de polling establece que el procesador se encargue de visualizar a los dispositivos y periféricos cada determinado tiempo</b> en donde revise que sus comunicaciones estén funcionando correctamente.
+                                            <b>Las interrupciones surgen de la necesidad de que los dispositivos y periféricos envíen información al procesador de la computadora</b>. Por lo tanto, la técnica de consultas establece que el procesador visualice los dispositivos y periféricos a intervalos regulares para verificar que las comunicaciones estén funcionando correctamente.
                                           </p>
                                           <p>
-                                            Esta técnica polling <b>presenta diferentes problemas ya que es ineficiente para el procesador</b> debido a que   consume tiempo y recursos para estar revisando el funcionamiento correcto de las interrupciones.
+                                            Debido a que consume tiempo y recursos para estar revisando el funcionamiento correcto de las interrupciones, <b></b>esta técnica de consultas presenta varios problemas.
                                           </p>
                                       </li>
 
 
                                       <li>
-                                        <b>Sistema de interrupción vectorizado</b>
+                                        <b>Sistema vectorizado de interrupción</b>
                                         <p>
-                                          <b>Las interrupciones vectorizadas son aquellas que generan dos  líneas de interrupción</b>, una es de petición y otra de reconocimiento esto es  generado por el dispositivo que produce la interrupción y el cual utiliza a todos los periféricos ya que solicitan servicios por la misma línea, cuando la CPU reconoce la interrupción, el periférico que ha interrumpido se identifica poniendo en el bus de datos el vector de interrupción (dirección) o una codificación del mismo (nivel) y la resolución de prioridades se resuelve por alguno de ellos, como se ve en la siguiente imagen.
+                                          <b>Las interrupciones vectorizadas generan dos líneas de interrupción</b>: una de petición y otra de reconocimiento por el dispositivo que produce la interrupción y que utiliza a todos los periféricos porque solicitan servicios por la misma línea. Cuando la CPU reconoce la interrupción, el periférico que ha interrumpido se identifica mediante la inserción del vector de interrupción (dirección) o una codificación de este (nivel) en el bus de datos, y alguno de ellos resuelve la resolución de prioridades, como se muestra en la siguiente imágen.
                                         </p>
                                       </li>
 
@@ -567,15 +567,20 @@
                                         </div>
 
                                         <li>
-                                          <b>Sistema con una línea de petición de interrupción y una línea de reconocimiento con encadenamiento</b>
+                                          <b>Sistema que incluye una línea de petición de interrupción y una línea de reconocimiento encadenada</b>
                                           <p>
-                                            <b>También conocido como daisy-chain</b>. son módulos de Entrada y salida que se conectan al procesador con una línea de petición de interrupción llamada <b>(INT)</b> en colector abierto y una línea de reconocimiento de interrupción llamada <b>(INTA)</b> que se genera el procesador para indicar al módulo de Entrada y salida que se atiende la petición que ha hecho. Esta señal <b>INTA</b> se propaga mediante los módulos, en los cuales el sistema de conexión permite reducir el tiempo necesario para gestionar las prioridades si más de un módulo de Entrada y salida ha pedido atención al mismo tiempo y, por otra parte, identificar qué periférico pide atención, sin tener que ejecutar un programa de encuesta que accede a todos los módulos de entrada y salida.
+                                            <b>También conocido como Daisy-chain</b>. Son módulos de entrada y salida que se conectan al procesador con una línea de petición de interrupción (INT) en colector abierto y una línea de reconocimiento de interrupción.
                                           </p>
                                           <p>
-                                            <b>Para llevar a cabo este sistema, se requiere realizar algunos ajustes en el hardware</b> en donde el procesador requiere un punto de conexión que genere una señal de reconocimiento de interrupción <b>(INTA)</b>, para que los módulos de entrada y salida  pueden disponer de un circuito lógico para que se pueda propagar la señal <b>INTA</b> de este módulo al siguiente dispositivo de entrada y salida permitiendo que los demás módulos están conectados para que se genere su registro será el registro vector y donde se almacenará el valor del vector de interrupción que se envío del procesador mediante el bus del sistema. El valor que se almacena en cada registro es único ya que el procesador lo utiliza como identificador del periférico.
+                                            <b>La llamada (INTA) que produce el procesador para informar al módulo de entrada y salida que está atendiendo la petición</b>. Esta señal INTA se propaga a través de los módulos, lo que permite al sistema de conexión reducir el tiempo necesario para gestionar las prioridades si más de un módulo de entrada y ha solicitado simultáneamente atención y, por otro lado, identificado qué periférico necesita atención, sin tener que usar un programa de encuesta que acceda a todos los módulos de entrada y salida.
                                           </p>
                                           <p>
-                                            Por lo que <b>la gestión de una interrupción es análoga</b>  ya que como es único el módulo de entrada y salida podrá variar el ciclo de reconocimiento de la interrupción para poder gestionar sus prioridades, por lo que si algun otro modulo requiere hacer una petición de entrada y salida tendrá que obtener un identificador para tener la atención de la interrupción del sistema.
+                                            <b>Para implementar este sistema, se requieren cambios en el hardware</b>. Estos cambios implican que el procesador necesita un punto de conexión que produzca una señal de reconocimiento de interrupción (INTA), y que los módulos de entrada y salida deben tener un circuito lógico paraque se pueda permitir que los demás módulos se conecten para generar su vector de registro y almacenar el valor del registro, transmitiendo la señal INTA de este módulo al siguiente dispositivo de entrada y salida, por lo que el vector de interrupción y el procesador envía a través del bus del sistema.  Cada registro tiene su propio valor porque el procesador lo utiliza como identificador del periférico.
+                                          </p>
+                                          <p>
+                                            
+                                            <b>Como es único, la gestión de interrupciones es análoga </b>porque el módulo de entrada y salida puede ajustar el ciclo de reconocimiento de interrupciones para gestionar sus prioridades. Por lo tanto, si el módulo necesita hacer una petición de entrada y salida, como obtener un identificador para tener en cuenta las interrupciones del sistema, tendrá que visualizar cada tipo de interrupción para su propio grupo de código el cual ayudará a decidir qué tipo de acción se debe tomar.
+
                                           </p>
                                           <p>
                                             <b>Segmentos de código separados determinan que tipo de acción deberían llevarse a cabo para cada tipo de interrupción</b>.

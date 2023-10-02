@@ -803,14 +803,15 @@
                                         <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
                                           <div class="accordion-body" id="cardBtnConcept">
                                             <p>
-                                                <b>Su trabajo principal es asignar recursos a las máquinas virtuales y después comprobar los intentos de utilizarlos</b> con ello para asegurar que ninguna máquina trate de usar los recursos de la otra. 
-                                            </p>
-                                            <p>
-                                              La <b>ventaja</b> del esquema del exokernel es que ahora en la asignación ya que en otros diseños cada máquina virtual piensa que <b>tiene su propio disco con bloques que van desde 0 hasta cierto valor máximo</b> por lo que el monitor de la MVl debe de mantener las tablas para así asignar las direcciones del disco y todos los demás recursos requeridos, por lo que en el exokernel  no es necesario ya que con ello el solo necesita llevar el control del registro para saber a cuál máquina virtual se le ha asignado el recurso.
-                                            </p>
-                                            <p>
-                                              Este método sigue teniendo la <b>ventaja de separar la multiprogramación del código del sistema operativo</b> del usuario, pero con menos sobrecarga ya que todo lo que tiene que hacer el exokernel es mantener las máquinas virtuales separadas una de la otra.
+                                                
+                                                <b>Su trabajo principal es asignar recursos a las máquinas virtuales y verificar los intentos de utilizarlos</b> para asegurarse de que ninguna máquina trate de usar los recursos de la otra.
 
+                                              </p>
+                                            <p>
+                                              La <b>ventaja</b> del esquema del exokernel es que ahora en la asignación, ya que en otros diseños cada máquina virtual piensa que tiene su propio disco con bloques que van desde 0 hasta un valor máximo, por lo que el monitor debe mantener las tablas para asignar las direcciones del disco y todos los demás recursos requeridos, pero no es necesario ya que solo necesita llevar el control del registro para saber a cuál máquina virtual pertenece.
+                                            </p>
+                                            <p>
+                                              Por lo que la ventaja es <b>separar la multiprogramación del código del sistema operativo del usuario</b>, pero el exokernel solo debe mantener las máquinas virtuales separadas una de la otra, lo que reduce la sobrecarga.
                                             </p>
                                           </div>
                                         </div>

@@ -488,28 +488,30 @@
                               <div class="container">
                                 <div class="card" id="cardConcept">
                                   <div class="card-body" id="cardTextConcept">
-                                    <p>
-                                      <b>Los procesos son esenciales para que un programa se pueda ejecutar</b> ya que cada proceso tiene asociado un espacio de direcciones, una lista de ubicaciones de memoria que va desde algún mínimo el cual empieza con un valor 0 y puede obtener una valor máximo, por que un proceso incluye valores actuales del contador de programa, registros y variables. 
-                                    </p>
-                                    <p>
-                                      <b>Por lo que la unidad de control de procesos (CPU) conmuta sucesivamente de un proceso a otro</b>. Esta rápida conmutación de un proceso a otro en  algún orden se denomina multiprogramación.
-                                    </p>
+                                   <p>
+                                      <b>Dado que cada proceso tiene asociado un espacio de direcciones</b>, una lista de ubicaciones de memoria que comienza con un valor mínimo y puede alcanzar un valor máximo, los procesos son esenciales para que un programa se pueda ejecutar. Esto se debe a que cada proceso incluye los valores actuales del contador del programa, registros y variables.
+                                   </p>
+
+                                   <p>
+                                    <b>Como resultado, la CPU pasa de un proceso a otro</b>. La multiprogramación es esta transición rápida de un proceso a otro en algún orden.
+                                   </p>
                                     
                                     <p>
-                                      Es importante establecer la <b>diferencia entre un programa y un proceso</b>; <b></b>un <b>programa</b> es una entidad estática constituida por sentencias de programa que definen la conducta del proceso cuando se ejecutan utilizando un conjunto de datos y el <b>proceso</b> es la ejecución del programa  por el sistema operativo y de una forma más precisa, como la unidad de procesamiento gestionada por el sistema operativo.
+                                      <b>Es crucial distinguir entre un programa y un proceso</b>. Un programa es una entidad estática formada por sentencias de programa que definen la conducta del proceso cuando se ejecutan con un conjunto de datos, mientras que un proceso es la ejecución del programa por parte .del sistema operativo, de manera más precisa, la unidad de procesamiento que el sistema operativo administra.
+                                    </p>
+
+                                    <p>
+                                      <b>El mismo programa puede estar siendo ejecutado por dos o más procesos</b>, cada uno con sus propios datos y recursos, como si dos o más usuarios usan el mismo editor de texto al mismo tiempo. Aunque el programa es igual, cada usuario tiene un proceso diferente (y diferentes datos).
                                     </p>
                                     <p>
-                                      <b>Dos o más procesos podrían estar ejecutando el mismo programa</b>, empleando sus propios datos y recursos, por ejemplo, si dos o más usuarios están usando simultáneamente el mismo editor de texto. El programa es el mismo, pero cada usuario tiene un proceso distinto (y con distintos datos).
-                                    </p>
-                                    <p>
-                                      Los sistemas operativos necesitan asegurar de alguna forma que puedan existir todos los procesos requeridos, <b>entonces es necesaria alguna manera de poder crear y destruir los procesos</b> según sea necesario durante la operación del sistema. Los cuatro principales sucesos que provocan la creación de nuevos procesos son:
+                                      <b>Los sistemas operativos deben garantizar que existan todos los procesos necesarios</b>, por lo que es necesario tener una forma de crear y destruir los procesos según sea necesario durante el funcionamiento del sistema. Los siguientes son los cuatro principales eventos que conducen a la creación de nuevos procesos:
                                     </p>
                                     <p>
                                       <ul>
-                                        <li><b>La inicialización del sistema.</b></li>
-                                        <li><b>La ejecución por parte de un proceso (en ejecución) de una llamada al sistema de creación de un nuevo proceso.</b></li>
-                                        <li><b>La petición por parte del usuario de la creación de un nuevo proceso.</b></li>
-                                        <li><b>El inicio de un trabajo en batch (lotes).</b></li>
+                                        <li><b>Iniciar el sistema.</b></li>
+                                        <li><b>Un proceso llama al sistema para iniciar un nuevo proceso.</b></li>
+                                        <li><b>El usuario solicitó la creación de un nuevo proceso.</b></li>
+                                        <li><b>Iniciar un trabajo en serie.</b></li>
                                       </ul>
                                     </p>
                                     <p>
@@ -517,18 +519,18 @@
 
                                     </p>
                                     <p>
-                                      Ahora bien, <b>cada vez que se crea un proceso también se debe determinar cuando un comienza su ejecución</b> está realizando el trabajo que se le ha encomendado. Sin embargo tarde o temprano, el nuevo proceso debe terminar, usualmente debido a una de las siguientes causas:
+                                      Ahora bien, <b>cada vez que se crea un proceso</b>, también se debe determinar cuándo una ejecución comienza a realizar el trabajo. Sin embargo, el nuevo proceso debe terminar pronto o temprano debido a una de las siguientes razones:
                                     </p>
                                     <p>
                                       <ul>
-                                        <li><b>El proceso completa su trabajo y termina (voluntariamente).</b></li>
-                                        <li><b>El proceso detecta un error y termina voluntariamente).</b></li>
-                                        <li><b>El sistema detecta un error fatal del proceso y fuerza su terminación.</b></li>
-                                        <li><b>Otro proceso fuerza la terminación del proceso (por ejemplo en UNIX mediante la llamada al sistema kill).</b></li>
+                                        <li><b>El proceso completa su trabajo y termina de manera voluntaria.</b></li>
+                                        <li><b>Cuando el proceso detecte un error, decida terminar de manera voluntaria). El sistema interrumpe el proceso al detectar un error fatal.</b></li>
+                                        <li><b>Un proceso puede finalizar a otro proceso mediante una llamada al sistema Kill en UNIX.</b></li>
+                                        <!-- <li><b>Otro proceso fuerza la terminación del proceso (por ejemplo en UNIX mediante la llamada al sistema kill).</b></li> -->
                                       </ul>
                                     </p>
                                     <p>
-                                      <b>Por lo general, La primera causa de terminar procesos es cuando terminan su ejecución debido a que han completado su trabajo</b>. Cuando un compilador ha compilado el programa que se le ha dado, el compilador ejecuta una llamada al sistema para decirle al sistema operativo que ha finalizado Los procesadores de texto, navegadores y programas similares cuentan siempre con un icono o una opción de menú para que el usuario pueda elegir con el ratón indicando al proceso que borre cualquier archivo temporal que esté abierto y a continuación termine y la segunda causa de terminación es que el proceso descubra un error fatal.
+                                      <b>La primera razón por la que terminan los procesos es porque han completado su trabajo</b>. Un compilador ejecuta una llamada al sistema para notificar al sistema operativo que ha completado la compilación del programa. siempre hay un icono o una opción de menú en los procesadores de texto, navegadores y programas similares que permite al usuario seleccionar con el ratón que el proceso borre cualquier archivo temporal que esté abierto y luego termine; la segunda causa de terminación es que el proceso descubre un error fatal.
                                     </p>
                                     
                                   </div>
@@ -562,7 +564,7 @@
                                   <div class="card-body" id="cardTextConcept">
 
                                     <p>
-                                      <b>El estado de los procesos es muy importante</b> ya que durante su existencia un proceso pasa por una serie de estados discretos, siendo varias las circunstancias que pueden hacer que el mismo cambie de estado:
+                                      <b>El estado de un proceso es crucial porque durante su existencia pasa por una serie de estados distintos</b>, siendo varias las circunstancias que pueden hacer que el mismo estado cambie:
                                     </p>
                                     <p>
                                       <ul>
@@ -571,17 +573,19 @@
                                         </li>
                                       
                                       <li>
-                                        <b>Ejecutándose (<i>running</i>). El proceso está siendo ejecutado en la CPU. Por lo tanto, un proceso puede estar en este estado en un computador uniprocesador.</b>
+                                        <b>En marcha (<i>running</i>). En marcha. El proceso está en la CPU. En una computadora monoprocesador, un proceso puede estar en este estado.</b>
                                       </li>
                                       
                                       <li>
-                                        <b>Listo para ejecutar (<i>ready</i>). El proceso está en condiciones de ejecutarse, pero debe esperar su turno de CPU.</b>
+                                        <b>Preparado para ejecutar (<i>ready</i>). Aunque el proceso está en condiciones de ejecutarse, debe esperar un turno de CPU.</b>
+                                     
                                       </li>
                                         
                                       
                                       <li>
-                                        <b>Bloqueado o En espera (<i>waiting</i>) El proceso no está en condiciones de ejecutarse. Está esperando que algún evento ocurra, como la finalización de una operación de E/S.
-                                      </b>
+                                        <b>Bloqueado o en espera (<i>waiting</i>). También se dice que está suspendido o en espera cuando se espera que ocurra un evento, como la finalización de una operación de E/S.
+                                      
+                                        </b>
                                       </li>
                                       
                                       <li>
@@ -589,49 +593,45 @@
                                       </li>
 
                                       <li>
-                                        <b>Terminado (<i>terminated</i>).</b>
+                                        <b>Finalizado (<i>terminated</i>). Su ejecución ha terminado totalmente.</b>
                                       </li>
                                         
                                       </ul>
                                     </p>
                                     
                                     <p>
-                                      Se puede <b>establecer una cola de Listos para los procesos “listos” y una cola de Bloqueados para los “bloqueados”</b>. La cola de Listos se mantiene en orden prioritario y la cola de Bloqueados está desordenada, ya que los procesos se desbloquean en el orden en que tienen lugar los eventos que están esperando.
-
+                                      <b>Para los procesos "listos" y "bloqueados", se puede establecer una cola de Listos y una cola de Bloqueados</b>, para las procesos "bloqueados" son en listados y se ordenan en orden prioritario, mientras que la cola de procesos se desbloque en el orden en que tienen lugar los eventos que están esperando, para que los bloqueados no causen desorden.
                                     </p>
-                                    <p>
-                                      <b>Al admitirse un trabajo en el sistema</b> se crea un proceso equivalente y es insertado en la última parte de la cola de listos.
-
-                                    </p>
-                                    <p>
-                                       <b>La asignación de la CPU al primer proceso</b> de la cola de Listos se denomina <b>“Despacho”</b>, que es ejecutado por una entidad del Sistema Operativo llamada <b>“Despachador” (<i>dispatcher</i>)</b>.
-
-                                    </p>
-                                    <p>
-                                      El “Bloqueo” es la única transición de estado iniciada por el propio proceso del usuario, <b>puesto que las otras transiciones son iniciadas por entidades ajenas al proceso</b>.
-
-                                    </p>
-                                    <p>
-                                      Toda la <b>información acerca de cada proceso</b>, aparte del contenido de su <b>propio espacio de direcciones</b>, se almacena en una tabla del sistema operativo llamada <b>tabla de procesos</b>, que es un arreglo (o lista enlazada) de estructuras, una para cada proceso existente en ese momento.
 
 
-                                    </p>
                                     <p>
-                                      Así, <b>un proceso (suspendido)</b> consiste en su espacio de direcciones, por lo regular <b>llamado imagen de núcleo</b> (recordando las memorias de núcleos magnéticos que se usaban en el pasado), y su entrada en la tabla de procesos, que contiene sus registros, entre otras cosas.
-
-                                    </p>
-                                    <p>
-                                      Las  <b>llamadas</b> al sistema de administración para procesos clave <b>son las que se ocupan de la creación y terminación de procesos</b>. Consideremos un ejemplo representativo. Un proceso llamado intérprete de comandos o <b>shell lee comandos de una terminal</b>. El usuario acaba de teclear un comando solicitando la compilación de un programa. El <b>shell</b> debe crear ahora un proceso nuevo que ejecute el compilador. Cuando ese proceso haya terminado la compilación, ejecutará una llamada al sistema para terminarse a sí mismo.
-
-                                    </p>
-                                    <p>
-                                      <b>Cuando ha transcurrido el número de segundos que se especificó</b>, el sistema operativo envía una <b>señal</b> al proceso. La <b>señal hace que el proceso suspenda temporalmente lo que estaba haciendo</b>, guarde sus registros en la pila, y comience a ejecutar un procedimiento especial de manejo de señales, por ejemplo, para transmitir un mensaje que al parecer se perdió.
+                                      <b>Un proceso equivalente se crea y coloca en la última</b> parte de la cola de listos cuando un trabajo se admite en el sistema.
                                     </p>
 
                                     <p>
-                                      Una vez que el <b>manejador de señales termina</b>, el <b>proceso en ejecución se reinicia en el estado en que estaba</b> justo antes de la señal. Las señales son el análogo en software de las interrupciones de hardware, y pueden ser generadas por diversas causas además de la expiración de temporizadores.
+                                      <b>La CPU se asigna al proceso "Despacho"</b>, que es ejecutado por una entidad del Sistema Operativo llamada "Despachador".
+                                    </p>
+                                 
+                                    <p>
+                                      <b>El "Bloqueo" es la única transición de estado que inicia el proceso del usuario</b>, ya que los demás son iniciados por entidades externas al proceso. 
+                                    </p>
+                                    <p>
+                                      <b>Toda la información sobre cada proceso</b>, excepto la información de su propio espacio de direcciones, se almacenan en la tabla de procesos del sistema operativo, que es una lista (o arreglo) de estructuras, una para cada proceso que se encuentra en ese tiempo.
 
                                     </p>
+                                    <p>
+                                      Por lo tanto, <b>un proceso suspendido se compone de su espacio de direcciones</b>, que generalmente se denomina imagen de núcleo (recordando las memorias de núcleo magnético utilizadas anteriormente) y su entrada en la tabla de procesos, que contiene sus registros, entre otras cosas.                                    </p>
+                                    <p>
+                                      <b>El sistema de administración de procesos clave se ocupa de la creación y terminación de procesos</b>. Consideraremos esto como un ejemplo ilustrativo. Un proceso conocido como shell o intérprete de comandos lee comandos de una terminal. El usuario ha terminado
+                                      teclear un comando que requiera la compilación de un programa. Ahora, el shell debe crear un proceso nuevo para que el compilador lo ejecute. Cuando ese proceso complete la compilación, llamará al sistema para que se complete a sí mismo.
+
+                                    </p>
+                                    <p>
+                                      <b>El sistema operativo envía una señal al proceso cuando pasa el tiempo predeterminado</b>. La señal hace que el proceso detenga temporalmente su trabajo, guarde sus registros en la pila y comience a realizar un procedimiento especial de manejo de señales, como transmitir un mensaje que parece haberse perdido.
+                                      El proceso en ejecución se reinicia en el estado anterior cuando el manejador de señales termina. En software, las señales son similares a las interrupciones de hardware y pueden producirse por una variedad de razones además de la expiración de temporizadores.                                      
+                                    </p>
+
+                                   
                                     
                                   </div>
 
