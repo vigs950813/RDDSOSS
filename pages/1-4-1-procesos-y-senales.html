@@ -489,11 +489,11 @@
                                 <div class="card" id="cardConcept">
                                   <div class="card-body" id="cardTextConcept">
                                    <p>
-                                      <b>Dado que cada proceso tiene asociado un espacio de direcciones</b>, una lista de ubicaciones de memoria que comienza con un valor mínimo y puede alcanzar un valor máximo, los procesos son esenciales para que un programa se pueda ejecutar. Esto se debe a que cada proceso incluye los valores actuales del contador del programa, registros y variables.
+                                      Dado que cada proceso tiene asociado un espacio de direcciones, una lista de ubicaciones de memoria que comienza con un valor mínimo y puede alcanzar un valor máximo, los procesos son esenciales para que un programa se pueda ejecutar. Esto se debe a que cada proceso incluye los valores actuales del contador del programa, registros y variables.
                                    </p>
 
                                    <p>
-                                    <b>Como resultado, la CPU pasa de un proceso a otro</b>. La multiprogramación es esta transición rápida de un proceso a otro en algún orden.
+                                    Como resultado, la CPU pasa de un proceso a otro. La multiprogramación es esta transición rápida de un proceso a otro en algún orden.
                                    </p>
                                     
                                     <p>
@@ -501,7 +501,7 @@
                                     </p>
 
                                     <p>
-                                      <b>El mismo programa puede estar siendo ejecutado por dos o más procesos</b>, cada uno con sus propios datos y recursos, como si dos o más usuarios usan el mismo editor de texto al mismo tiempo. Aunque el programa es igual, cada usuario tiene un proceso diferente (y diferentes datos).
+                                      <b>El mismo programa puede estar siendo ejecutado por dos o más procesos</b>, cada uno con sus propios datos y recursos, como si dos o más usuarios usan el mismo editor de texto al mismo tiempo. Aunque el programa es igual, cada usuario tiene un proceso diferente y diferentes datos.
                                     </p>
                                     <p>
                                       <b>Los sistemas operativos deben garantizar que existan todos los procesos necesarios</b>, por lo que es necesario tener una forma de crear y destruir los procesos según sea necesario durante el funcionamiento del sistema. Los siguientes son los cuatro principales eventos que conducen a la creación de nuevos procesos:
@@ -515,17 +515,17 @@
                                       </ul>
                                     </p>
                                     <p>
-                                      <b>Cuando un sistema operativo arranca, se crean típicamente varios procesos</b>. Algunos de esos procesos son procesos <b>foreground (en primer plano)</b>, esto es, <b>procesos que interactúan con los usuarios y realizan trabajo para ellos</b>. Otros son procesos background (en segundo plano), que no están asociados con usuarios particulares, sino que tienen alguna función específica. Los procesos que se ejecutan como procesos background para llevar a cabo alguna actividad tal como el correo electrónico, las páginas web, la impresión de archivos de salida, se denominan demonios en Unix o servicios en Windows.
-
+                                      <b>Cuando un sistema operativo arranca, se crean típicamente varios procesos</b>. Algunos de esos procesos son procesos <b><i>foreground</i> (en primer plano)</b>, esto es, <b>procesos que interactúan con los usuarios y realizan trabajo para ellos</b>. Otros son procesos <i>background</i> (en segundo plano), que no están asociados con usuarios particulares, 
+                                      sino que tienen alguna función específica. Los procesos que se ejecutan como procesos background para llevar a cabo alguna actividad tal como el correo electrónico, las páginas web, la impresión de archivos de salida, se denominan demonios en Unix o servicios en Windows.
                                     </p>
                                     <p>
-                                      Ahora bien, <b>cada vez que se crea un proceso</b>, también se debe determinar cuándo una ejecución comienza a realizar el trabajo. Sin embargo, el nuevo proceso debe terminar pronto o temprano debido a una de las siguientes razones:
+                                      Ahora bien, cada vez que se crea un proceso, también se debe determinar cuándo una ejecución comienza a realizar el trabajo. Sin embargo, el nuevo proceso debe terminar pronto o temprano debido a una de las siguientes razones:
                                     </p>
                                     <p>
                                       <ul>
-                                        <li><b>El proceso completa su trabajo y termina de manera voluntaria.</b></li>
-                                        <li><b>Cuando el proceso detecte un error, decida terminar de manera voluntaria). El sistema interrumpe el proceso al detectar un error fatal.</b></li>
-                                        <li><b>Un proceso puede finalizar a otro proceso mediante una llamada al sistema Kill en UNIX.</b></li>
+                                        <li>El proceso completa su trabajo y termina de manera voluntaria.</li>
+                                        <li>Cuando el proceso detecte un error, decida terminar de manera voluntaria). El sistema interrumpe el proceso al detectar un error fatal.</li>
+                                        <li>Un proceso puede finalizar a otro proceso mediante una llamada al sistema Kill en UNIX.</li>
                                         <!-- <li><b>Otro proceso fuerza la terminación del proceso (por ejemplo en UNIX mediante la llamada al sistema kill).</b></li> -->
                                       </ul>
                                     </p>
@@ -600,12 +600,12 @@
                                     </p>
                                     
                                     <p>
-                                      <b>Para los procesos "listos" y "bloqueados", se puede establecer una cola de Listos y una cola de Bloqueados</b>, para las procesos "bloqueados" son en listados y se ordenan en orden prioritario, mientras que la cola de procesos se desbloque en el orden en que tienen lugar los eventos que están esperando, para que los bloqueados no causen desorden.
+                                      <b>Para los procesos "listos" y "bloqueados", se puede establecer una cola de Listos y una cola de Bloqueados</b>, para los procesos "bloqueados" son en listados y se ordenan en orden prioritario, mientras que, la cola de procesos se desbloqueará en el orden en que tienen lugar los eventos que están esperando, para que los bloqueados no causen desorden.
                                     </p>
 
 
                                     <p>
-                                      <b>Un proceso equivalente se crea y coloca en la última</b> parte de la cola de listos cuando un trabajo se admite en el sistema.
+                                      <b>Un proceso equivalente se crea y coloca en la última</b> parte de la cola de listos cuando un trabajo se admite en el sistema..
                                     </p>
 
                                     <p>
@@ -616,19 +616,17 @@
                                       <b>El "Bloqueo" es la única transición de estado que inicia el proceso del usuario</b>, ya que los demás son iniciados por entidades externas al proceso. 
                                     </p>
                                     <p>
-                                      <b>Toda la información sobre cada proceso</b>, excepto la información de su propio espacio de direcciones, se almacenan en la tabla de procesos del sistema operativo, que es una lista (o arreglo) de estructuras, una para cada proceso que se encuentra en ese tiempo.
+                                      <b>Toda la información sobre cada proceso</b>, excepto la información de su propio espacio de direcciones, se almacenan en la tabla de procesos del sistema operativo, que es una lista o arreglo de estructuras, una para cada proceso que se encuentra en ese tiempo.
 
                                     </p>
                                     <p>
-                                      Por lo tanto, <b>un proceso suspendido se compone de su espacio de direcciones</b>, que generalmente se denomina imagen de núcleo (recordando las memorias de núcleo magnético utilizadas anteriormente) y su entrada en la tabla de procesos, que contiene sus registros, entre otras cosas.                                    </p>
-                                    <p>
-                                      <b>El sistema de administración de procesos clave se ocupa de la creación y terminación de procesos</b>. Consideraremos esto como un ejemplo ilustrativo. Un proceso conocido como shell o intérprete de comandos lee comandos de una terminal. El usuario ha terminado
-                                      teclear un comando que requiera la compilación de un programa. Ahora, el shell debe crear un proceso nuevo para que el compilador lo ejecute. Cuando ese proceso complete la compilación, llamará al sistema para que se complete a sí mismo.
-
+                                      Por lo tanto, <b>un proceso suspendido se compone de su espacio de direcciones</b>, que generalmente se denomina imagen de núcleo recordando las memorias de núcleo magnético utilizadas anteriormente y su entrada en la tabla de procesos, que contiene sus registros, entre otras cosas.
                                     </p>
                                     <p>
-                                      <b>El sistema operativo envía una señal al proceso cuando pasa el tiempo predeterminado</b>. La señal hace que el proceso detenga temporalmente su trabajo, guarde sus registros en la pila y comience a realizar un procedimiento especial de manejo de señales, como transmitir un mensaje que parece haberse perdido.
-                                      El proceso en ejecución se reinicia en el estado anterior cuando el manejador de señales termina. En software, las señales son similares a las interrupciones de hardware y pueden producirse por una variedad de razones además de la expiración de temporizadores.                                      
+                                      <b>El sistema de administración de procesos clave se ocupa de la creación y terminación de procesos</b>. Consideraremos esto como un ejemplo ilustrativo. Un proceso conocido como shell o intérprete de comandos lee comandos de una terminal. El usuario ha terminado teclear un comando que requiera la compilación de un programa. Ahora, el shell debe crear un proceso nuevo para que el compilador lo ejecute. Cuando ese proceso complete la compilación, llamará al sistema para que se complete a sí mismo.
+                                    </p>
+                                    <p>
+                                      <b>El sistema operativo envía una señal al proceso cuando pasa el tiempo predeterminado</b>. La señal hace que el proceso detenga temporalmente su trabajo, guarde sus registros en la pila y comience a realizar un procedimiento especial de manejo de señales, como transmitir un mensaje que parece haberse perdido. El proceso en ejecución se reinicia en el estado anterior cuando el manejador de señales termina.                                       
                                     </p>
 
                                    
@@ -670,11 +668,12 @@
                    <a xmlns:cc="http://creativecommons.org/ns#" href=" https://vigs950813.github.io/RDDSOSS/index.html" property="cc:attributionName" rel="cc:attributionURL">
                     
                    </a>Tanibet Pérez de los Santos Mondragón, Benjamín Cruz Torres e Israel Salas Ramírez. <br>Se distribuye bajo una 
-                  <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">
+                  <!-- <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"> -->
+                    <a rel="license" href="https://www.comunidad.escom.ipn.mx/israelsr/RDD_SO_U1/index.html">
                     Licencia Creative Commons Atribución-NoComercial 4.0 Internacional
                   </a>.
                   <br> Basada en una obra en 
-                  <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">
+                  <a rel="license" href="https://github.com/vigs950813/RDDSOSS">
                     https://github.com/vigs950813/RDDSOSS
                   </a>.
             
