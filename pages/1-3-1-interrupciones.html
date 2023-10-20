@@ -551,7 +551,7 @@
 
 
                                       <li>
-                                        <b>Sistema vectorizado de interrupción</b>
+                                        <b>Sistema de interrupción vectorizado</b>
                                         <p>
                                           <b>Las interrupciones vectorizadas generan dos líneas de interrupción</b>: una de petición y otra de reconocimiento por el dispositivo que produce la interrupción y que utiliza a todos los periféricos porque solicitan servicios por la misma línea. Cuando la CPU reconoce la interrupción, el periférico que ha interrumpido se identifica mediante la inserción del vector de interrupción (dirección) o una codificación de este (nivel) en el bus de datos, y alguno de ellos resuelve la resolución de prioridades, como se muestra en la siguiente imágen.
                                         </p>
@@ -572,10 +572,10 @@
                                             <b>También conocido como Daisy-chain</b>. Son módulos de entrada y salida que se conectan al procesador con una línea de petición de interrupción (INT) en colector abierto y una línea de reconocimiento de interrupción.
                                           </p>
                                           <p>
-                                            <b>La llamada (INTA) que produce el procesador para informar al módulo de entrada y salida que está atendiendo la petición</b>. Esta señal INTA se propaga a través de los módulos, lo que permite al sistema de conexión reducir el tiempo necesario para gestionar las prioridades si más de un módulo de entrada y ha solicitado simultáneamente atención y, por otro lado, identificado qué periférico necesita atención, sin tener que usar un programa de encuesta que acceda a todos los módulos de entrada y salida.
-                                          </p>
+                                            <b>La llamada INTA, es una señal que emite el procesador para notificar al módulo de entrada y salida que está atendiendo la solicitud</b>. Esta señal INTA se propaga a través de los módulos, lo que permite al sistema de conexión reducir el tiempo necesario para gestionar las prioridades si varios módulos de entrada han solicitado atención simultáneamente. Además, identifica qué periférico requiere atención sin necesidad de utilizar un programa de sondeo que acceda a todos los módulos de entrada y salida.
+                                            </p>
                                           <p>
-                                            <b>Para implementar este sistema, se requieren cambios en el hardware</b>. Estos cambios implican que el procesador necesita un punto de conexión que produzca una señal de reconocimiento de interrupción (INTA), y que los módulos de entrada y salida deben tener un circuito lógico paraque se pueda permitir que los demás módulos se conecten para generar su vector de registro y almacenar el valor del registro, transmitiendo la señal INTA de este módulo al siguiente dispositivo de entrada y salida, por lo que el vector de interrupción y el procesador envía a través del bus del sistema.  Cada registro tiene su propio valor porque el procesador lo utiliza como identificador del periférico.
+                                            <b>Para implementar este sistema, se requieren cambios en el hardware</b>. Estos cambios implican que el procesador necesita un punto de conexión que produzca una señal de reconocimiento de interrupción (INTA), y que los módulos de entrada y salida deben tener un circuito lógico para que se pueda permitir que los demás módulos se conecten para generar su vector de registro y almacenar el valor del registro, transmitiendo la señal INTA de este módulo al siguiente dispositivo de entrada y salida, por lo que el vector de interrupción y el procesador envía a través del bus del sistema.  Cada registro tiene su propio valor porque el procesador lo utiliza como identificador del periférico.
                                           </p>
                                           <p>
                                             
@@ -627,10 +627,7 @@
                   <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/InteractiveResource" property="dct:title" rel="dct:type">
                     Unidad 1 - Estructura de un sistema operativo
                   </span>
-                   por 
-                   <a xmlns:cc="http://creativecommons.org/ns#" href=" https://vigs950813.github.io/RDDSOSS/index.html" property="cc:attributionName" rel="cc:attributionURL">
-                    
-                   </a>Tanibet Pérez de los Santos Mondragón, Benjamín Cruz Torres e Israel Salas Ramírez. <br>Se distribuye bajo una 
+                  por</a>, Benjamín Cruz Torres, Israel Salas Ramírez y Tanibet Pérez de los Santos Mondragón.<br>Se distribuye bajo una 
                   <!-- <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"> -->
                     <a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">
                     Licencia Creative Commons Atribución-NoComercial 4.0 Internacional
